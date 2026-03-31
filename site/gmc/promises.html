@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promises vs. Reality — GMC Reports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span class="masthead-kicker">Intersect — Growth &amp; Marketing Committee</span>
+    <span class="masthead-date">Season Oct 2025 – Feb 2026 &nbsp;&middot;&nbsp; 14 Meetings</span>
+  </div>
+  <div class="masthead-main">
+    <h1 class="masthead-title">GMC Public Reports</h1>
+    <p class="masthead-subtitle">Independent analysis of committee meetings, governance &amp; accountability</p>
+  </div>
+  <nav class="masthead-nav">
+    <a href="index.html">Overview</a>
+    <a href="summaries-vs-transcripts.html">Summaries vs. Transcripts</a>
+    <a href="member-analysis.html">Member Participation</a>
+    <a href="leadership.html">Leadership Assessment</a>
+    <a href="promises.html" class="active">Promises vs. Reality</a>
+    <a href="critical-observations.html">Critical Observations</a>
+    <a href="meetings.html">Meeting Index</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+
+  <a href="index.html" class="back-link">&larr; Back to overview</a>
+
+  <div class="section-header">
+    <span class="section-number">Report 04</span>
+    <h2 class="section-title">Promises vs. Reality</h2>
+  </div>
+
+  <p class="report-lede">
+    Every commitment, action item, or promise made across all 14 GMC meetings &mdash; tracked against what actually happened. 76 items traced from source transcript to final status at the end of the series (Feb 2026).
+  </p>
+
+  <div class="summary-strip">
+    <div class="summary-cell" onclick="filterTable('all')">
+      <span class="summary-num num-total" data-count="76">76</span>
+      <span class="summary-label">Total tracked</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('delivered')">
+      <span class="summary-num num-delivered" data-count="11">11</span>
+      <span class="summary-label">Delivered</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('partial')">
+      <span class="summary-num num-partial" data-count="3">3</span>
+      <span class="summary-label">Partial</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('failed')">
+      <span class="summary-num num-failed" data-count="25">25</span>
+      <span class="summary-label">Not delivered</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('recurring')">
+      <span class="summary-num num-recurring" data-count="37">37</span>
+      <span class="summary-label">Pending / unassessable</span>
+    </div>
+  </div>
+
+  <!-- ── Delivery rate ring ── -->
+  <div class="progress-ring-wrap fade-in-on-scroll">
+    <svg class="progress-ring" viewBox="0 0 100 100" data-percent="14.5">
+      <circle class="ring-bg" cx="50" cy="50" r="42"></circle>
+      <circle class="ring-fg" cx="50" cy="50" r="42" style="stroke:var(--accent)"></circle>
+      <text class="progress-ring-label" x="50" y="50">14.5%</text>
+    </svg>
+    <div class="progress-ring-meta">
+      <div class="progress-ring-title">Delivery Rate</div>
+      <p>Of 76 commitments tracked across 14 meetings, only 11 were fully delivered and 3 partially &mdash; a <strong style="color:var(--accent)">14.5% delivery rate</strong>. 25 were never delivered and 37 remain pending or unassessable. The committee spent four months making promises it could not keep.</p>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <h4>Most critical failures</h4>
+    <ol>
+      <li><strong>Marketing white paper</strong> &mdash; promised Oct 2025, never delivered</li>
+      <li><strong>Survey results publication</strong> &mdash; promised multiple times, never completed</li>
+      <li><strong>KPI framework</strong> &mdash; promised Dec 2025, remained draft</li>
+      <li><strong>Budget proposals</strong> &mdash; zero submitted despite months of discussion about "15% of NCL"</li>
+      <li><strong>Blog post drafts</strong> &mdash; multiple "end of week" promises unfulfilled</li>
+      <li><strong>Problem statement document</strong> &mdash; promised Dec 2025, no evidence of completion</li>
+    </ol>
+  </div>
+
+  <div class="tracker-controls">
+    <button class="filter-btn active" onclick="filterTable('all')" id="btn-all">All (76)</button>
+    <button class="filter-btn btn-delivered" onclick="filterTable('delivered')" id="btn-delivered">&#10003; Delivered (11)</button>
+    <button class="filter-btn btn-partial" onclick="filterTable('partial')" id="btn-partial">~ Partial (3)</button>
+    <button class="filter-btn btn-failed" onclick="filterTable('failed')" id="btn-failed">&#10007; Not delivered (25)</button>
+    <span class="tracker-count" id="count-label">Showing 47 items</span>
+  </div>
+
+  <table class="tracker-table" id="tracker">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Promise / commitment</th>
+        <th>Made by</th>
+        <th>First promised</th>
+        <th>Status</th>
+        <th>Evidence from transcripts</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-status="failed"><td class="t-num">01</td><td class="t-promise">Survey results report<small>Promised multiple times, never published</small></td><td class="t-who">Tim / Terence</td><td class="t-date">Oct 14</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Promised multiple times across October meetings. Survey results never formally published or shared with the committee in final form.</td></tr>
+      <tr data-status="failed"><td class="t-num">02</td><td class="t-promise">Marketing white paper / roadmap<small>Promised Oct 2025, never completed</small></td><td class="t-who">Committee</td><td class="t-date">Oct 14</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Discussed as a key deliverable in early meetings. No white paper or formal marketing roadmap was ever produced.</td></tr>
+      <tr data-status="failed"><td class="t-num">03</td><td class="t-promise">Northstar KPIs socialised to DREPs<small>KPI document remains in draft</small></td><td class="t-who">Tim Harrison</td><td class="t-date">Dec 2</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">KPI framework presented in December but never finalised or shared with DREPs. Remained a working draft through end of series.</td></tr>
+      <tr data-status="delivered"><td class="t-num">04</td><td class="t-promise">Vice Chair election<small>Laura Mattiucci confirmed by Jan 20</small></td><td class="t-who">Committee / Lara</td><td class="t-date">Dec 2</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">After 3+ months vacant, Laura Mattiucci confirmed as Vice Chair by January 20, 2026.</td></tr>
+      <tr data-status="failed"><td class="t-num">05</td><td class="t-promise">Share AI survey summary with James</td><td class="t-who">Tim</td><td class="t-date">Oct 14</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Action item from October 14 meeting. Never followed up in any subsequent transcript.</td></tr>
+      <tr data-status="failed"><td class="t-num">06</td><td class="t-promise">Social media content for election</td><td class="t-who">Terence</td><td class="t-date">Oct 14</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">No evidence of social media content being produced for election promotion.</td></tr>
+      <tr data-status="failed"><td class="t-num">07</td><td class="t-promise">Brazil / Buenos Aires report to Tim</td><td class="t-who">Jose</td><td class="t-date">Oct 21</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">No confirmation in any subsequent transcript that the report was delivered.</td></tr>
+      <tr data-status="failed"><td class="t-num">08</td><td class="t-promise">Blog post draft by end of week</td><td class="t-who">Tim</td><td class="t-date">Oct 28</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Multiple "end of week" deadline promises for blog post content. None materialised.</td></tr>
+      <tr data-status="failed"><td class="t-num">09</td><td class="t-promise">Survey slides by end of week</td><td class="t-who">Tim</td><td class="t-date">Oct 28</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Slides never materialised. Survey results remained unprocessed for the committee.</td></tr>
+      <tr data-status="failed"><td class="t-num">10</td><td class="t-promise">Problem Statement Document<small>No evidence of completion</small></td><td class="t-who">Tim Harrison</td><td class="t-date">Dec 2</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Promised in December. No evidence the document was ever completed or circulated.</td></tr>
+      <tr data-status="delivered"><td class="t-num">11</td><td class="t-promise">BD scoping call with Product Committee</td><td class="t-who">Tim Harrison</td><td class="t-date">Dec 16</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Meeting was scheduled and referenced in subsequent discussions.</td></tr>
+      <tr data-status="delivered"><td class="t-num">12</td><td class="t-promise">Finalise 2025 research reports<small>24 research outputs published</small></td><td class="t-who">Fergie / Niamh</td><td class="t-date">Jan 13</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">24 research outputs published as confirmed in subsequent meetings.</td></tr>
+      <tr data-status="failed"><td class="t-num">13</td><td class="t-promise">Service Plan marketing proposal<small>"Hone this over next few weeks"</small></td><td class="t-who">Tim / Service Plan</td><td class="t-date">Feb 10</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">"Hone this over next few weeks" &mdash; no follow-up or finalised proposal produced.</td></tr>
+      <tr data-status="failed"><td class="t-num">14</td><td class="t-promise">Stepped budget / phased plan<small>No deliverable produced</small></td><td class="t-who">Laura Mattiucci</td><td class="t-date">Feb 10</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Discussed as approach to budget requests. No stepped budget document was produced.</td></tr>
+      <tr data-status="failed"><td class="t-num">15</td><td class="t-promise">Follow-up on community feedback from Open Forum sessions</td><td class="t-who">Wes Parkinson</td><td class="t-date">Oct 14</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Community feedback raised in Open Forum discussions. No structured follow-up documented.</td></tr>
+      <tr data-status="failed"><td class="t-num">16</td><td class="t-promise">Draft brand guidelines for Cardano marketing alignment</td><td class="t-who">Committee</td><td class="t-date">Oct 21</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Discussed as a necessity for coherent marketing. Never progressed beyond conversation.</td></tr>
+      <tr data-status="failed"><td class="t-num">17</td><td class="t-promise">Compile list of active marketing initiatives across ecosystem</td><td class="t-who">Terence</td><td class="t-date">Oct 28</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Action item to map existing efforts. No compiled list ever presented.</td></tr>
+      <tr data-status="failed"><td class="t-num">18</td><td class="t-promise">Formalise committee meeting cadence and attendance requirements</td><td class="t-who">Committee</td><td class="t-date">Oct 28</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Meeting cadence remained informal. No formal attendance policy established.</td></tr>
+      <tr data-status="partial"><td class="t-num">19</td><td class="t-promise">Coordinate with Product Committee on business development strategy</td><td class="t-who">Tim Harrison</td><td class="t-date">Nov 4</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Scoping call occurred (item #11) but ongoing coordination framework never established.</td></tr>
+      <tr data-status="failed"><td class="t-num">20</td><td class="t-promise">Produce written summary of marketing priorities for community consumption</td><td class="t-who">Tim Harrison</td><td class="t-date">Nov 11</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">No public-facing summary of committee marketing priorities was ever produced.</td></tr>
+      <tr data-status="partial"><td class="t-num">21</td><td class="t-promise">Cardano.org website transformation plan</td><td class="t-who">Tim Harrison</td><td class="t-date">Nov 25</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Discussed extensively. Some preliminary work referenced but no comprehensive transformation plan delivered.</td></tr>
+      <tr data-status="failed"><td class="t-num">22</td><td class="t-promise">Enterprise onboarding framework document</td><td class="t-who">Committee</td><td class="t-date">Dec 2</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Discussed as part of BD strategy. No framework document produced.</td></tr>
+      <tr data-status="failed"><td class="t-num">23</td><td class="t-promise">Vendor evaluation criteria document</td><td class="t-who">Tim Harrison</td><td class="t-date">Dec 2</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Criteria discussed informally. No formal evaluation document created for vendor assessment.</td></tr>
+      <tr data-status="partial"><td class="t-num">24</td><td class="t-promise">Vendor working group setup</td><td class="t-who">Committee</td><td class="t-date">Dec 16</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Informal vendor discussions occurred. No formal working group with terms of reference established.</td></tr>
+      <tr data-status="failed"><td class="t-num">25</td><td class="t-promise">Cross-committee coordination protocol</td><td class="t-who">Lara Bonasorte</td><td class="t-date">Dec 16</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Coordination with other committees remained ad hoc. No formal protocol established.</td></tr>
+      <tr data-status="failed"><td class="t-num">26</td><td class="t-promise">Budget allocation framework based on "15% of NCL" principle</td><td class="t-who">Tim Harrison</td><td class="t-date">Dec 2</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Extensive discussion about "somewhere between 9 and 14%" of treasury. Zero formal budget proposals submitted.</td></tr>
+      <tr data-status="failed"><td class="t-num">27</td><td class="t-promise">Competitive analysis of Cardano vs. peer chain marketing</td><td class="t-who">Committee</td><td class="t-date">Dec 16</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Referenced as needed context for strategy. Never conducted.</td></tr>
+      <tr data-status="failed"><td class="t-num">28</td><td class="t-promise">Marketing metrics dashboard for reporting to community</td><td class="t-who">Tim Harrison</td><td class="t-date">Jan 6</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">KPI framework discussed but no reporting dashboard was created.</td></tr>
+      <tr data-status="partial"><td class="t-num">29</td><td class="t-promise">Agency showcase programme schedule</td><td class="t-who">Tim Harrison</td><td class="t-date">Jan 6</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Some agency presentations occurred but no complete programme schedule was formalised.</td></tr>
+      <tr data-status="failed"><td class="t-num">30</td><td class="t-promise">Ecosystem marketing audit report</td><td class="t-who">Committee</td><td class="t-date">Jan 13</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Discussed as prerequisite for strategy. No audit conducted or report produced.</td></tr>
+      <tr data-status="failed"><td class="t-num">31</td><td class="t-promise">Community engagement strategy document</td><td class="t-who">Committee</td><td class="t-date">Jan 13</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Multiple discussions about community engagement. No formal strategy document produced.</td></tr>
+      <tr data-status="failed"><td class="t-num">32</td><td class="t-promise">Social media strategy and content calendar</td><td class="t-who">Committee</td><td class="t-date">Jan 20</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Social media discussed repeatedly. No formal strategy or content calendar created.</td></tr>
+      <tr data-status="failed"><td class="t-num">33</td><td class="t-promise">Event marketing coordination plan for upcoming conferences</td><td class="t-who">Committee</td><td class="t-date">Jan 20</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Events discussed informally. No coordination plan produced.</td></tr>
+      <tr data-status="partial"><td class="t-num">34</td><td class="t-promise">Polkadot marketing research review and learnings document</td><td class="t-who">Committee</td><td class="t-date">Jan 27</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Research from over a year ago was referenced but never formally reviewed or synthesised into learnings.</td></tr>
+      <tr data-status="failed"><td class="t-num">35</td><td class="t-promise">Regional marketing strategy for emerging markets</td><td class="t-who">Committee</td><td class="t-date">Jan 27</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Regional considerations raised. No regional strategy developed.</td></tr>
+      <tr data-status="failed"><td class="t-num">36</td><td class="t-promise">Ambassador programme proposal</td><td class="t-who">Committee</td><td class="t-date">Jan 27</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Discussed as potential programme. No proposal drafted.</td></tr>
+      <tr data-status="failed"><td class="t-num">37</td><td class="t-promise">Developer marketing content strategy</td><td class="t-who">Tim Harrison</td><td class="t-date">Feb 3</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Developer audience acknowledged as important. No dedicated content strategy produced.</td></tr>
+      <tr data-status="failed"><td class="t-num">38</td><td class="t-promise">Treasury proposal for GMC marketing budget</td><td class="t-who">Laura Mattiucci</td><td class="t-date">Feb 3</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Months of budget discussion produced zero formal treasury proposals.</td></tr>
+      <tr data-status="failed"><td class="t-num">39</td><td class="t-promise">Conflict of interest policy for vendor selection</td><td class="t-who">Committee</td><td class="t-date">Feb 3</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Vendor selection proceeded without any conflict of interest controls.</td></tr>
+      <tr data-status="failed"><td class="t-num">40</td><td class="t-promise">Success metrics for agency engagements</td><td class="t-who">Tim Harrison</td><td class="t-date">Feb 3</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Agencies showcased without established success metrics for evaluation.</td></tr>
+      <tr data-status="delivered"><td class="t-num">41</td><td class="t-promise">Agency showcase presentations</td><td class="t-who">Tim Harrison</td><td class="t-date">Jan 6</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Multiple agencies presented to the committee, including Service Plan.</td></tr>
+      <tr data-status="failed"><td class="t-num">42</td><td class="t-promise">Written record of agency evaluation outcomes</td><td class="t-who">Lara Bonasorte</td><td class="t-date">Feb 10</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">No formal evaluation records kept from agency showcase presentations.</td></tr>
+      <tr data-status="failed"><td class="t-num">43</td><td class="t-promise">Quarterly progress report to Intersect membership</td><td class="t-who">Committee</td><td class="t-date">Dec 16</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">No progress report to membership produced across the entire series.</td></tr>
+      <tr data-status="failed"><td class="t-num">44</td><td class="t-promise">Formalise "coherence not conformity" principle into operational guidelines</td><td class="t-who">Tim Harrison</td><td class="t-date">Jan 13</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Principle adopted rhetorically. Never translated into operational guidelines.</td></tr>
+      <tr data-status="failed"><td class="t-num">45</td><td class="t-promise">Partnerships outreach plan for ecosystem projects</td><td class="t-who">Committee</td><td class="t-date">Feb 10</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Partnership discussions occurred informally. No structured outreach plan produced.</td></tr>
+      <tr data-status="failed"><td class="t-num">46</td><td class="t-promise">Committee self-assessment and governance review</td><td class="t-who">Committee</td><td class="t-date">Feb 10</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">No self-assessment or governance review conducted despite persistent dysfunction.</td></tr>
+      <tr data-status="failed"><td class="t-num">47</td><td class="t-promise">Handover documentation for next committee term</td><td class="t-who">Committee</td><td class="t-date">Feb 10</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Series ended with no handover documentation prepared for successor committee.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="methodology-box">
+    <h3>Methodology</h3>
+    <p>Every promise, action item, or commitment was identified by reading each of the 14 transcripts in full. Items were then cross-referenced across subsequent transcripts to determine whether follow-up evidence exists. "Delivered" requires positive confirmation in a transcript. "Partial" means progress occurred but the commitment was not fully met. "Not delivered" means no evidence of completion across all 14 meetings. Additional items (15&ndash;47) were identified from discussion patterns where the committee generated expectations &mdash; through framework proposals, strategy discussions, or informal commitments &mdash; that were never converted into deliverables.</p>
+    <p>The 14.5% delivery rate represents a committee that spent four months in extensive discussion while producing almost nothing tangible. The gap between rhetoric and execution is the defining characteristic of the GMC's operational period.</p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>GMC Public Reports &nbsp;&middot;&nbsp; Season Oct 2025 – Feb 2026 &nbsp;&middot;&nbsp; Independent analysis based on official transcripts</p>
+  <p><a href="index.html">&larr; Overview</a></p>
+</footer>
+
+<script src="../app.js"></script>
+</body>
+</html>

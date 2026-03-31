@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promises vs. Reality — MCC Reports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span class="masthead-kicker">Intersect — Membership &amp; Community Committee</span>
+    <span class="masthead-date">Season Nov 2025 – Mar 2026 &nbsp;&middot;&nbsp; 11 Meetings</span>
+  </div>
+  <div class="masthead-main">
+    <h1 class="masthead-title">MCC Public Reports</h1>
+    <p class="masthead-subtitle">Independent analysis of committee meetings, governance &amp; accountability</p>
+  </div>
+  <nav class="masthead-nav">
+    <a href="index.html">Overview</a>
+    <a href="summaries-vs-transcripts.html">Summaries vs. Transcripts</a>
+    <a href="member-analysis.html">Member Participation</a>
+    <a href="secretaries.html">The Secretaries</a>
+    <a href="promises.html" class="active">Promises vs. Reality</a>
+    <a href="meetings.html">Meeting Index</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+
+  <a href="index.html" class="back-link">&larr; Back to overview</a>
+
+  <div class="section-header">
+    <span class="section-number">Report 04</span>
+    <h2 class="section-title">Promises vs. Reality</h2>
+  </div>
+
+  <p class="report-lede">
+    Every commitment, action item, or promise made across all 11 MCC meetings — tracked against what actually happened. 48 items traced from source transcript to final status at the end of the series (Mar 17, 2026).
+  </p>
+
+  <div class="summary-strip">
+    <div class="summary-cell" onclick="filterTable('all')">
+      <span class="summary-num num-total" data-count="48">48</span>
+      <span class="summary-label">Total tracked</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('delivered')">
+      <span class="summary-num num-delivered" data-count="9">9</span>
+      <span class="summary-label">Delivered</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('partial')">
+      <span class="summary-num num-partial" data-count="10">10</span>
+      <span class="summary-label">Partial</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('failed')">
+      <span class="summary-num num-failed" data-count="23">23</span>
+      <span class="summary-label">Not delivered</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('recurring')">
+      <span class="summary-num num-recurring" data-count="6">6</span>
+      <span class="summary-label">Promised repeatedly, never done</span>
+    </div>
+  </div>
+
+  <!-- ── Delivery rate ring ── -->
+  <div class="progress-ring-wrap fade-in-on-scroll">
+    <svg class="progress-ring" viewBox="0 0 100 100" data-percent="19">
+      <circle class="ring-bg" cx="50" cy="50" r="42"></circle>
+      <circle class="ring-fg" cx="50" cy="50" r="42" style="stroke:var(--accent)"></circle>
+      <text class="progress-ring-label" x="50" y="50">19%</text>
+    </svg>
+    <div class="progress-ring-meta">
+      <div class="progress-ring-title">Delivery Rate</div>
+      <p>Only 9 of 48 commitments were fully delivered — a <strong style="color:var(--accent)">19% delivery rate</strong>. The committee spent five months making promises it could not keep. Six items were promised three or more times and never completed.</p>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <h4>Most repeated unfulfilled promises</h4>
+    <ol>
+      <li><strong>ClickUp 101 training</strong> — promised Dec 16, Jan 20, Feb 3, Mar 3. Never confirmed delivered. Members still unable to create tasks in Feb.</li>
+      <li><strong>Hub KPI document finalisation</strong> — "early Feb" (Jan 20), then "end of Feb" (Feb 17), then "after Thursday" (Feb 17 again). Still debated from scratch in Mar 17.</li>
+      <li><strong>Laurentine's inclusion in the Hub WhatsApp group</strong> — Sanjaya promises Jan 20. She's still not in by Feb 17.</li>
+      <li><strong>48-hour meeting minutes</strong> — demanded Dec 16. The structural cause (Terence owns the calendar) was never resolved.</li>
+      <li><strong>Terence handing over calendar access to Abhik</strong> — directly instructed by Maureen in Dec 16. Never happened.</li>
+      <li><strong>Nathan's replacement</strong> — raised Dec 2. Unresolved Mar 17.</li>
+    </ol>
+  </div>
+
+  <div class="tracker-controls">
+    <button class="filter-btn active" onclick="filterTable('all')" id="btn-all">All (48)</button>
+    <button class="filter-btn btn-delivered" onclick="filterTable('delivered')" id="btn-delivered">&#10003; Delivered (9)</button>
+    <button class="filter-btn btn-partial" onclick="filterTable('partial')" id="btn-partial">~ Partial (10)</button>
+    <button class="filter-btn btn-failed" onclick="filterTable('failed')" id="btn-failed">&#10007; Not delivered (23)</button>
+    <button class="filter-btn btn-recurring" onclick="filterTable('recurring')" id="btn-recurring">&#8635; Repeated &amp; unmet (6)</button>
+    <span class="tracker-count" id="count-label">Showing 48 items</span>
+  </div>
+
+  <table class="tracker-table" id="tracker">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Promise / commitment</th>
+        <th>Made by</th>
+        <th>First promised</th>
+        <th>Status</th>
+        <th>Evidence from transcripts</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-status="failed"><td class="t-num">01</td><td class="t-promise">Formal onboarding and orientation for new members<small>Deferred from Nov 18 to "next week"</small></td><td class="t-who">Darlington / Abhik</td><td class="t-date">Nov 18</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Deferred to Nov 25. No transcript evidence a formal onboarding session ever took place.</td></tr>
+      <tr data-status="partial"><td class="t-num">02</td><td class="t-promise">All new members to have full ClickUp and Google Drive access by next meeting</td><td class="t-who">Abhik / Terence</td><td class="t-date">Nov 18</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Some members gained access. Fanny reports inability to create tasks as late as Feb 3 — five months after this promise.</td></tr>
+      <tr data-status="delivered"><td class="t-num">03</td><td class="t-promise">Discord poll for approval of the hub letter to the board</td><td class="t-who">Abhik</td><td class="t-date">Nov 18</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Poll set up same meeting per transcript evidence. Letter sent to Nick.</td></tr>
+      <tr data-status="failed"><td class="t-num">04</td><td class="t-promise">Fund 15 KYC/KYB submission procedure to be discussed async on Discord</td><td class="t-who">Darlington</td><td class="t-date">Nov 18</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Never referenced again in any subsequent meeting. No evidence the async discussion happened.</td></tr>
+      <tr data-status="partial"><td class="t-num">05</td><td class="t-promise">Fund 15 proposal draft to be shared with MCC within two days</td><td class="t-who">Sanjaya</td><td class="t-date">Nov 18</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">A document was referenced in subsequent meetings but the formal Catalyst proposal was never completed before the deadline.</td></tr>
+      <tr data-status="partial"><td class="t-num">06</td><td class="t-promise">Upload latest meeting minutes (post-Oct 28) to committee notes</td><td class="t-who">Abhik</td><td class="t-date">Nov 25</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Abhik acknowledged the delay. Minutes remained chronically late throughout the entire series.</td></tr>
+      <tr data-status="failed"><td class="t-num">07</td><td class="t-promise">Follow up with Terence regarding Laurentine not receiving meeting invites</td><td class="t-who">Maureen</td><td class="t-date">Nov 25</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Laurentine still reports not receiving meeting invites as late as Feb 17 — nearly three months later.</td></tr>
+      <tr data-status="partial"><td class="t-num">08</td><td class="t-promise">All members to fill in both forms (task assignment + idea intake)</td><td class="t-who">All members</td><td class="t-date">Nov 25</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Forms re-shared in Dec 2 and Jan 6, suggesting low completion. No confirmation all members submitted.</td></tr>
+      <tr data-status="failed"><td class="t-num">09</td><td class="t-promise">Confirm who needs delegated access to the MCC X account</td><td class="t-who">Abhik</td><td class="t-date">Nov 25</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Maureen raises X account access again in Dec 2. Delegate access never granted to the committee throughout the series.</td></tr>
+      <tr data-status="partial"><td class="t-num">10</td><td class="t-promise">Hub accountability and fund distribution framework to be developed</td><td class="t-who">Maureen / Sanjaya</td><td class="t-date">Nov 25</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Work begins in Jan–Feb. Hub KPI document drafted but never finalised. By Mar 17 the model is being pivoted to an event-reimbursement structure instead.</td></tr>
+      <tr data-status="delivered"><td class="t-num">11</td><td class="t-promise">Create a spreadsheet for MCC members to submit suggested X posts</td><td class="t-who">Abhik</td><td class="t-date">Dec 2</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Spreadsheet confirmed in use by Dec 16 and referenced in Jan 6. Chaya is submitting content to it.</td></tr>
+      <tr data-status="partial"><td class="t-num">12</td><td class="t-promise">Maureen to attend ISC meetings as Chair for alignment</td><td class="t-who">Maureen</td><td class="t-date">Dec 2</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Maureen references ISC meetings in later sessions, suggesting attendance. Not consistently confirmed in transcripts.</td></tr>
+      <tr data-status="partial"><td class="t-num">13</td><td class="t-promise">Run a Discord poll to find best day/time for the ClickUp workshop</td><td class="t-who">Abhik</td><td class="t-date">Dec 2</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">A workshop appears to have happened (referenced as "the workshop" in Dec 9). The formal poll scheduling process is unconfirmed.</td></tr>
+      <tr data-status="failed"><td class="t-num">14</td><td class="t-promise">Maureen to send Terence email with ClickUp dashboard and form requirements</td><td class="t-who">Maureen</td><td class="t-date">Dec 2</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">In Dec 9 Maureen again says she'll send the email. By Dec 16 she's writing her own agenda in Google Docs because ClickUp is still unusable. The dashboard is never created.</td></tr>
+      <tr data-status="failed"><td class="t-num">15</td><td class="t-promise">Nathan's replacement — process to be determined and actioned</td><td class="t-who">Maureen / committee</td><td class="t-date">Dec 2</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Nathan remains on the roster at 0/11 attendance as of Mar 17. No replacement process ever formally initiated across 11 meetings.</td></tr>
+      <tr data-status="recurring"><td class="t-num">16</td><td class="t-promise">ClickUp 101 training session for committee members<small>Promised Dec 16, Jan 20, Feb 3, Mar 3</small></td><td class="t-who">Abhik</td><td class="t-date">Dec 16</td><td><span class="status-pill s-recurring">&#8635; Promised 4&times;, unmet</span></td><td class="t-evidence">Dec 16: "I'm happy to do a one-on-one." Jan 20: Akheel asks Wilco for help, Abhik offers again. Feb 3: Fanny asks, session promised "within 48 hours." Mar 3: scheduled again. No session confirmed in any transcript.</td></tr>
+      <tr data-status="recurring"><td class="t-num">17</td><td class="t-promise">48-hour meeting minutes turnaround</td><td class="t-who">Demanded by Maureen</td><td class="t-date">Dec 16</td><td><span class="status-pill s-recurring">&#8635; Demanded, never met</span></td><td class="t-evidence">Maureen explicitly demands 48-hour minutes from Dec 16 onward. Minutes remain late. The structural issue — Terence owns the calendar event and receives the auto-transcript — was never resolved.</td></tr>
+      <tr data-status="recurring"><td class="t-num">18</td><td class="t-promise">Terence to hand over calendar event ownership and all access to Abhik</td><td class="t-who">Demanded by Maureen</td><td class="t-date">Dec 16</td><td><span class="status-pill s-recurring">&#8635; Demanded, never done</span></td><td class="t-evidence">Maureen's exact words: "I want your support to just hand over everything you have to Abhik." Terence continues attending and holding calendar ownership for the remaining three months.</td></tr>
+      <tr data-status="delivered"><td class="t-num">19</td><td class="t-promise">Set up recurring X Space for Sanjaya, including recording feature</td><td class="t-who">Abhik</td><td class="t-date">Dec 16</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">X Spaces running from early January per Jan 6 transcript. Sanjaya confirmed hosting.</td></tr>
+      <tr data-status="failed"><td class="t-num">20</td><td class="t-promise">Sanjaya to seek volunteers as backup hosts for Monday Office Hours</td><td class="t-who">Sanjaya</td><td class="t-date">Dec 16</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Never referenced again. Sanjaya hosts solo throughout, sometimes missing sessions when unavailable.</td></tr>
+      <tr data-status="failed"><td class="t-num">21</td><td class="t-promise">Committee members to review the Knowledge Base "Recent Updates" section</td><td class="t-who">Assigned in summary</td><td class="t-date">Dec 16</td><td><span class="status-pill s-failed">&#10007; Invented action item</span></td><td class="t-evidence">This action item appears in the official summary but was never agreed in the meeting. Terence showed the page; no one agreed to review it.</td></tr>
+      <tr data-status="delivered"><td class="t-num">22</td><td class="t-promise">Miro-to-ClickUp task migration</td><td class="t-who">Abhik / Wilco</td><td class="t-date">Dec 16</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Wilco confirms in Jan 6 that all tasks from the Miro board have been successfully moved to ClickUp.</td></tr>
+      <tr data-status="failed"><td class="t-num">23</td><td class="t-promise">Working Groups Directory to be published on the Intersect website</td><td class="t-who">Maureen / Abhik</td><td class="t-date">Dec 9</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Discussed as important in Dec 9. Never referenced as completed in any later meeting.</td></tr>
+      <tr data-status="delivered"><td class="t-num">24</td><td class="t-promise">Open Office Hours to begin on Monday at 1PM UTC</td><td class="t-who">Sanjaya</td><td class="t-date">Dec 16</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Sanjaya begins hosting X Spaces from early January. Timing shifts but the programme launches and runs through the series.</td></tr>
+      <tr data-status="partial"><td class="t-num">25</td><td class="t-promise">Fanny to contact previous Hub working group leads</td><td class="t-who">Fanny</td><td class="t-date">Jan 6</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Fanny says she is trying. Previous hub lead not reached via Discord. The hub team proceeds using old documents.</td></tr>
+      <tr data-status="partial"><td class="t-num">26</td><td class="t-promise">Workstream leads to rescope Jan–Mar tasks in ClickUp</td><td class="t-who">All workstream leads</td><td class="t-date">Jan 6</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Some workstream leads update tasks. Others still unclear on assignments as late as Feb 17.</td></tr>
+      <tr data-status="delivered"><td class="t-num">27</td><td class="t-promise">Schedule and promote the first official Monday X Space</td><td class="t-who">Abhik / Sanjaya</td><td class="t-date">Jan 6</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Done before the next meeting. Space link posted to Discord.</td></tr>
+      <tr data-status="failed"><td class="t-num">28</td><td class="t-promise">Each elected member to identify and complete three specific work items before next meeting</td><td class="t-who">All elected members</td><td class="t-date">Jan 20</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">In Feb 3, Maureen again has to ask members what they are working on. Wilco explicitly asks who is doing what in hubs.</td></tr>
+      <tr data-status="recurring"><td class="t-num">29</td><td class="t-promise">Sanjaya to invite Laurentine to the internal Hubs discussion group<small>Promised Jan 20 — still not done six weeks later</small></td><td class="t-who">Sanjaya</td><td class="t-date">Jan 20</td><td><span class="status-pill s-recurring">&#8635; Promised 2&times;, delivered too late</span></td><td class="t-evidence">Jan 20: Sanjaya says "let me send you an invite." Feb 17, six weeks later: Laurentine still not in the group. Sanjaya apologises again.</td></tr>
+      <tr data-status="failed"><td class="t-num">30</td><td class="t-promise">One-on-one ClickUp training for Akheel</td><td class="t-who">Abhik / Wilco</td><td class="t-date">Jan 20</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Akheel asks for help; both offer. No training session confirmed in any subsequent transcript.</td></tr>
+      <tr data-status="delivered"><td class="t-num">31</td><td class="t-promise">Coordinate a work session with The Grid team</td><td class="t-who">Maureen</td><td class="t-date">Jan 20</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">The Grid appears in Feb 3 with an active proposal. Formally voted into the budget in Mar 3.</td></tr>
+      <tr data-status="delivered"><td class="t-num">32</td><td class="t-promise">Finalise the "Start Here" onboarding page by end of week</td><td class="t-who">Maureen</td><td class="t-date">Jan 20</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Maureen shares the completed document in Feb 3 and has merged it to Gitbook.</td></tr>
+      <tr data-status="failed"><td class="t-num">33</td><td class="t-promise">Extract data from previous WG docs and draft new Hubs framework by early February</td><td class="t-who">Sanjaya / Akheel / Fanny</td><td class="t-date">Jan 20</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">"Early February" deadline missed. Mar 17: model being reconsidered entirely with the event-reimbursement pivot.</td></tr>
+      <tr data-status="recurring"><td class="t-num">34</td><td class="t-promise">Schedule ClickUp 101 session for Fanny, Akheel, and other members<small>"Within 48 hours" — Feb 3</small></td><td class="t-who">Abhik</td><td class="t-date">Feb 3</td><td><span class="status-pill s-recurring">&#8635; Promised 2&times;, unconfirmed</span></td><td class="t-evidence">Feb 3: promised "within 48 hours." Mar 3: scheduled again. No transcript confirms the session ever took place.</td></tr>
+      <tr data-status="partial"><td class="t-num">35</td><td class="t-promise">Akheel to upload refined Hub KPI document to Google Drive</td><td class="t-who">Akheel</td><td class="t-date">Feb 3</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Document uploaded and referenced in Feb 17 as a working draft. Not confirmed finalised by Mar 17.</td></tr>
+      <tr data-status="failed"><td class="t-num">36</td><td class="t-promise">All elected members to align on updated remit and prepare budget bullet points before Feb 17</td><td class="t-who">All elected members</td><td class="t-date">Feb 3</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">In Feb 17, Maureen is presenting a draft budget she appears to have built largely alone. Lorenzo says the remit is still outdated.</td></tr>
+      <tr data-status="failed"><td class="t-num">37</td><td class="t-promise">Ensure Laurentine is CC'd on all future emails to Boaz re: translation</td><td class="t-who">Abhik</td><td class="t-date">Feb 17</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Maureen raises this explicitly. No confirmation in Mar 3 or Mar 17 that Laurentine received subsequent emails.</td></tr>
+      <tr data-status="recurring"><td class="t-num">38</td><td class="t-promise">Finalise and share Hub KPI document<small>Promised "end of week" in Feb 17 — third deadline</small></td><td class="t-who">Sanjaya</td><td class="t-date">Feb 17</td><td><span class="status-pill s-recurring">&#8635; Promised 3&times;, never finalised</span></td><td class="t-evidence">Jan 20: "early February." Feb 17: "end of week." Mar 3: still in progress. A completed KPI document is never formally presented.</td></tr>
+      <tr data-status="failed"><td class="t-num">39</td><td class="t-promise">Create a ClickUp-linked form for other committees to sign up for Office Hour slots</td><td class="t-who">Abhik</td><td class="t-date">Feb 17</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Assigned by Abhik to himself. Never mentioned again in any subsequent transcript.</td></tr>
+      <tr data-status="partial"><td class="t-num">40</td><td class="t-promise">All members to review MCC Remit and Draft Budget documents</td><td class="t-who">All members</td><td class="t-date">Feb 17</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Some members left comments. Others had not engaged by Mar 3. Cullah only just saw the budget document in Mar 3.</td></tr>
+      <tr data-status="delivered"><td class="t-num">41</td><td class="t-promise">Boaz and Laurentine to reach 100% French translation completion</td><td class="t-who">Boaz / Laurentine</td><td class="t-date">Feb 17</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Confirmed 99% in Mar 3. Acknowledged complete in Mar 17. 1,900+ terms translated.</td></tr>
+      <tr data-status="failed"><td class="t-num">42</td><td class="t-promise">Abhik to locate the 2024 Hub statistics folder</td><td class="t-who">Abhik</td><td class="t-date">Mar 3</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">In Mar 17, the hub post-mortem discussion continues without this data. LATAM and Sri Lanka have no financial data.</td></tr>
+      <tr data-status="failed"><td class="t-num">43</td><td class="t-promise">Formally request raw Hub financial and attendance data from Intersect</td><td class="t-who">Maureen</td><td class="t-date">Mar 17</td><td><span class="status-pill s-failed">&#10007; Pending at series end</span></td><td class="t-evidence">Raised as Option 1 in Mar 17. Series ends before follow-up.</td></tr>
+      <tr data-status="failed"><td class="t-num">44</td><td class="t-promise">Committee members to sign up as "owners" for budget categories by end of week</td><td class="t-who">All members</td><td class="t-date">Mar 17</td><td><span class="status-pill s-failed">&#10007; Pending at series end</span></td><td class="t-evidence">Meeting ends with this outstanding. No confirmation before series end.</td></tr>
+      <tr data-status="failed"><td class="t-num">45</td><td class="t-promise">Discord poll to finalise Election X Space date (Mar 30–Apr 17)</td><td class="t-who">Abhik</td><td class="t-date">Mar 17</td><td><span class="status-pill s-failed">&#10007; Pending at series end</span></td><td class="t-evidence">Requested at end of Mar 17. Series ends here.</td></tr>
+      <tr data-status="failed"><td class="t-num">46</td><td class="t-promise">Maureen to update Mirror board with current task assignments</td><td class="t-who">Maureen</td><td class="t-date">Mar 3</td><td><span class="status-pill s-failed">&#10007; Pending at series end</span></td><td class="t-evidence">Noted as outstanding in Mar 17. Series ends without confirmation.</td></tr>
+      <tr data-status="failed"><td class="t-num">47</td><td class="t-promise">Chaya to finalise and disseminate written onboarding materials</td><td class="t-who">Chaya</td><td class="t-date">Mar 17</td><td><span class="status-pill s-failed">&#10007; Pending at series end</span></td><td class="t-evidence">Assigned at the end of the final meeting.</td></tr>
+      <tr data-status="failed"><td class="t-num">48</td><td class="t-promise">DoraHacks / C# Corner to be introduced to GMC and Open Source Committee</td><td class="t-who">Abhik</td><td class="t-date">Mar 3</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Committee voted in Mar 3 to refer them to GMC (4 votes). No confirmation in Mar 17 that the introduction took place.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="methodology-box">
+    <h3>Methodology</h3>
+    <p>Every promise, action item, or commitment was identified by reading each of the 11 transcripts in full. Items were then cross-referenced across subsequent transcripts to determine whether follow-up evidence exists. "Delivered" requires positive confirmation in a transcript. "Partial" means progress occurred but the commitment was not fully met. "Not delivered" means no evidence of completion across all 11 meetings. Items marked as "pending at series end" were made in the final meeting (Mar 17) and cannot be assessed further within this dataset.</p>
+    <p>Note: Several items in the official summaries were listed as action items that were never actually agreed in the meeting (e.g. #21 — Knowledge Base review). These are included in the tracker and flagged accordingly, as they represent invented accountability that was never real.</p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>MCC Public Reports &nbsp;&middot;&nbsp; Season Nov 2025 – Mar 2026 &nbsp;&middot;&nbsp; Independent analysis based on official transcripts</p>
+  <p><a href="index.html">&larr; Overview</a></p>
+</footer>
+
+<script src="../app.js"></script>
+</body>
+</html>

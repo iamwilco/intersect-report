@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promises vs. Reality — TSC Reports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span class="masthead-kicker">Intersect — Technical Steering Committee</span>
+    <span class="masthead-date">Season Oct 2025 – Mar 2026 &nbsp;&middot;&nbsp; 23 Meetings</span>
+  </div>
+  <div class="masthead-main">
+    <h1 class="masthead-title">TSC Public Reports</h1>
+    <p class="masthead-subtitle">Independent analysis of committee meetings, governance &amp; accountability</p>
+  </div>
+  <nav class="masthead-nav">
+    <a href="index.html">Overview</a>
+    <a href="summaries-vs-transcripts.html">Summaries vs. Transcripts</a>
+    <a href="member-analysis.html">Member Participation</a>
+    <a href="leadership.html">Leadership Assessment</a>
+    <a href="promises.html" class="active">Promises vs. Reality</a>
+    <a href="critical-observations.html">Critical Observations</a>
+    <a href="meetings.html">Meeting Index</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+
+  <a href="index.html" class="back-link">&larr; Back to overview</a>
+
+  <div class="section-header">
+    <span class="section-number">Report 04</span>
+    <h2 class="section-title">Promises vs. Reality</h2>
+  </div>
+
+  <p class="report-lede">
+    Every commitment, action item, or promise made across all 23 TSC meetings &mdash; tracked against what actually happened. 39 items traced from source transcript to final status at the end of the series (March 2026).
+  </p>
+
+  <div class="summary-strip">
+    <div class="summary-cell" onclick="filterTable('all')">
+      <span class="summary-num num-total" data-count="39">39</span>
+      <span class="summary-label">Total tracked</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('delivered')">
+      <span class="summary-num num-delivered" data-count="21">21</span>
+      <span class="summary-label">Delivered</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('partial')">
+      <span class="summary-num num-partial" data-count="5">5</span>
+      <span class="summary-label">Partial</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('failed')">
+      <span class="summary-num num-failed" data-count="12">12</span>
+      <span class="summary-label">Not delivered</span>
+    </div>
+    <div class="summary-cell" onclick="filterTable('recurring')">
+      <span class="summary-num num-recurring" data-count="1">1</span>
+      <span class="summary-label">Pending</span>
+    </div>
+  </div>
+
+  <!-- ── Delivery rate ring ── -->
+  <div class="progress-ring-wrap fade-in-on-scroll">
+    <svg class="progress-ring" viewBox="0 0 100 100" data-percent="54">
+      <circle class="ring-bg" cx="50" cy="50" r="42"></circle>
+      <circle class="ring-fg" cx="50" cy="50" r="42"></circle>
+      <text class="progress-ring-label" x="50" y="50">~54%</text>
+    </svg>
+    <div class="progress-ring-meta">
+      <div class="progress-ring-title">Delivery Rate</div>
+      <p>Of 39 commitments tracked across 23 meetings, 21 were fully delivered and 5 partially &mdash; a <strong style="color:var(--teal)">~54% delivery rate</strong>. 12 were never delivered and 1 remains pending. The TSC delivers on external deadlines and crisis response but fails consistently on internal governance and cross-committee coordination.</p>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <h4>What gets done vs. what doesn't</h4>
+    <div class="findings-grid" style="margin-top:16px;">
+      <div class="finding-box">
+        <h4 class="finding-title">Delivered consistently</h4>
+        <ul class="finding-list">
+          <li>External deadlines: parameter updates, governance votes</li>
+          <li>Crisis response: chain partition incident handled effectively</li>
+          <li>Formal processes: elections, voting, approvals</li>
+          <li>Budget-related items when finally prioritized</li>
+        </ul>
+      </div>
+      <div class="finding-box">
+        <h4 class="finding-title">Consistently fails</h4>
+        <ul class="finding-list">
+          <li>Internal governance: Vice Chair vacant 6+ months</li>
+          <li>Written reports without deadlines</li>
+          <li>Cross-committee coordination</li>
+          <li>External communications (drafted but never sent)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="tracker-controls">
+    <button class="filter-btn active" onclick="filterTable('all')" id="btn-all">All (39)</button>
+    <button class="filter-btn btn-delivered" onclick="filterTable('delivered')" id="btn-delivered">&#10003; Delivered (21)</button>
+    <button class="filter-btn btn-partial" onclick="filterTable('partial')" id="btn-partial">~ Partial (5)</button>
+    <button class="filter-btn btn-failed" onclick="filterTable('failed')" id="btn-failed">&#10007; Not delivered (12)</button>
+    <span class="tracker-count" id="count-label">Showing 39 items</span>
+  </div>
+
+  <table class="tracker-table" id="tracker">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Promise / commitment</th>
+        <th>Made by</th>
+        <th>First promised</th>
+        <th>Status</th>
+        <th>Evidence from transcripts</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- DELIVERED -->
+      <tr data-status="delivered"><td class="t-num">01</td><td class="t-promise">PCP00003 Parameter Change<small>Ratified on testnets</small></td><td class="t-who">Alexander Moser</td><td class="t-date">Oct 1</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Parameter change ratified on testnets and deployed. Confirmed Nov 5, 2025.</td></tr>
+      <tr data-status="delivered"><td class="t-num">02</td><td class="t-promise">Plutus Memory Limits Update<small>86% DRep support achieved</small></td><td class="t-who">Alexander Moser</td><td class="t-date">Jan 14</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Governance action achieved 86% DRep support. Confirmed Feb 18, 2026.</td></tr>
+      <tr data-status="delivered"><td class="t-num">03</td><td class="t-promise">Hard Fork Naming Vote<small>"Max Van Rossem" &mdash; 7 Yes, 1 Abstain</small></td><td class="t-who">Committee</td><td class="t-date">Oct 22</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Formal vote conducted Dec 17, 2025: 7 Yes, 1 Abstain.</td></tr>
+      <tr data-status="delivered"><td class="t-num">04</td><td class="t-promise">Hard Fork Working Group reformed<small>First meeting Dec 2</small></td><td class="t-who">Committee / Bosko</td><td class="t-date">Oct 1</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">HFWG reformed with first meeting December 2, 2025. Confirmed by Bosko.</td></tr>
+      <tr data-status="delivered"><td class="t-num">05</td><td class="t-promise">Chain Partition Working Group<small>Report completed Jan 7</small></td><td class="t-who">Neil Davies / Committee</td><td class="t-date">Nov 26</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Forensic working group formed, report v0.5 finalized Jan 14, 2026.</td></tr>
+      <tr data-status="delivered"><td class="t-num">06</td><td class="t-promise">Temperature Check Process for SIP-1694</td><td class="t-who">Committee</td><td class="t-date">Nov 5</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Process established by Nov 12, 2025.</td></tr>
+      <tr data-status="delivered"><td class="t-num">07</td><td class="t-promise">Weekly HFWG cadence<small>Transitioned from bi-weekly</small></td><td class="t-who">Committee</td><td class="t-date">Dec 3</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Cadence increased from bi-weekly to weekly as hard fork approached.</td></tr>
+      <tr data-status="delivered"><td class="t-num">08</td><td class="t-promise">TSC Annual Report<small>Completed by Nov 26</small></td><td class="t-who">Sebastian Nagel</td><td class="t-date">Oct 15</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Sebastian volunteered to compile using AI tools. Completed by Nov 26, 2025.</td></tr>
+      <tr data-status="delivered"><td class="t-num">09</td><td class="t-promise">Chain Partition Incident Report v0.5</td><td class="t-who">Working Group</td><td class="t-date">Nov 26</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Finalized Jan 14, 2026 despite board interference.</td></tr>
+      <tr data-status="delivered"><td class="t-num">10</td><td class="t-promise">SanchoNet Retrospective</td><td class="t-who">Committee</td><td class="t-date">Jan 7</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Confirmed complete Feb 25, 2026.</td></tr>
+      <tr data-status="delivered"><td class="t-num">11</td><td class="t-promise">2030 Vision KPIs Document<small>Shared with Product Committee</small></td><td class="t-who">Leandros Holleman</td><td class="t-date">Jan 14</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Comprehensive document with quarterly breakdown shared Feb 11, 2026.</td></tr>
+      <tr data-status="delivered"><td class="t-num">12</td><td class="t-promise">TSC 2026 Operational Budget<small>$371,000 proposal submitted</small></td><td class="t-who">Kevin Hammond</td><td class="t-date">Nov 26</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">$371,000 proposal across 4 work packages submitted by Mar 25, 2026.</td></tr>
+      <tr data-status="delivered"><td class="t-num">13</td><td class="t-promise">Repository Adoption Votes<small>IOSIM &amp; Type Protocols</small></td><td class="t-who">Committee</td><td class="t-date">Nov 5</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">8 Yes, 0 No vote conducted Nov 19, 2025.</td></tr>
+      <tr data-status="delivered"><td class="t-num">14</td><td class="t-promise">Chair Election<small>Kevin Hammond unanimously elected</small></td><td class="t-who">Committee</td><td class="t-date">Oct 15</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Kevin elected by acclamation Dec 3, 2025 (though poll had quorum issues).</td></tr>
+      <tr data-status="delivered"><td class="t-num">15</td><td class="t-promise">Security Officer Appointment<small>Mike Hornan</small></td><td class="t-who">Committee</td><td class="t-date">Jan 7</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Mike Hornan appointed as Security Incident Response Officer, Jan 14, 2026.</td></tr>
+      <tr data-status="delivered"><td class="t-num">16</td><td class="t-promise">Governance action for hard fork naming</td><td class="t-who">Ryan Williams</td><td class="t-date">Dec 17</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Info action submitted on chain by Jan 14, 2026.</td></tr>
+      <tr data-status="delivered"><td class="t-num">17</td><td class="t-promise">Committee rewards process</td><td class="t-who">Bosko / Intersect</td><td class="t-date">Dec 3</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">500 ADA/month for members, 1,000 ADA/month for Chair established.</td></tr>
+      <tr data-status="delivered"><td class="t-num">18</td><td class="t-promise">Holiday meeting suspension</td><td class="t-who">Committee</td><td class="t-date">Dec 3</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Meetings suspended Dec 24 and 31, reconvened Jan 7.</td></tr>
+      <tr data-status="delivered"><td class="t-num">19</td><td class="t-promise">Product Committee invitation for Jan 7</td><td class="t-who">Kevin Hammond</td><td class="t-date">Dec 17</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Joint session scheduled as planned.</td></tr>
+      <tr data-status="delivered"><td class="t-num">20</td><td class="t-promise">Node 10.6.2 release candidate</td><td class="t-who">IO / Committee</td><td class="t-date">Jan 7</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Release candidate delivered within expected timeframe.</td></tr>
+      <tr data-status="delivered"><td class="t-num">21</td><td class="t-promise">Charlie 3 incubation approval</td><td class="t-who">Committee</td><td class="t-date">Feb 4</td><td><span class="status-pill s-delivered">&#10003; Delivered</span></td><td class="t-evidence">Approved via motion by default, Feb 4, 2026.</td></tr>
+
+      <!-- PARTIAL -->
+      <tr data-status="partial"><td class="t-num">22</td><td class="t-promise">Risk Register for Van Rossem hard fork<small>Draft created, still being populated</small></td><td class="t-who">Committee</td><td class="t-date">Feb 11</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Draft created but still being populated as of Mar 25, 2026.</td></tr>
+      <tr data-status="partial"><td class="t-num">23</td><td class="t-promise">Constitution v2.4 Technical Review<small>Repeatedly postponed, "waiting for Neil"</small></td><td class="t-who">Kevin / Neil</td><td class="t-date">Jan 21</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Discussion occurred but formal review repeatedly deferred. Mar 18: "just waiting for Neil to provide us with the summary."</td></tr>
+      <tr data-status="partial"><td class="t-num">24</td><td class="t-promise">SPO Auto-abstain Mechanism promotion<small>Post drafted but not published</small></td><td class="t-who">Alexander Moser</td><td class="t-date">Feb 11</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Post drafted but not published as of Feb 25 deadline.</td></tr>
+      <tr data-status="partial"><td class="t-num">25</td><td class="t-promise">CIP Prioritization Process for Dijkstra<small>Tool developed, process not implemented</small></td><td class="t-who">Ryan Wiley</td><td class="t-date">Feb 4</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">On-chain survey tool developed but full prioritization process not implemented.</td></tr>
+      <tr data-status="partial"><td class="t-num">26</td><td class="t-promise">Nested Transactions Response<small>AI draft created but never sent</small></td><td class="t-who">Committee / Bosko</td><td class="t-date">Nov 26</td><td><span class="status-pill s-partial">~ Partial</span></td><td class="t-evidence">Draft response created Dec 10 but never formally sent.</td></tr>
+
+      <!-- NOT DELIVERED -->
+      <tr data-status="failed"><td class="t-num">27</td><td class="t-promise">Vice Chair Position<small>Mentioned every meeting, never filled</small></td><td class="t-who">Committee</td><td class="t-date">Oct 1</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Discussed in every single meeting from Oct 1 to Mar 25. Zero volunteers. Never filled.</td></tr>
+      <tr data-status="failed"><td class="t-num">28</td><td class="t-promise">Discord Bot Setup</td><td class="t-who">Terence / Committee</td><td class="t-date">Oct 29</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Promised Oct 29, still unresolved by Mar 18, 2026.</td></tr>
+      <tr data-status="failed"><td class="t-num">29</td><td class="t-promise">Linear Leios Technical Deep-dive<small>Doodle poll mentioned, never scheduled</small></td><td class="t-who">Committee</td><td class="t-date">Feb 25</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Promised Feb 25. Doodle poll mentioned but session never scheduled.</td></tr>
+      <tr data-status="failed"><td class="t-num">30</td><td class="t-promise">DRep Compensation Paper Review<small>Feedback requested, never provided</small></td><td class="t-who">Committee</td><td class="t-date">Feb 18</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Ryan Wiley requested feedback multiple times. Committee never provided review.</td></tr>
+      <tr data-status="failed"><td class="t-num">31</td><td class="t-promise">Fire Drill Written Report</td><td class="t-who">Jonathan Kelly</td><td class="t-date">Oct 22</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Promised by Jonathan after Oct 22 fire drill. Never delivered.</td></tr>
+      <tr data-status="failed"><td class="t-num">32</td><td class="t-promise">CIP for Leios</td><td class="t-who">Nicolas Biri</td><td class="t-date">Oct 15</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Promised Oct 15. No evidence of delivery across the entire series.</td></tr>
+      <tr data-status="failed"><td class="t-num">33</td><td class="t-promise">IUR Progress Review Feedback</td><td class="t-who">Kevin Hammond</td><td class="t-date">Oct 1</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Kevin suggested all provide input Oct 1. Never delivered.</td></tr>
+      <tr data-status="failed"><td class="t-num">34</td><td class="t-promise">Onboarding Slide Deck for new members</td><td class="t-who">Committee</td><td class="t-date">Oct 29</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Terence asked for volunteers. No one accepted. Never created.</td></tr>
+      <tr data-status="failed"><td class="t-num">35</td><td class="t-promise">Cross-committee coordination protocol</td><td class="t-who">Committee</td><td class="t-date">Dec 10</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Coordination with Product Committee remained ad hoc throughout.</td></tr>
+      <tr data-status="failed"><td class="t-num">36</td><td class="t-promise">RSS feed for TSC communications</td><td class="t-who">Kevin Hammond</td><td class="t-date">Mar 25</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">Kevin: "I'll see what we can do about an RSS feed." No evidence of delivery.</td></tr>
+      <tr data-status="failed"><td class="t-num">37</td><td class="t-promise">Committee self-assessment</td><td class="t-who">Committee</td><td class="t-date">Feb 25</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">No self-assessment or governance review conducted despite persistent dysfunction.</td></tr>
+      <tr data-status="failed"><td class="t-num">38</td><td class="t-promise">Formal decision-making procedures</td><td class="t-who">Committee</td><td class="t-date">Oct 1</td><td><span class="status-pill s-failed">&#10007; Not delivered</span></td><td class="t-evidence">"I think we have agreement" remained the default. No formal voting procedures established.</td></tr>
+
+      <!-- PENDING -->
+      <tr data-status="recurring"><td class="t-num">39</td><td class="t-promise">Van Rossem Hard Fork execution<small>May/June 2026 target</small></td><td class="t-who">Committee / IO</td><td class="t-date">Oct 22</td><td><span class="status-pill s-recurring">Pending</span></td><td class="t-evidence">Target shifted from Jan 2026 to May/June 2026. Node 10.7 in pre-release as of Mar 25.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="report-body" style="margin-top:40px;">
+    <h2>Financial &amp; Resource Context</h2>
+    <h3>Budget Evolution</h3>
+    <p>The TSC operated entirely on volunteer effort through Q4 2025. Kevin Hammond acknowledged: "I've not had time to do that" regarding the budget draft (Dec 10). The final $371,000 proposal for 2026 covers 4 work packages: Community Facing Coordination, Security and Incident Response, Protocol Governance and Devolution, and Technical Review &mdash; including 10 workshops (4 in-person, 6 virtual).</p>
+
+    <h3>Resource Constraints</h3>
+    <p>There is a direct correlation between lack of resources and the 46% non-delivery rate. Items requiring external deadlines (parameter updates, governance votes) get done because they are forced by the system. Items requiring internal initiative (Vice Chair recruitment, written reports, cross-committee coordination) consistently fail because volunteer effort cannot sustain them.</p>
+  </div>
+
+  <div class="methodology-box">
+    <h3>Methodology</h3>
+    <p>Every promise, action item, or commitment was identified by reading each of the 23 transcripts in full. Items were cross-referenced across subsequent transcripts to determine whether follow-up evidence exists. "Delivered" requires positive confirmation in a transcript. "Partial" means progress occurred but the commitment was not fully met. "Not delivered" means no evidence of completion across all 23 meetings.</p>
+    <p>The ~54% delivery rate represents a committee that performs well on externally-driven technical work while consistently failing on internal governance and coordination. The gap between crisis response capability and institutional maintenance is the defining characteristic of the TSC's operational period.</p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>TSC Public Reports &nbsp;&middot;&nbsp; Season Oct 2025 – Mar 2026 &nbsp;&middot;&nbsp; Independent analysis based on official transcripts</p>
+  <p><a href="index.html">&larr; Overview</a></p>
+</footer>
+
+<script src="../app.js"></script>
+</body>
+</html>

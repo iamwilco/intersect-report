@@ -1,0 +1,18 @@
+# Secrets
+backend/.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Audit trails (large, not needed on site)
+**/Reports/_audit/
+
+# Obsidian
+.obsidian/
+
+# Claude Code
+.claude/
+
+# macOS
+.DS_Store

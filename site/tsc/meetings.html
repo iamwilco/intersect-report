@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meeting Index — TSC Reports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span class="masthead-kicker">Intersect — Technical Steering Committee</span>
+    <span class="masthead-date">Season Oct 2025 – Mar 2026 &nbsp;&middot;&nbsp; 23 Meetings</span>
+  </div>
+  <div class="masthead-main">
+    <h1 class="masthead-title">TSC Public Reports</h1>
+    <p class="masthead-subtitle">Independent analysis of committee meetings, governance &amp; accountability</p>
+  </div>
+  <nav class="masthead-nav">
+    <a href="index.html">Overview</a>
+    <a href="summaries-vs-transcripts.html">Summaries vs. Transcripts</a>
+    <a href="member-analysis.html">Member Participation</a>
+    <a href="leadership.html">Leadership Assessment</a>
+    <a href="promises.html">Promises vs. Reality</a>
+    <a href="critical-observations.html">Critical Observations</a>
+    <a href="meetings.html" class="active">Meeting Index</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+
+  <a href="index.html" class="back-link">&larr; Back to overview</a>
+
+  <div class="section-header">
+    <span class="section-number">Index</span>
+    <h2 class="section-title">All 23 Meetings</h2>
+  </div>
+
+  <p style="font-size:14px; color:var(--ink-muted); margin-bottom:32px; line-height:1.7;">
+    Full index of all 23 TSC meetings covered in this analysis. Each entry includes the date, key topics, and elected member attendance count. The committee transitioned from the pre-election body (10 members, 6 meetings) to the post-election body (10 members with 1 vacancy from Dec 17) on November 19, 2025. Seungheon Oh attended only 4 of 17 post-election meetings and never spoke.
+  </p>
+
+  <table class="meeting-table" data-sortable style="margin-bottom:0;">
+    <thead>
+      <tr>
+        <th style="width:120px">Date</th>
+        <th>Summary of key topics</th>
+        <th style="text-align:center; width:90px">Attendance</th>
+        <th style="width:180px">Source</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- PRE-ELECTION (6 meetings) -->
+      <tr>
+        <td class="date">Oct 1, 2025</td>
+        <td><strong>Hard Fork Working Group; Max TX Unit vote</strong><br><span class="topics">Unanimous parameter vote. HFWG reformation proposed. Duncan Coutts' SPO slot battles advice. Bug bounty for Mike Horn. Meeting shortened for other event.</span></td>
+        <td class="att"><span class="att-badge att-full">8</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Oct 8, 2025</td>
+        <td><strong>Informal Leios technical discussion</strong><br><span class="topics">No chairs present. Sebastian: "no chairs around." Neil's systems engineering warnings about Ouroboros-Leios. Attack vector concerns. Economic implications debated.</span></td>
+        <td class="att"><span class="att-badge att-low">6</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Oct 15, 2025</td>
+        <td><strong>Chair crisis; TSC powerlessness discussed</strong><br><span class="topics">Neil: "Intersect has emasculated the TSC." Parameter change SPO voting requirements. CIP-164 bug fix. Disaster recovery drill. Election timeline confirmed.</span></td>
+        <td class="att"><span class="att-badge att-full">7</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Oct 22, 2025</td>
+        <td><strong>Antithesis evaluation; hard fork timeline skepticism</strong><br><span class="topics">$400K annual Antithesis license. Fire drill: recovery tool doesn't exist. January hard fork: "snowball's chance." Hard fork naming memorial proposed. VRF/KZ key security concerns.</span></td>
+        <td class="att"><span class="att-badge att-full">8</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Oct 29, 2025</td>
+        <td><strong>Hard fork justification critique; CIP-50 concerns</strong><br><span class="topics">Adam Dean: "doing this to meet a contract milestone." Staking upper bound threat. Quorum issues. Minnow CLI wallet abandoned. Election term consensus debated.</span></td>
+        <td class="att"><span class="att-badge att-low">6</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Nov 5, 2025</td>
+        <td><strong>Election transition; node memory leak crisis</strong><br><span class="topics">IO Slack access revoked. Node 10.6: "massive memory leak, 12-16 GB." Hard fork pushed to Q1 2026. Repository ownership debate. UPLC costing off by orders of magnitude.</span></td>
+        <td class="att"><span class="att-badge att-full">8</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+
+      <!-- POST-ELECTION (17 meetings) -->
+      <tr>
+        <td class="date">Nov 19, 2025</td>
+        <td><strong>New committee seated; repository adoption vote</strong><br><span class="topics">Election results: Kevin, Ryan, Udai, Leandro, Seung elected. IOSIM/Type Protocols voted 8-0. Governance crisis warning. Annual report requested. Michele's MEV concerns.</span></td>
+        <td class="att"><span class="att-badge att-full">8</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Nov 26, 2025</td>
+        <td><strong>Chain partition incident response</strong><br><span class="topics">Mainnet incident forensics begin. Neil: legal action threats. Plutus cost model regression critique. Nested transactions MEV discussion. Vice Chair vacancy formalized.</span></td>
+        <td class="att"><span class="att-badge att-full">8</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Dec 3, 2025</td>
+        <td><strong>Chair election; preview testnet dysfunction</strong><br><span class="topics">Kevin elected unanimously (poll had quorum issues). Vice Chair debate: "week six." Plutus benchmarking could postpone hard fork. CIP editors funding crisis. Preview "state of disarray."</span></td>
+        <td class="att"><span class="att-badge att-full">7</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Dec 10, 2025</td>
+        <td><strong>Past trauma resurfaces; budget discussions begin</strong><br><span class="topics">Neil: "shot down in flames... people lost their jobs." Vendors "putting long-term viability at risk." Sebastian's conflict of interest. Node 10.7 not before end of 2025.</span></td>
+        <td class="att"><span class="att-badge att-full">8</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Dec 17, 2025</td>
+        <td><strong>Van Rossem naming vote; KPI critique</strong><br><span class="topics">Hard fork named "Max Van Rossem" (7-1). Neil: KPI numbers "pulled out of somebody's." Governance system "logic hazards." Chain partition: 500 transactions affected. Vice Chair: nobody volunteers.</span></td>
+        <td class="att"><span class="att-badge att-full">9</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Jan 7, 2026</td>
+        <td><strong>Chain incident report blocked; committee scope debate</strong><br><span class="topics">Report blocked by board. Neil: "pull their bloody finger out." Nicolas vs Neil on TSC scope. Ryan: "throw everything at the wall." Chain resilience positive finding buried.</span></td>
+        <td class="att"><span class="att-badge att-full">8</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Jan 14, 2026</td>
+        <td><strong>Board censured; security officer appointed</strong><br><span class="topics">Neil censures board over report interference. Mike Hornan appointed. K parameter analysis begins. Kevin: "you are all vice chairs." Fergie's research presentations.</span></td>
+        <td class="att"><span class="att-badge att-full">8</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Jan 21, 2026</td>
+        <td><strong>Constitutional security safeguards removed</strong><br><span class="topics">Security parameters removed without TSC notification. SPO voting crisis: less than 5%. Governance process breakdown. Leadership vacuum: can't find anyone to chair next week.</span></td>
+        <td class="att"><span class="att-badge att-full">8</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Jan 28, 2026</td>
+        <td><strong>Neil chairs emergency; budget review</strong><br><span class="topics">Kevin absent. Neil: "what a bunch of puppets." Udai offers free developer resources. Parameter change: "literally have to rethink everything." Vice Chair: "Nobody but you."</span></td>
+        <td class="att"><span class="att-badge att-low">6</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Feb 4, 2026</td>
+        <td><strong>Charlie 3 incubation; constitutional alarm</strong><br><span class="topics">Treasury spending safeguards removed: "spend on anything you like." Guardrail label ambiguity: "absolutely serious problem." Nicolas: budget "unprofessional." Only ~20% SPO support.</span></td>
+        <td class="att"><span class="att-badge att-full">7</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Feb 11, 2026</td>
+        <td><strong>$371K budget socialized; constitutional crisis deepens</strong><br><span class="topics">Neil: "constitutional committees accepted a constitution that wasn't constitutional." Guardrails internally inconsistent. Competing governance actions: "denial of service by voting." Auto-abstain mechanism discovered.</span></td>
+        <td class="att"><span class="att-badge att-full">8</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Feb 18, 2026</td>
+        <td><strong>KPIs provisionally accepted (not quorate)</strong><br><span class="topics">Only 5 voting members. 86% DRep support for Plutus update. Nicolas: TSC work "far beyond our remit." Alexander: "built out in the open." Christian Taylor departs.</span></td>
+        <td class="att"><span class="att-badge att-low">5</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Feb 25, 2026</td>
+        <td><strong>Linear Leios chain growth warnings; constitutional mess</strong><br><span class="topics">Sebastian: "150 GB in six days." Neil: "do we care about Cardano?" Legal dispute risk. Hard fork version confusion. Election: 5 or 6 seats? DRep paper deferred.</span></td>
+        <td class="att"><span class="att-badge att-full">8</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Mar 4, 2026</td>
+        <td><strong>SanchoNet incident; DRep compensation discussion</strong><br><span class="topics">Plutus cost model broke SanchoNet. Quorum uncertain. Budget feedback loop unknown. Constitution review deferred again. Ryan leaves after 20 minutes.</span></td>
+        <td class="att"><span class="att-badge att-low">6</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Mar 11, 2026</td>
+        <td><strong>Budget template absurdity; Discord gatekeeping</strong><br><span class="topics">Nicolas: alignment with pillars "stupid." 20+ min Discord debate. Sebastian: "paywalling is not the best idea." Kevin: "essentially just guessing on timelines." Bosko forgot invitations.</span></td>
+        <td class="att"><span class="att-badge att-full">7</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Mar 18, 2026</td>
+        <td><strong>AI-generated budget; scope critique</strong><br><span class="topics">Kevin: "friends with AI." ~$500K request. Nicolas opposes in-person travel. Udai: TSC scope too limited. Node pre-release expected. Hard fork: "beginning of June."</span></td>
+        <td class="att"><span class="att-badge att-full">7</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+      <tr>
+        <td class="date">Mar 25, 2026</td>
+        <td><strong>Final meeting; not quorate; budget finalized</strong><br><span class="topics">Only 5 members. Neil: "$150 is bloody laughable." Budget: $371K across 4 work packages. Nobody saw parameter update except Kevin. Intersect budget: "very far from complete."</span></td>
+        <td class="att"><span class="att-badge att-low">5</span></td>
+        <td class="links">Transcript available</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="margin-top:40px; padding:20px 24px; border:1px solid var(--rule); background:var(--paper-card); font-size:13px; color:var(--ink-muted);">
+    <strong style="color:var(--ink); font-size:13px;">Attendance note:</strong> Figures show elected committee members present out of 10 voting seats (pre-election) or 10 seats with 1 vacancy from Dec 17 (post-election). Seungheon Oh attended 4 of 17 post-election meetings and never spoke. Attendance counts are based on transcript evidence &mdash; speakers verified against attendee lists. Several summaries contain attendance errors including a phantom "TBC" Vice Chair.
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>TSC Public Reports &nbsp;&middot;&nbsp; Season Oct 2025 – Mar 2026 &nbsp;&middot;&nbsp; Independent analysis based on official transcripts</p>
+  <p><a href="index.html">&larr; Overview</a></p>
+</footer>
+
+<script src="../app.js"></script>
+</body>
+</html>
