@@ -18,7 +18,7 @@ from pathlib import Path
 from datetime import datetime
 
 from config import (
-    VAULT_ROOT, COMMITTEES, COMMITTEE_FULL_NAMES, SITE_DATA_DIR
+    VAULT_ROOT, COMMITTEES, COMMITTEE_FULL_NAMES, SITE_DATA_DIR, ELECTION_START,
 )
 
 
@@ -158,7 +158,8 @@ def build_committee_data(committee: str) -> dict | None:
     if not reports_dir.exists() and not transcripts_dir.exists():
         return None
 
-    # Count source files
+    # Count source files (filtered by election start date)
+    election_start = ELECTION_START.get(committee)
     summary_count = 0
     transcript_count = 0
     dates = []
@@ -170,6 +171,8 @@ def build_committee_data(committee: str) -> dict | None:
                 continue
             date_str = parts[0].strip()
             file_type = parts[1].strip().lower()
+            if election_start and date_str < election_start:
+                continue
             if "summary" in file_type:
                 summary_count += 1
             elif "transcript" in file_type:

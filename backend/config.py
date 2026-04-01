@@ -14,7 +14,7 @@ from pathlib import Path
 VAULT_ROOT = Path.home() / "Desktop" / "wilco-os" / "projects" / "intersect-reports" / "Intersect"
 
 # Where the frontend site lives (for generate_site_data.py output)
-SITE_DATA_DIR = Path.home() / "Desktop" / "wilco-os" / "projects" / "intersect-reports" / "site" / "data"
+SITE_DATA_DIR = Path.home() / "Desktop" / "wilco-os" / "projects" / "intersect-reports" / "docs" / "data"
 
 # ─────────────────────────────────────────────
 # Committees
@@ -40,6 +40,15 @@ COMMITTEE_FULL_NAMES = {
     "CCC": "Constitution & Civics Committee",
     "CBC": "Community & Budget Committee",
     "ISC": "Intersect Steering Committee",
+}
+
+# First meeting date of the CURRENT election period per committee.
+# Meetings before this date are excluded from analysis.
+# Set to None or omit to include all meetings.
+ELECTION_START = {
+    "TSC": "20251119",
+    "MCC": "20251125",
+    "GMC": "20251118",
 }
 
 # ─────────────────────────────────────────────

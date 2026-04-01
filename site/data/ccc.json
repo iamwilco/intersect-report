@@ -1,0 +1,52 @@
+{
+  "committee": "CCC",
+  "full_name": "Constitution & Civics Committee",
+  "period": {
+    "start": "20251127",
+    "end": "20260319"
+  },
+  "meetings_count": 12,
+  "summary_count": 12,
+  "transcript_count": 12,
+  "has_transcripts": true,
+  "dates": [
+    "20251127",
+    "20251204",
+    "20260108",
+    "20260115",
+    "20260122",
+    "20260129",
+    "20260205",
+    "20260219",
+    "20260226",
+    "20260303",
+    "20260312",
+    "20260319"
+  ],
+  "reports": {
+    "summaries_vs_transcripts": {
+      "available": false
+    },
+    "member_participation": {
+      "available": false
+    },
+    "leadership_assessment": {
+      "available": false
+    },
+    "promises_vs_reality": {
+      "available": false
+    },
+    "critical_observations": {
+      "available": false
+    }
+  },
+  "stats": {
+    "total_promises": 0,
+    "delivered": 0,
+    "partial": 0,
+    "failed": 0,
+    "recurring": 0,
+    "delivery_rate": 0
+  },
+  "generated": "2026-04-01T00:14:43.874964"
+}

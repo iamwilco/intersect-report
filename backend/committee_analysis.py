@@ -38,7 +38,7 @@ except ImportError:
 from config import (
     VAULT_ROOT, COMMITTEES, MODEL, MAX_CONTEXT_TOKENS,
     MAX_OUTPUT_TOKENS, CHARS_PER_TOKEN, RATE_LIMIT_DELAY,
-    RATE_LIMIT_TPM, MAX_RETRIES,
+    RATE_LIMIT_TPM, MAX_RETRIES, ELECTION_START,
 )
 from prompts import PROMPTS
 
@@ -56,12 +56,18 @@ def estimate_tokens(text: str) -> int:
 # ─────────────────────────────────────────────
 
 def load_committee_files(committee: str) -> dict | None:
-    """Load all Summary + Transcript files for a committee."""
+    """Load all Summary + Transcript files for a committee.
+
+    Filters out meetings before the committee's ELECTION_START date
+    (if configured) so only the current election period is analysed.
+    """
 
     transcripts_dir = VAULT_ROOT / committee / "Transcripts"
     if not transcripts_dir.exists():
         print(f"  ERROR: {transcripts_dir} does not exist")
         return None
+
+    election_start = ELECTION_START.get(committee)
 
     files = sorted(transcripts_dir.glob("*.md"))
     summaries: dict[str, str] = {}
@@ -77,6 +83,10 @@ def load_committee_files(committee: str) -> dict | None:
             continue
         date_str = parts[0].strip()
         file_type = parts[1].strip().lower()
+
+        # Skip pre-election meetings
+        if election_start and date_str < election_start:
+            continue
 
         if "summary" in file_type:
             summaries[date_str] = content
