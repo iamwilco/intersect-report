@@ -245,7 +245,68 @@
           "body": "### Performance Rankings (Most to Least Effective):\n1. **Laura Mattiucci** - 90% attendance, drives all major initiatives\n2. **Anuj Chaudhary** - 90.5% attendance, consistent regional execution\n3. **Yoram Ben Zvi** - 85% attendance, strategic enterprise value\n4. **Tim Harrison** - 72% attendance, leadership compromised by absence\n5. **Hasitha Raymond** - 76% attendance, but zero contributions\n6. **Andy Hung** - 75% attendance, but completely silent\n7. **Reshan Fernando** - 65% attendance, minimal input\n8. **Otavio Lima** - 45% attendance, negligible contributions\n9. **Wes Parkinson** - 40% attendance, wasted potential\n10. **Maggie Schmidt** - 15% attendance, non-functional member\n\n### Critical Finding\n**6 of 11 elected members (55%) contribute little to nothing** despite holding voting power. This represents a fundamental governance failure where:\n- 3 members attend but never meaningfully participate (Andy, Hasitha, Reshan)\n- 3 members have attendance below 50% (Maggie, Otavio, Wes)\n- The committee's work falls on 3 primary contributors (Laura, Anuj, Yoram)\n\n### Recommendation\nThe community should demand accountability measures for non-performing elected members, as over half the committee collects benefits while contributing negligible value to Cardano's governance mission."
         }
       ],
-      "members": []
+      "members": [
+        {
+          "name": "Tim Harrison",
+          "attended": 13,
+          "total": 18,
+          "rate": 72
+        },
+        {
+          "name": "Laura Mattiucci",
+          "attended": 18,
+          "total": 20,
+          "rate": 90
+        },
+        {
+          "name": "Andy Hung",
+          "attended": 15,
+          "total": 20,
+          "rate": 75
+        },
+        {
+          "name": "Anuj Chaudhary",
+          "attended": 19,
+          "total": 21,
+          "rate": 90
+        },
+        {
+          "name": "Hasitha Raymond",
+          "attended": 16,
+          "total": 21,
+          "rate": 76
+        },
+        {
+          "name": "Maggie Schmidt",
+          "attended": 3,
+          "total": 20,
+          "rate": 15
+        },
+        {
+          "name": "Otavio Lima",
+          "attended": 9,
+          "total": 20,
+          "rate": 45
+        },
+        {
+          "name": "Reshan Fernando",
+          "attended": 13,
+          "total": 20,
+          "rate": 65
+        },
+        {
+          "name": "Wes Parkinson",
+          "attended": 8,
+          "total": 20,
+          "rate": 40
+        },
+        {
+          "name": "Yoram Ben Zvi",
+          "attended": 17,
+          "total": 20,
+          "rate": 85
+        }
+      ]
     },
     "leadership_assessment": {
       "available": true,
@@ -373,5 +434,5 @@
     "recurring": 0,
     "delivery_rate": 0
   },
-  "generated": "2026-04-16T02:11:19.551346"
+  "generated": "2026-04-16T18:01:29.021099"
 }

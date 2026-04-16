@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-16T02:11:19.552809",
+  "generated": "2026-04-16T18:01:29.026707",
   "committees": [
     {
       "id": "MCC",
@@ -31,10 +31,10 @@
       "has_transcripts": true,
       "report_count": 5,
       "stats": {
-        "total_promises": 0,
+        "total_promises": 10,
         "delivered": 0,
         "partial": 0,
-        "failed": 0,
+        "failed": 10,
         "recurring": 0,
         "delivery_rate": 0
       }
@@ -48,14 +48,14 @@
       },
       "meetings_count": 21,
       "has_transcripts": false,
-      "report_count": 0,
+      "report_count": 4,
       "stats": {
-        "total_promises": 0,
-        "delivered": 0,
-        "partial": 0,
-        "failed": 0,
+        "total_promises": 12,
+        "delivered": 4,
+        "partial": 1,
+        "failed": 7,
         "recurring": 0,
-        "delivery_rate": 0
+        "delivery_rate": 33
       }
     },
     {
@@ -124,14 +124,14 @@
       },
       "meetings_count": 18,
       "has_transcripts": false,
-      "report_count": 0,
+      "report_count": 4,
       "stats": {
-        "total_promises": 0,
-        "delivered": 0,
+        "total_promises": 22,
+        "delivered": 9,
         "partial": 0,
-        "failed": 0,
+        "failed": 13,
         "recurring": 0,
-        "delivery_rate": 0
+        "delivery_rate": 41
       }
     },
     {
@@ -143,14 +143,14 @@
       },
       "meetings_count": 23,
       "has_transcripts": false,
-      "report_count": 0,
+      "report_count": 3,
       "stats": {
-        "total_promises": 0,
-        "delivered": 0,
-        "partial": 0,
-        "failed": 0,
+        "total_promises": 15,
+        "delivered": 6,
+        "partial": 5,
+        "failed": 4,
         "recurring": 0,
-        "delivery_rate": 0
+        "delivery_rate": 40
       }
     }
   ]

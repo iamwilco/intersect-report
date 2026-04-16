@@ -3,10 +3,10 @@
   "full_name": "Intersect Steering Committee",
   "period": {
     "start": "20251006",
-    "end": "20260316"
+    "end": "20260330"
   },
-  "meetings_count": 21,
-  "summary_count": 21,
+  "meetings_count": 23,
+  "summary_count": 23,
   "transcript_count": 0,
   "has_transcripts": false,
   "dates": [
@@ -30,32 +30,332 @@
     "20260223",
     "20260302",
     "20260309",
-    "20260316"
+    "20260316",
+    "20260323",
+    "20260330"
   ],
   "reports": {
     "summaries_vs_transcripts": {
       "available": false
     },
     "member_participation": {
-      "available": false
+      "available": true,
+      "header": {
+        "committee": "ISC",
+        "period": "20251006 -> 20260330",
+        "meetings_count": 23,
+        "has_transcripts": false,
+        "generated": "2026-04-16 17:59"
+      },
+      "sections": [
+        {
+          "title": "Intersect Steering Committee (ISC) Participation Analysis",
+          "body": "**Period: October 6, 2025 - March 30, 2026**\n\n### Committee Composition\n\n**Total Meetings in Dataset: 25 meetings**\n1. 2025-10-06\n2. 2025-10-13\n3. 2025-10-20\n4. 2025-10-27\n5. 2025-11-03\n6. 2025-11-17\n7. 2025-11-24\n8. 2025-12-01\n9. 2025-12-08\n10. 2025-12-15\n11. 2026-01-05\n12. 2026-01-12\n13. 2026-01-19\n14. 2026-01-26\n15. 2026-02-02\n16. 2026-02-09\n17. 2026-02-16\n18. 2026-02-23\n19. 2026-03-02\n20. 2026-03-09\n21. 2026-03-16\n22. 2026-03-23\n23. 2026-03-30\n\n**Committee Transition Identified:** Yes, around November 24, 2025\n\nEvidence from 2025-11-24 transcript:\n- \"Two newly elected ISC members were welcomed: Jose Miguel de Gamboa, Kristijan Kowalsky\"\n- New committee chairs appear: Maureen Wepngogn (MCC Chair), Megan Hess (CBC Chair), Tim Harrison (GMC Chair)\n\nThe dataset contains 25 meetings. The committee transitioned around November 24, 2025 \u2014 the first 6 meetings are the old committee, the remaining 19 are the new committee.\n\n**Current Elected/Voting Members (post-transition):**\n1. Sheldon Hunt - Community Member Seat\n2. Fred Tanaka - Community Member Seat\n3. Jose Miguel de Gamboa - Community Member Seat (new)\n4. Kristijan Kowalsky - Community Member Seat (new)\n5. Jack Briggs - Executive Director\n6. Nick Cook - Director Operations\n7. Elaine Cardenas - OSC Chair (continuing) / Georg Link (OSC Chair from January)\n8. Samuel Leathers - Product Chair\n9. Maureen Wepngogn - MCC Chair (new)\n10. Megan Hess - CBC Chair (new)\n11. Kevin Hammond - TSC Chair\n12. Tim Harrison - GMC Chair (new)\n13. Nicolas Cerny - CCC Chair\n\n**Members who left after transition:**\n- YUTA - Community Member Seat (last appearance 2025-11-03)\n- Phil Lewis - Community Member Seat (last appearance 2025-11-03)\n- Darlington Welsh - MCC Chair\n- Wes Parkison - GMC Chair\n\n### Part 1: Attendance Grid\n\n**Elected Members Attendance (P=Present, A=Absent)**\n\n| Member | 10-06 | 10-13 | 10-20 | 10-27 | 11-03 | 11-17 | 11-24 | 12-01 | 12-08 | 12-15 | 01-05 | 01-12 | 01-19 | 01-26 | 02-02 | 02-09 | 02-16 | 02-23 | 03-02 | 03-09 | 03-16 | 03-23 | 03-30 | Rate |\n|--------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|------|\n| Jack Briggs | P | P | P | A | P | A | P | P | P | P | A | A | A | A | P | A | P | A | P | A | A | P | P | 13/25 |\n| Nick Cook | A | P | A | A | P | A | P | P | A | A | P | A | A | P | P | A | A | A | A | A | A | P | P | 9/25 |\n| Sheldon Hunt | P | P | P | P | P | A | P | A | P | A | A | P | P | P | P | P | A | A | P | P | P | P | P | 17/25 |\n| Fred Tanaka | P | P | P | A | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | 23/25 |\n| YUTA | P | P | P | A | P | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 5/5 |\n| Phil Lewis | P | P | P | P | P | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 5/5 |\n| Jose Miguel de Gamboa | - | - | - | - | - | - | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | 17/19 |\n| Kristijan Kowalsky | A | P | P | P | A | A | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | 20/25 |\n| Elaine Cardenas | P | A | P | A | P | P | P | P | A | A | A | A | A | A | P | A | A | A | A | A | A | A | - | 7/22 |\n| Georg Link | - | - | - | - | - | - | - | - | - | - | A | A | A | A | A | A | A | A | A | A | A | P | P | 2/13 |\n| Samuel Leathers | A | A | P | P | A | P | A | A | P | P | A | P | A | P | P | A | A | P | P | A | P | P | P | 13/25 |\n| Darlington Welsh | P | P | A | A | P | P | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 4/6 |\n| Maureen Wepngogn | - | - | - | - | - | - | P | P | P | P | P | P | P | P | P | P | P | P | A | P | A | P | P | 16/19 |\n| Kevin Hammond | A | A | A | P | A | A | P | P | P | P | P | P | A | A | P | P | P | P | P | P | P | P | P | 16/25 |\n| Wes Parkison | A | P | P | P | P | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 4/5 |\n| Tim Harrison | - | - | - | - | - | - | P | P | A | A | A | P | A | A | P | A | P | A | A | A | A | A | A | 5/19 |\n| Megan Hess | - | - | - | - | - | - | P | P | P | P | P | P | P | P | P | A | A | P | P | P | P | P | P | 16/19 |\n| Nicolas Cerny | A | P | P | A | P | A | P | A | A | A | P | P | P | P | A | A | A | P | P | P | P | P | P | 14/25 |\n\n### Part 2: Per-Member Deep Analysis\n\n**Fred Tanaka (23/25 attendance - 92%)**\n- **Speaking frequency**: Light. Spoke substantively in only 3 meetings despite near-perfect attendance\n- **Substantive contributions**: None documented. No proposals, documents, or strategic ideas presented\n- **Work between meetings**: No evidence\n- **Quality of engagement**: Passive presence. Shows up but rarely contributes\n- **Accountability**: No action items assigned or completed\n- **Trajectory**: Flat - consistent attendance but minimal engagement throughout\n\n**Kristijan Kowalsky (20/25 attendance - 80%)**\n- **Speaking frequency**: Moderate. Actively participated in budget discussions (03-09, 03-16)\n- **Substantive contributions**: \n  - Raised concerns about committee workload and mandate clarity (01-12)\n  - Contributed to committee term extension discussions (01-19)\n  - Participated in budget alignment discussions (03-09)\n- **Work between meetings**: CBC Chair, likely committee work\n- **Quality of engagement**: Constructive, raises operational concerns\n- **Accountability**: No specific action items tracked\n- **Trajectory**: Improved engagement in 2026\n\n**Sheldon Hunt (17/25 attendance - 68%)**\n- **Speaking frequency**: Moderate. Regular contributor when present\n- **Substantive contributions**: Limited evidence of concrete proposals\n- **Work between meetings**: No specific evidence\n- **Quality of engagement**: Engaged when present but inconsistent attendance\n- **Accountability**: No documented action items\n- **Trajectory**: Declining - more absences in early 2026\n\n**Jose Miguel de Gamboa (17/19 attendance - 89%)**\n- **Speaking frequency**: Moderate. Regular participant in discussions\n- **Substantive contributions**: Active in committee term discussions and governance topics\n- **Work between meetings**: No specific evidence documented\n- **Quality of engagement**: Constructive participation\n- **Accountability**: No specific action items tracked\n- **Trajectory**: Consistent since joining\n\n**Kevin Hammond (16/25 attendance - 64%)**\n- **Speaking frequency**: Heavy. TSC Chair, provides detailed technical updates\n- **Substantive contributions**:\n  - Chain incident analysis and reporting (12-01, 12-08)\n  - Hard fork planning and coordination (multiple meetings)\n  - TSC operational budget development (02-02, 02-16)\n  - Plutus parameter updates and governance actions\n- **Work between meetings**: Extensive TSC leadership work evident\n- **Quality of engagement**: High value technical leadership\n- **Accountability**: Follows through on TSC deliverables\n- **Trajectory**: Consistent high-quality contributions\n\n**Megan Hess (16/19 attendance - 84%)**\n- **Speaking frequency**: Heavy. Active Budget Committee Chair\n- **Substantive contributions**:\n  - Led 2026 budget process development (multiple meetings)\n  - NCL governance action preparation (01-05, 01-12)\n  - Budget tooling improvements (03-02)\n  - Budget template development (02-23)\n- **Work between meetings**: Extensive Budget Committee leadership\n- **Quality of engagement**: High-impact strategic work\n- **Accountability**: Delivered on budget process milestones\n- **Trajectory**: Strong performance throughout term\n\n**Maureen Wepngogn (16/19 attendance - 84%)**\n- **Speaking frequency**: Light to Moderate as MCC Chair\n- **Substantive contributions**:\n  - Member benefits update work (12-01)\n  - Community hub revitalization efforts (01-05)\n  - MCC restructuring discussions (03-30)\n- **Work between meetings**: MCC coordination evident\n- **Quality of engagement**: Working through committee challenges\n- **Accountability**: Mixed - committee facing delivery issues\n- **Trajectory**: Struggling with committee effectiveness\n\n**Nicolas Cerny (14/25 attendance - 56%)**\n- **Speaking frequency**: Moderate when present\n- **Substantive contributions**:\n  - Constitutional amendment process work\n  - CIP-149 grant program launch (10-13)\n  - CC election coordination\n- **Work between meetings**: Civics Committee leadership\n- **Quality of engagement**: Valuable governance contributions\n- **Accountability**: Delivered on key initiatives\n- **Trajectory**: Inconsistent due to attendance\n\n**Samuel Leathers (13/25 attendance - 52%)**\n- **Speaking frequency**: Heavy when present\n- **Substantive contributions**:\n  - Vision 2030 strategy development and workshops\n  - Product research grant launch (02-16)\n  - KPI refinement work with TSC\n- **Work between meetings**: Extensive Product Committee work\n- **Quality of engagement**: High-impact strategic leadership\n- **Accountability**: Delivered Vision 2030 milestones\n- **Trajectory**: Strong contributions despite attendance\n\n**Jack Briggs (13/25 attendance - 52%)**\n- **Speaking frequency**: Heavy when present (Executive Director)\n- **Substantive contributions**:\n  - Organizational restructuring (03-30)\n  - Treasury administration improvements\n  - Incident response framework development\n- **Work between meetings**: Full-time ED role\n- **Quality of engagement**: Strategic leadership\n- **Accountability**: Driving organizational changes\n- **Trajectory**: Increased focus on strategic items\n\n**Nick Cook (9/25 attendance - 36%)**\n- **Speaking frequency**: Light when present\n- **Substantive contributions**: Limited documented contributions\n- **Work between meetings**: Operational role implied but not detailed\n- **Quality of engagement**: Minimal committee engagement\n- **Accountability**: No specific deliverables tracked\n- **Trajectory**: Declining participation\n\n**Elaine Cardenas (7/22 attendance - 32%)**\n- **Speaking frequency**: Light\n- **Substantive contributions**: OSC program updates when present\n- **Work between meetings**: OSC Chair duties until transition\n- **Quality of engagement**: Limited due to attendance\n- **Accountability**: Transitioned role to Georg Link\n- **Trajectory**: Phased out of role\n\n**Tim Harrison (5/19 attendance - 26%)**\n- **Speaking frequency**: Light to none\n- **Substantive contributions**: GMC reset discussion (12-01)\n- **Work between meetings**: Limited evidence\n- **Quality of engagement**: Minimal\n- **Accountability**: Poor attendance record\n- **Trajectory**: Failing to fulfill role\n\n**Georg Link (2/13 attendance - 15%)**\n- **Speaking frequency**: Silent in meetings attended\n- **Substantive contributions**: None documented in ISC\n- **Work between meetings**: Assumed OSC work but not visible\n- **Quality of engagement**: Absent from governance\n- **Accountability**: Not meeting ISC obligations\n- **Trajectory**: Critical attendance failure\n\n### Part 3: Power Dynamics\n\n**Speaking Time Dominance:**\n- Kevin Hammond (TSC), Megan Hess (Budget), and Samuel Leathers (Product) dominate technical discussions\n- Executive team (Jack Briggs when present) sets strategic direction\n- Evidence: These individuals provide lengthy updates in nearly every meeting they attend\n\n**Consistently Sidelined:**\n- Fred Tanaka - present but rarely speaks (23 meetings, minimal contributions)\n- Tim Harrison - poor attendance and minimal engagement when present\n- Georg Link - essentially absent from ISC governance\n\n**Visible Alliances:**\n- Technical committees (TSC, Product) frequently align on KPIs and strategy\n- Budget Committee works closely with executive team on process\n- Some community member seats appear disconnected from committee work\n\n**Work vs. Attendance:**\n- High performers: Kevin Hammond, Megan Hess, Samuel Leathers deliver despite varying attendance\n- Attendance without impact: Fred Tanaka, Nick Cook show up but contribute little\n- Absent and unproductive: Georg Link, Tim Harrison fail on both metrics\n\n### Part 4: Summary Rankings\n\n**Most to Least Effective Elected Members:**\n\n1. **Megan Hess** - Delivered entire 2026 budget process, high attendance (84%), heavy contributor\n2. **Kevin Hammond** - Critical technical leadership, delivered hard fork prep and incident response\n3. **Samuel Leathers** - Drove Vision 2030 to completion despite 52% attendance\n4. **Kristijan Kowalsky** - Strong attendance (80%), constructive governance contributions\n5. **Jose Miguel de Gamboa** - Reliable attendance (89%), moderate but quality contributions\n6. **Nicolas Cerny** - Important governance work but hampered by 56% attendance\n7. **Maureen Wepngogn** - Trying to address MCC challenges, decent attendance\n8. **Jack Briggs** - Strategic when present but 52% attendance limits impact\n9. **Sheldon Hunt** - Present but minimal concrete contributions\n10. **Fred Tanaka** - Perfect attendance (92%) but virtually silent - pure seat warming\n11. **Nick Cook** - Poor attendance (36%), minimal contributions\n12. **Tim Harrison** - 26% attendance, failing basic obligations\n13. **Georg Link** - 15% attendance, complete failure of responsibilities\n\n**Critical Finding:** The committee has a severe problem with non-contributing members. Fred Tanaka attended 23/25 meetings but made no substantive contributions. Georg Link and Tim Harrison are failing their basic attendance obligations. These three seats could be far more productive with engaged members."
+        }
+      ],
+      "members": [
+        {
+          "name": "Jack Briggs",
+          "attended": 13,
+          "total": 25,
+          "rate": 52
+        },
+        {
+          "name": "Nick Cook",
+          "attended": 9,
+          "total": 25,
+          "rate": 36
+        },
+        {
+          "name": "Sheldon Hunt",
+          "attended": 17,
+          "total": 25,
+          "rate": 68
+        },
+        {
+          "name": "Fred Tanaka",
+          "attended": 23,
+          "total": 25,
+          "rate": 92
+        },
+        {
+          "name": "YUTA",
+          "attended": 5,
+          "total": 5,
+          "rate": 100
+        },
+        {
+          "name": "Phil Lewis",
+          "attended": 5,
+          "total": 5,
+          "rate": 100
+        },
+        {
+          "name": "Jose Miguel de Gamboa",
+          "attended": 17,
+          "total": 19,
+          "rate": 89
+        },
+        {
+          "name": "Kristijan Kowalsky",
+          "attended": 20,
+          "total": 25,
+          "rate": 80
+        },
+        {
+          "name": "Elaine Cardenas",
+          "attended": 7,
+          "total": 22,
+          "rate": 32
+        },
+        {
+          "name": "Georg Link",
+          "attended": 2,
+          "total": 13,
+          "rate": 15
+        },
+        {
+          "name": "Samuel Leathers",
+          "attended": 13,
+          "total": 25,
+          "rate": 52
+        },
+        {
+          "name": "Darlington Welsh",
+          "attended": 4,
+          "total": 6,
+          "rate": 67
+        },
+        {
+          "name": "Maureen Wepngogn",
+          "attended": 16,
+          "total": 19,
+          "rate": 84
+        },
+        {
+          "name": "Kevin Hammond",
+          "attended": 16,
+          "total": 25,
+          "rate": 64
+        },
+        {
+          "name": "Wes Parkison",
+          "attended": 4,
+          "total": 5,
+          "rate": 80
+        },
+        {
+          "name": "Tim Harrison",
+          "attended": 5,
+          "total": 19,
+          "rate": 26
+        },
+        {
+          "name": "Megan Hess",
+          "attended": 16,
+          "total": 19,
+          "rate": 84
+        },
+        {
+          "name": "Nicolas Cerny",
+          "attended": 14,
+          "total": 25,
+          "rate": 56
+        }
+      ]
     },
     "leadership_assessment": {
-      "available": false
+      "available": true,
+      "header": {
+        "committee": "ISC",
+        "period": "20251006 -> 20260330",
+        "meetings_count": 23,
+        "has_transcripts": false,
+        "generated": "2026-04-16 18:00"
+      },
+      "sections": [
+        {
+          "title": "ISC Leadership Analysis (October 2025 - March 2026)",
+          "body": "### Leadership Team Identification\n\n**Chair**: The ISC explicitly operates without a Chair. This is confirmed in the February 16, 2026 meeting where members stated:\n> \"Members emphasized that the ISC was intentionally designed as a chair-less, collegial body, functioning as a roundtable of equals rather than a hierarchical committee.\" (20260216)\n\n**Vice Chair**: No Vice Chair position exists for the ISC, as confirmed by the same chair-less structure.\n\n**Secretary**: \n- **Simo Simovic** served as Secretary throughout the entire period\n- Listed as \"Secretary\" in every meeting's attendee table\n- Referred to performing secretarial duties: \"secretary will follow up via Discord\" (20251006), \"Secretary training in Q1 2026 will support consistent planning\" (20260105), \"Simo will work internally on a draft\" (20260105)\n\n### Leadership Analysis\n\nSince the ISC operates without a Chair or Vice Chair, the analysis focuses on:\n1. Collective leadership effectiveness\n2. Secretary performance\n3. Executive Director's de facto leadership role\n\n### Collective Leadership Performance\n\n**Strengths:**\n- **Decision-making clarity**: The committee successfully voted on major policies including the two-year term extension (20260202), Committee Rewards Policy implementation (20251013), and Chair & Vice-Chair Election Policy (20260302)\n- **Inclusive participation**: Multiple members regularly contributed to discussions, with rotating facilitation implied by the structure\n- **Strategic progress**: Successfully developed committee budget proposals, election processes, and governance frameworks\n\n**Weaknesses:**\n- **Meeting management inconsistency**: Some meetings ran long without completing agendas. The Chair & Vice-Chair Election Policy was deferred multiple times (20260209, 20260216) due to time constraints\n- **Follow-through gaps**: Several requested items remained incomplete across multiple meetings, including the organizational chart update requested in October 2025 and still pending in December 2025\n\n### Secretary Performance (Simo Simovic)\n\n**Administrative Execution - Strong:**\n- Maintained consistent meeting documentation structure\n- Coordinated committee planning activities: \"Simo will work with chairs and secretaries over the next few weeks to consolidate objectives\" (20260105)\n- Managed ISC actions tracking through ClickUp board (20260112)\n\n**Boundary Respect - Appropriate:**\n- Stayed within administrative role without evidence of overstepping into governance\n- No instances of swaying votes or inappropriate advocacy observed\n\n**Areas for Improvement:**\n- Meeting preparation could be enhanced - multiple instances of agenda items being deferred suggest time management issues\n- Documentation of action items and follow-up could be more explicit in minutes\n\n### Jack Briggs (Executive Director) - De Facto Meeting Leadership\n\nWhile not formally chairing, Jack Briggs provided significant meeting direction:\n- Presented major updates and strategic direction\n- Guided discussions on treasury administration, hard fork planning, and organizational structure\n- His absence correlated with less structured meetings (noted when \"Executive participation was limited\" on 20260223)\n\n**Effectiveness:**\n- Clear communication of complex topics\n- Strategic vision evident in organizational updates\n- Balanced executive updates with committee input\n\n**Concerns:**\n- Risk of over-centralization given the chair-less structure's dependence on executive presence\n- Some transparency delays noted by members: \"ISC members raised concerns that, because ISC participated directly in the selection panel, the committee should have been informed sooner\" regarding ED appointment (20260112)\n\n### Overall Leadership Assessment\n\n**Is the committee well-led?**\nThe committee functions adequately under its collegial model but shows signs of needing more structure. The chair-less design works when all members are engaged, but meetings sometimes lack clear facilitation, leading to:\n- Deferred agenda items\n- Extended discussions without resolution\n- Inconsistent follow-through on actions\n\n**Biggest Leadership Failure:**\nThe most significant failure was the delayed transparency around the Executive Director appointment process. Despite ISC members participating in the selection panel, they learned of the decision through external channels, undermining trust: \"Leadership acknowledged the point and committed to provide clarity on announcement timing within 24 hours\" (20260112).\n\n**Recommended Changes:**\n1. **Introduce a rotating facilitator role** - While maintaining the collegial structure, designate a facilitator for each meeting to ensure agenda completion\n2. **Strengthen action tracking** - More explicit documentation of decisions, owners, and deadlines\n3. **Establish time limits** - Enforce time boxes for agenda items to prevent chronic deferrals\n4. **Improve executive-committee communication protocols** - Clear expectations for when ISC should be informed of major decisions\n\nThe collegial model has merit but requires more operational discipline to function effectively. The committee achieves strategic outcomes but could benefit from tactical improvements in meeting management and follow-through."
+        }
+      ]
     },
     "promises_vs_reality": {
-      "available": false
+      "available": true,
+      "header": {
+        "committee": "ISC",
+        "period": "20251006 -> 20260330",
+        "meetings_count": 23,
+        "has_transcripts": false,
+        "generated": "2026-04-16 18:01"
+      },
+      "sections": [
+        {
+          "title": "Part 1: The Tracker",
+          "body": "| # | Promise/Commitment | Made by | First promised (date) | Repeated? | Status | Evidence |\n|---|---|---|---|---|---|---|\n| 1 | ISC Members to review decision-making documentation | ISC Secretary | 20251006 | Yes (20251013) | NOT DELIVERED | No evidence of review completion in subsequent meetings |\n| 2 | Nominate 5 ISC representatives for ED panel | ISC Secretary | 20251006 | Modified to 2 reps (20251013) | DELIVERED | 20251020: \"three members have confirmed interest\" |\n| 3 | Review Chair/Vice-Chair Election Policy | ISC Members | 20251208 | Yes (20260112, 20260119) | DELIVERED | 20260302: \"policy was approved by vote\" |\n| 4 | Develop long-term ISC agenda/work plan | Simo | 20251201 | Yes (20260105, 20260112) | PARTIAL | 20260119: \"A four-five week timeline is expected\" - some progress noted |\n| 5 | Update organizational chart | Executive Team | 20251215 | Yes (20260105) | PARTIAL | 20260309: \"current org chart is available on Knowledge Base\" |\n| 6 | Gather data on 2025 membership renewal | Secretary | 20251103 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 7 | Critical Integrations Budget committee involvement update | Jack Briggs | 20260105 | Yes (20260112) | PARTIAL | 20260223: Board discussion occurred but no clear resolution |\n| 8 | Committee Reward Policy implementation | Intersect | 20251006 | Tracked throughout | DELIVERED | 20251208: \"Test transactions targeted for 8 December\" |\n| 9 | Joint ISC-Board discussion on MBO structure | Executive Team | 20251020 | Yes (multiple) | DELIVERED | 20260126: First monthly joint session occurred |\n| 10 | Provide ISC long-term planning in January | Simo | 20251215 | Yes (20260105) | NOT DELIVERED | No evidence of presentation in January meetings |\n| 11 | Committees to submit 2026 objectives | All Committees | 20260105 | Tracked | PARTIAL | Multiple committees presented draft budgets by March |\n| 12 | Publish chain incident report | TSC | 20251201 | Yes (multiple) | DELIVERED | 20260316: \"chain incident preliminary factual report\" published |\n| 13 | Committee Budget Guide feedback | All Committees | 20260202 | No | PARTIAL | 20260309: \"updated version...confirmed as current working draft\" |\n| 14 | Implement two-year committee terms | ISC | 20260119 | Yes (20260202) | DELIVERED | 20260202: \"motion passed by majority vote\" |\n| 15 | Launch 2026 committee elections | Intersect | Multiple mentions | No | PENDING (final meeting) | 20260330: \"applications opening\" |"
+        },
+        {
+          "title": "Part 2: Concrete Deliverables",
+          "body": "**Documents Published:**\n- Committee Reward Policy (approved 20251013, implemented December 2025)\n- Chain Incident Preliminary Factual Report (confirmed published 20260316)\n- Committee Chair & Vice-Chair Election Policy (approved 20260302)\n- Committee Roles & Responsibilities guidance document (presented 20260302)\n- Committee Budget Guide (working draft confirmed 20260309)\n- Updated organizational structure (presented 20260330)\n\n**Programs Launched:**\n- Committee rewards system in Member Portal (20251208: \"test transactions targeted for 8 December\")\n- Monthly ISC-Board joint sessions (commenced 20260126)\n- Quarterly ISC review sessions (first held 20260330)\n\n**Governance Actions Completed:**\n- Vision 2030 Strategy approved on-chain (20260112: \"on-chain\" with \"positive reception\")\n- Net Change Limit info action passed (20260309)\n- Budget Process Info Action approved (20260316: \"progressing on-chain\")\n- Two-year committee term extension approved (20260202)\n\n**Elections Conducted:**\n- October 2025 committee elections (results published 20251117: \"~300 members voted\")\n- Constitutional Committee snap election (20251124)\n- Various committee Vice-Chair elections\n\n**Budget Proposals Developed:**\n- All committees presented draft 2026 budget proposals (20260323)\n- Intersect core proposal presented (20260323)"
+        },
+        {
+          "title": "Part 3: Gap Analysis",
+          "body": "**Total Commitments vs Delivered:**\n- Total trackable commitments: 15\n- DELIVERED: 7 (47%)\n- PARTIAL: 5 (33%)\n- NOT DELIVERED: 2 (13%)\n- PENDING: 1 (7%)\n\n**Delivery Rate: 47% fully delivered, 80% at least partially delivered**\n\n**Biggest Failures:**\n1. Long-term ISC agenda/work plan - promised repeatedly from December through January, never fully materialized\n2. 2025 membership renewal data - promised November, never presented\n3. Decision-making documentation review - first action item from October, never confirmed complete\n\n**Most Reliable Promise-Keepers:**\n- Budget Committee: Consistently delivered on NCL and process documentation\n- TSC: Delivered chain incident report despite delays\n- Intersect staff: Committee rewards implementation completed as promised\n\n**Least Reliable:**\n- ISC Secretary on internal planning documents\n- Executive team on organizational updates\n\n**Patterns:**\n- External-facing deliverables (elections, governance actions) had high completion rates\n- Internal coordination items (agendas, documentation reviews) frequently dropped\n- Multi-stakeholder items took longer but generally delivered\n- Committee-specific work progressed better than ISC-wide initiatives"
+        },
+        {
+          "title": "Part 4: Overall Assessment",
+          "body": "**Is this committee delivering value to Cardano?**\n\nYes, with qualifications. The ISC successfully:\n- Coordinated 7 active committees through a complete operational cycle\n- Managed multiple election cycles with increasing participation\n- Established sustainable governance frameworks (2-year terms, reward policies)\n- Maintained committee functionality during leadership transitions\n- Facilitated ~$270M ADA in treasury administration oversight\n\nHowever, the committee struggles with:\n- Internal coordination and follow-through\n- Clear articulation of its own value proposition\n- Consistent execution of promised deliverables\n- Managing the tension between advisory and execution roles\n\n**What would you tell a DRep asking about continued funding?**\n\nThe ISC provides essential coordination infrastructure for Cardano's decentralized governance. While its 47% full delivery rate on commitments is concerning, the committee successfully delivered all critical external-facing outputs (elections, governance actions, policy frameworks). The 80% partial-or-better delivery rate suggests capacity exists but execution discipline needs improvement.\n\nRecommendation: Continue funding with conditions:\n1. Require quarterly delivery scorecards\n2. Implement formal action tracking systems\n3. Clarify boundaries between coordination and execution\n4. Set concrete KPIs for internal process improvements\n\nThe committee's coordination role becomes more critical as Cardano scales. The investment is justified if accompanied by accountability improvements."
+        }
+      ],
+      "promises": [
+        {
+          "num": 1,
+          "promise": "ISC Members to review decision-making documentation",
+          "made_by": "ISC Secretary",
+          "first_promised": "20251006",
+          "repeated": "Yes (20251013)",
+          "status": "failed",
+          "evidence": "No evidence of review completion in subsequent meetings"
+        },
+        {
+          "num": 2,
+          "promise": "Nominate 5 ISC representatives for ED panel",
+          "made_by": "ISC Secretary",
+          "first_promised": "20251006",
+          "repeated": "Modified to 2 reps (20251013)",
+          "status": "delivered",
+          "evidence": "20251020: \"three members have confirmed interest\""
+        },
+        {
+          "num": 3,
+          "promise": "Review Chair/Vice-Chair Election Policy",
+          "made_by": "ISC Members",
+          "first_promised": "20251208",
+          "repeated": "Yes (20260112, 20260119)",
+          "status": "delivered",
+          "evidence": "20260302: \"policy was approved by vote\""
+        },
+        {
+          "num": 4,
+          "promise": "Develop long-term ISC agenda/work plan",
+          "made_by": "Simo",
+          "first_promised": "20251201",
+          "repeated": "Yes (20260105, 20260112)",
+          "status": "partial",
+          "evidence": "20260119: \"A four-five week timeline is expected\" - some progress noted"
+        },
+        {
+          "num": 5,
+          "promise": "Update organizational chart",
+          "made_by": "Executive Team",
+          "first_promised": "20251215",
+          "repeated": "Yes (20260105)",
+          "status": "partial",
+          "evidence": "20260309: \"current org chart is available on Knowledge Base\""
+        },
+        {
+          "num": 6,
+          "promise": "Gather data on 2025 membership renewal",
+          "made_by": "Secretary",
+          "first_promised": "20251103",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 7,
+          "promise": "Critical Integrations Budget committee involvement update",
+          "made_by": "Jack Briggs",
+          "first_promised": "20260105",
+          "repeated": "Yes (20260112)",
+          "status": "partial",
+          "evidence": "20260223: Board discussion occurred but no clear resolution"
+        },
+        {
+          "num": 8,
+          "promise": "Committee Reward Policy implementation",
+          "made_by": "Intersect",
+          "first_promised": "20251006",
+          "repeated": "Tracked throughout",
+          "status": "delivered",
+          "evidence": "20251208: \"Test transactions targeted for 8 December\""
+        },
+        {
+          "num": 9,
+          "promise": "Joint ISC-Board discussion on MBO structure",
+          "made_by": "Executive Team",
+          "first_promised": "20251020",
+          "repeated": "Yes (multiple)",
+          "status": "delivered",
+          "evidence": "20260126: First monthly joint session occurred"
+        },
+        {
+          "num": 10,
+          "promise": "Provide ISC long-term planning in January",
+          "made_by": "Simo",
+          "first_promised": "20251215",
+          "repeated": "Yes (20260105)",
+          "status": "failed",
+          "evidence": "No evidence of presentation in January meetings"
+        },
+        {
+          "num": 11,
+          "promise": "Committees to submit 2026 objectives",
+          "made_by": "All Committees",
+          "first_promised": "20260105",
+          "repeated": "Tracked",
+          "status": "partial",
+          "evidence": "Multiple committees presented draft budgets by March"
+        },
+        {
+          "num": 12,
+          "promise": "Publish chain incident report",
+          "made_by": "TSC",
+          "first_promised": "20251201",
+          "repeated": "Yes (multiple)",
+          "status": "delivered",
+          "evidence": "20260316: \"chain incident preliminary factual report\" published"
+        },
+        {
+          "num": 13,
+          "promise": "Committee Budget Guide feedback",
+          "made_by": "All Committees",
+          "first_promised": "20260202",
+          "repeated": "No",
+          "status": "partial",
+          "evidence": "20260309: \"updated version...confirmed as current working draft\""
+        },
+        {
+          "num": 14,
+          "promise": "Implement two-year committee terms",
+          "made_by": "ISC",
+          "first_promised": "20260119",
+          "repeated": "Yes (20260202)",
+          "status": "delivered",
+          "evidence": "20260202: \"motion passed by majority vote\""
+        },
+        {
+          "num": 15,
+          "promise": "Launch 2026 committee elections",
+          "made_by": "Intersect",
+          "first_promised": "Multiple mentions",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "20260330: \"applications opening\""
+        }
+      ]
     },
     "critical_observations": {
       "available": false
     }
   },
   "stats": {
-    "total_promises": 0,
-    "delivered": 0,
-    "partial": 0,
-    "failed": 0,
+    "total_promises": 15,
+    "delivered": 6,
+    "partial": 5,
+    "failed": 4,
     "recurring": 0,
-    "delivery_rate": 0
+    "delivery_rate": 40
   },
-  "generated": "2026-04-01T00:14:43.875661"
+  "generated": "2026-04-16T18:01:29.026260"
 }

@@ -1,12 +1,12 @@
 {
   "committee": "CPC",
-  "full_name": "Cardano Product Committee",
+  "full_name": "Civics & Participation Committee",
   "period": {
     "start": "20251014",
-    "end": "20260203"
+    "end": "20260331"
   },
-  "meetings_count": 13,
-  "summary_count": 13,
+  "meetings_count": 21,
+  "summary_count": 21,
   "transcript_count": 0,
   "has_transcripts": false,
   "dates": [
@@ -22,32 +22,336 @@
     "20260113",
     "20260120",
     "20260127",
-    "20260203"
+    "20260203",
+    "20260210",
+    "20260217",
+    "20260224",
+    "20260303",
+    "20260310",
+    "20260317",
+    "20260324",
+    "20260331"
   ],
   "reports": {
     "summaries_vs_transcripts": {
       "available": false
     },
     "member_participation": {
-      "available": false
+      "available": true,
+      "header": {
+        "committee": "CPC",
+        "period": "20251014 -> 20260331",
+        "meetings_count": 21,
+        "has_transcripts": false,
+        "generated": "2026-04-16 17:49"
+      },
+      "sections": [
+        {
+          "title": "Committee Composition Analysis",
+          "body": "**Meeting Count:** The dataset contains 21 meetings spanning from October 14, 2025 to March 31, 2026.\n\n**Committee Transition Identified:** A clear membership transition occurred between the November 11, 2025 and November 18, 2025 meetings. Evidence:\n- November 18, 2025 meeting notes state: \"Secretary, Chair and Vice-Chair welcomed newly elected members: Alexandre Maaza, Christian Schmitz, Giorgio Zinetti\"\n- Naushad Fouze appeared in meetings October 14-November 4 but never again\n- Alexandre Maaza, Christian Schmitz, and Giorgio Zinetti first appear November 18 and continue thereafter\n\n**The dataset contains 21 meetings. The committee transitioned after November 11, 2025 \u2014 the first 7 meetings had the old committee, the remaining 14 meetings had the new committee.**\n\n**Current Elected/Voting Members (post-transition):**\n- Samuel Leathers (Chair)\n- Kyle Solomon (Vice-Chair)\n- Juan Sierra (transitioned from voting to SME role)\n- James Meidinger\n- Tegegne Tefera\n- Carlos Lopez De Lara\n- Alexandre Maaza (new)\n- Christian Schmitz (new)\n- Giorgio Zinetti (new)"
+        },
+        {
+          "title": "Part 1: Attendance Grid - Elected Members",
+          "body": "| Member | 10/14 | 10/21 | 10/28 | 11/04 | 11/18 | 11/25 | 12/02 | 12/09 | 12/16 | 01/13 | 01/20 | 01/27 | 02/03 | 02/10 | 02/17 | 02/24 | 03/03 | 03/10 | 03/17 | 03/24 | 03/31 | Rate |\n|--------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|------|\n| Samuel Leathers | P | P | P | P | P | P | P | P | P | P | P | A | A | P | P | P | P | P | P | P | P | 18/21 |\n| Kyle Solomon | A | P | P | P | P | A | A | A | P | P | P | A | A | P | P | P | A | P | P | P | P | 13/21 |\n| Tegegne Tefera | P | P | P | P | P | P | P | P | A | P | P | P | P | P | P | P | P | P | P | P | P | 20/21 |\n| Carlos Lopez De Lara | P | P | P | P | P | A | P | P | A | P | A | A | A | P | A | A | P | A | A | A | A | 10/21 |\n| James Meidinger | P | P | P | P | P | P | P | P | P | P | P | P | A | A | P | P | P | P | A | A | P | 17/21 |\n| Juan Sierra* | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | P | 21/21 |\n| Alexandre Maaza** | N/A | N/A | N/A | N/A | P | P | P | P | P | P | P | A | A | A | A | A | P | P | A | A | P | 8/14 |\n| Christian Schmitz** | N/A | N/A | N/A | N/A | P | P | P | P | A | A | P | P | P | A | A | A | A | A | A | A | A | 6/14 |\n| Giorgio Zinetti** | N/A | N/A | N/A | N/A | P | P | P | A | P | A | A | A | A | A | A | A | P | A | A | A | P | 6/14 |\n| Naushad Fouze*** | A | A | A | A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | 0/4 |\n\n*Juan Sierra transitioned from voting seat to SME role but maintained continuous participation\n**New members elected November 2025\n***Old member who left after transition"
+        },
+        {
+          "title": "Part 2: Per-Member Deep Analysis",
+          "body": "### Tegegne Tefera (20/21 - 95%)\n- **Attendance:** Exceptional - missed only December 16\n- **Speaking frequency:** Light - rarely speaks in transcripts\n- **Substantive contributions:** No concrete proposals or presentations identified in available transcripts\n- **Work between meetings:** No evidence in provided materials\n- **Quality of engagement:** Present but passive participant\n- **Accountability:** No action items tracked\n- **Trajectory:** Consistently present but consistently quiet\n\n### Samuel Leathers - Chair (18/21 - 86%)\n- **Attendance:** Strong - absent January 27, February 3, and one other\n- **Speaking frequency:** Heavy - speaks as Chair in most meetings\n- **Substantive contributions:** \n  - Led Asia workshops update (October 14, 21)\n  - Co-led stakeholder sessions (November 4, 18)\n  - Led session with Intersect Board (October 28)\n  - Presented Strategy overview (November 18)\n- **Work between meetings:** Extensive evidence of workshop leadership and stakeholder engagement\n- **Quality of engagement:** High value - drives strategic discussions\n- **Accountability:** Consistently follows through on Chair duties\n- **Trajectory:** Maintained high engagement throughout\n\n### Juan Sierra (21/21 - 100%)\n- **Attendance:** Perfect attendance across all meetings\n- **Speaking frequency:** Heavy - contributes regularly\n- **Substantive contributions:**\n  - BA workshop planning and execution (November 4, 18, 25)\n  - FIU activities update (January 20)\n  - Active in strategy discussions throughout\n- **Work between meetings:** Led Buenos Aires workshops\n- **Quality of engagement:** High - substantive strategic input\n- **Accountability:** Delivered on workshop commitments\n- **Trajectory:** Consistently strong throughout\n\n### James Meidinger (17/21 - 81%)\n- **Attendance:** Good - absent February 10, 17, March 24, 31\n- **Speaking frequency:** Moderate when present\n- **Substantive contributions:**\n  - Berlin workshop planning (November 4, 18)\n  - Active in KPI discussions\n- **Work between meetings:** Co-led Berlin workshop\n- **Quality of engagement:** Valuable when present\n- **Accountability:** Delivered Berlin workshop\n- **Trajectory:** Strong start, declining attendance in final months\n\n### Kyle Solomon - Vice-Chair (13/21 - 62%)\n- **Attendance:** Below expectations for leadership role\n- **Speaking frequency:** Heavy when present\n- **Substantive contributions:**\n  - Business Dev WG overview (December 9)\n  - Co-led stakeholder sessions (November 4, 18)\n  - Led CF session updates\n- **Work between meetings:** Active in stakeholder engagement\n- **Quality of engagement:** High value when present\n- **Accountability:** Delivered on Vice-Chair duties when present\n- **Trajectory:** Inconsistent attendance throughout\n\n### Carlos Lopez De Lara (10/21 - 48%)\n- **Attendance:** Poor - present less than half the time\n- **Speaking frequency:** Moderate when present\n- **Substantive contributions:**\n  - BA workshop planning and execution (November 4, 18, 25)\n- **Work between meetings:** Co-led BA workshop\n- **Quality of engagement:** Contributed to workshop planning\n- **Accountability:** Delivered BA workshop despite poor attendance\n- **Trajectory:** Declining attendance after January\n\n### Alexandre Maaza (8/14 - 57%)\n- **Attendance:** Below average for new member\n- **Speaking frequency:** Light\n- **Substantive contributions:**\n  - Ecosystem Funding WG structure overview (December 9)\n  - Led Ecosystem Funding WG sessions (January 20, March 3)\n- **Work between meetings:** Led working group\n- **Quality of engagement:** Focused on specific workstream\n- **Accountability:** Delivered on working group leadership\n- **Trajectory:** Started strong, attendance declined\n\n### Christian Schmitz (6/14 - 43%)\n- **Attendance:** Poor - absent more than present\n- **Speaking frequency:** Silent in most meetings attended\n- **Substantive contributions:** None identified in transcripts\n- **Work between meetings:** No evidence\n- **Quality of engagement:** Minimal\n- **Accountability:** No tracked deliverables\n- **Trajectory:** Weak throughout tenure\n\n### Giorgio Zinetti (6/14 - 43%)\n- **Attendance:** Poor - absent more than present\n- **Speaking frequency:** Light\n- **Substantive contributions:**\n  - Pentad context (December 9)\n- **Work between meetings:** No evidence beyond Pentad mention\n- **Quality of engagement:** Minimal\n- **Accountability:** No tracked deliverables\n- **Trajectory:** Weak throughout tenure\n\n### Naushad Fouze (0/4 - 0%)\n- **Attendance:** Never attended during eligible period\n- **Speaking frequency:** N/A\n- **Substantive contributions:** None\n- **Work between meetings:** No evidence\n- **Quality of engagement:** None\n- **Accountability:** Failed basic attendance requirement\n- **Trajectory:** Complete non-participation"
+        },
+        {
+          "title": "Part 3: Power Dynamics",
+          "body": "**Speaking Time Dominance:**\n- Samuel Leathers (Chair) and Kyle Solomon (Vice-Chair) dominate when present, as expected in leadership roles\n- Juan Sierra consistently contributes substantively\n- Lorenzo Bruno (Secretary) speaks frequently but in administrative capacity\n\n**Consistently Sidelined:**\n- Tegegne Tefera - 95% attendance but minimal speaking\n- Christian Schmitz and Giorgio Zinetti - new members who failed to integrate\n\n**Work Distribution:**\n- Heavy concentration on Samuel Leathers, Juan Sierra, and Kyle Solomon for strategic work\n- Alexandre Maaza took ownership of Ecosystem Funding WG\n- James Meidinger contributed through Berlin workshop\n- Multiple members (Tegegne, Christian, Giorgio) do no visible work\n\n**No visible voting blocs identified** - limited evidence of formal votes in transcripts"
+        },
+        {
+          "title": "Part 4: Summary Rankings",
+          "body": "1. **Juan Sierra** - 100% attendance, consistent substantive contributions, delivered workshops\n2. **Samuel Leathers** - Strong leadership, 86% attendance, drove strategy and stakeholder engagement  \n3. **Tegegne Tefera** - 95% attendance but minimal contribution (attendance without engagement)\n4. **James Meidinger** - 81% attendance, delivered Berlin workshop, declining trajectory\n5. **Kyle Solomon** - High-value contributions offset by 62% attendance \n6. **Alexandre Maaza** - 57% attendance but led working group effectively\n7. **Carlos Lopez De Lara** - 48% attendance, delivered BA workshop\n8. **Christian Schmitz** - 43% attendance, no contributions\n9. **Giorgio Zinetti** - 43% attendance, minimal contribution\n10. **Naushad Fouze** - 0% attendance, complete failure\n\n**Critical Finding:** Several members (Tegegne, Christian, Giorgio) show up but contribute nothing substantive. Tegegne's 95% attendance with near-zero participation represents attendance without accountability. The committee carries dead weight."
+        }
+      ],
+      "members": [
+        {
+          "name": "Samuel Leathers",
+          "attended": 18,
+          "total": 21,
+          "rate": 86
+        },
+        {
+          "name": "Kyle Solomon",
+          "attended": 13,
+          "total": 21,
+          "rate": 62
+        },
+        {
+          "name": "Tegegne Tefera",
+          "attended": 20,
+          "total": 21,
+          "rate": 95
+        },
+        {
+          "name": "Carlos Lopez De Lara",
+          "attended": 10,
+          "total": 21,
+          "rate": 48
+        },
+        {
+          "name": "James Meidinger",
+          "attended": 17,
+          "total": 21,
+          "rate": 81
+        },
+        {
+          "name": "Juan Sierra*",
+          "attended": 21,
+          "total": 21,
+          "rate": 100
+        },
+        {
+          "name": "Alexandre Maaza**",
+          "attended": 8,
+          "total": 14,
+          "rate": 57
+        },
+        {
+          "name": "Christian Schmitz**",
+          "attended": 6,
+          "total": 14,
+          "rate": 43
+        },
+        {
+          "name": "Giorgio Zinetti**",
+          "attended": 6,
+          "total": 14,
+          "rate": 43
+        },
+        {
+          "name": "Naushad Fouze***",
+          "attended": 0,
+          "total": 4,
+          "rate": 0
+        }
+      ]
     },
     "leadership_assessment": {
-      "available": false
+      "available": true,
+      "header": {
+        "committee": "CPC",
+        "period": "20251014 -> 20260331",
+        "meetings_count": 21,
+        "has_transcripts": false,
+        "generated": "2026-04-16 17:49"
+      },
+      "sections": [
+        {
+          "title": "Leadership Team Identification",
+          "body": "Based on the provided meeting records, the leadership team consisted of:\n\n**Chair: Samuel Leathers** - Consistently listed as \"Chair\" in all participant tables from October 14, 2025 through March 31, 2026.\n\n**Vice-Chair: Kyle Solomon** - Consistently listed as \"Vice-Chair\" in all participant tables throughout the period.\n\n**Secretary: Lorenzo Bruno** - Consistently listed as \"Secretary\" in all participant tables throughout the period.\n\nNo leadership changes occurred during this period based on the provided evidence."
+        },
+        {
+          "title": "Leadership Performance Analysis",
+          "body": "### Chair - Samuel Leathers\n\n**Meeting Facilitation**: The summaries provide insufficient evidence to assess facilitation quality. No transcript excerpts show how meetings were conducted, whether time was managed effectively, or if all voices were heard.\n\n**Attendance**: Samuel Leathers attended 15 of 19 meetings (absent on January 27, February 3, February 10, February 17).\n\n**Decision-Making**: The summaries indicate numerous committee decisions were made (info action approval, workshop approvals, budget discussions) but provide no evidence of how votes were conducted or decisions recorded.\n\n**Strategic Direction**: The summaries show the committee progressed from vision/strategy development (October-December) to successful info action passage (January) to tactical planning (February-March), suggesting forward momentum under his leadership.\n\n**Notable Gaps**: Four consecutive absences in late January through mid-February 2026 during critical budget planning discussions.\n\n### Vice-Chair - Kyle Solomon\n\n**Attendance**: Kyle Solomon attended 13 of 19 meetings.\n\n**Support Role**: Limited evidence of active vice-chair duties. The summaries note Kyle provided updates on stakeholder sessions and Business Development Working Group, suggesting some independent responsibilities.\n\n**Key Contributions**: \n- Led Business Development Working Group coordination with GMC (per December 9 summary)\n- Provided stakeholder session updates (multiple meetings)\n- Proposed using local gatherings budget for Paris Blockchain Week (March 31)\n\n**Notable Gap**: Absent during the critical period when the Chair was also absent (January 27, February 3).\n\n### Secretary - Lorenzo Bruno\n\n**Attendance**: Perfect attendance - present at all 19 meetings.\n\n**Administrative Execution**: Evidence suggests strong performance:\n- Consistent meeting documentation produced\n- Budget updates provided regularly\n- Elections coordination mentioned multiple times\n- Workshop logistics managed\n- Committee rewards/stipends administered\n\n**Boundary Respect**: No evidence of overstepping administrative role into governance matters.\n\n**Key Activities Documented**:\n- Managed workshop reimbursements and stipends\n- Coordinated committee elections\n- Provided budget status updates\n- Managed product research grant process\n- Produced committee budget guide\n\n### Overall Leadership Assessment\n\n**Strengths**:\n- Consistent leadership team throughout the period\n- Successful progression from vision development to approved info action\n- Secretary maintained perfect attendance and administrative continuity\n\n**Weaknesses**:\n- Chair absent for 21% of meetings, including a critical four-meeting stretch\n- Vice-Chair also absent during part of this gap period, leaving potential leadership vacuum\n- Insufficient evidence in summaries to assess meeting management quality\n\n**Biggest Leadership Failure**: The simultaneous absence of both Chair and Vice-Chair during late January/early February 2026 budget planning sessions represents a significant leadership gap during a critical period.\n\n**Recommended Changes**:\n1. Establish clear succession planning for when Chair is absent\n2. Ensure Chair and Vice-Chair coordinate schedules to avoid simultaneous absences\n3. Document in meeting summaries who facilitated meetings in Chair's absence\n\n**Data Limitations**: These summaries provide only high-level updates without transcript excerpts, making it impossible to assess actual meeting dynamics, facilitation quality, or decision-making processes. A proper performance analysis would require access to actual meeting transcripts with speaker attributions and quoted dialogue."
+        }
+      ]
     },
     "promises_vs_reality": {
-      "available": false
+      "available": true,
+      "header": {
+        "committee": "CPC",
+        "period": "20251014 -> 20260331",
+        "meetings_count": 21,
+        "has_transcripts": false,
+        "generated": "2026-04-16 17:50"
+      },
+      "sections": [
+        {
+          "title": "Part 1: The Tracker",
+          "body": "| # | Promise/Commitment | Made by | First promised (date) | Repeated? | Status | Evidence |\n|---|-------------------|---------|---------------------|-----------|---------|----------|\n| 1 | Submit info action with Vision, Strategy and 2026 Tactical strategy/roadmap in epoch 598 or 599 | Committee decision | 2025-10-21 | Yes (mentioned 2025-10-28, 2025-11-04, 2025-12-02) | DELIVERED | Info action submitted 2025-12-17 per 2025-12-16 notes; successful outcome confirmed 2026-01-20 |\n| 2 | Book follow-up meeting with GMC representatives for Business Dev WG | Secretary | 2025-12-09 | No | DELIVERED | Meeting occurred per 2025-12-16 update |\n| 3 | Book X space for Friday 19th December | Committee | 2025-12-16 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 4 | Book X space from Intersect X account for info action | Committee | 2026-01-13 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 5 | TSC to join session to share KPI feedback | Committee | 2026-01-13 | No | DELIVERED | TSC attended 2026-01-20 meeting |\n| 6 | Post async vote on product committee channel for research grant | Secretary | 2026-02-03 | Yes (mentioned 2026-02-10) | PARTIAL | Vote mentioned as in progress 2026-02-10, no final confirmation |\n| 7 | Review questions asynchronously for elections | Committee | 2026-02-17 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 8 | Establish developer experience working group | Committee | 2026-02-17 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 9 | Plan meeting with OSC for developer experience | Committee | 2026-02-17 | No | NOT DELIVERED | Noted as \"still pending\" 2026-02-24 |\n| 10 | Confirm reviewers for product research applications | Committee | 2026-02-24 | No | DELIVERED | Evaluation completed per 2026-03-10 |\n| 11 | Move regular sessions to Wednesday | Secretary/Committee | 2026-03-31 | No | PENDING (final meeting) | Cannot assess |\n| 12 | Begin Business Dev WG following week | Committee | 2026-03-31 | No | PENDING (final meeting) | Cannot assess |"
+        },
+        {
+          "title": "Part 2: Concrete Deliverables",
+          "body": "**Documents Published:**\n1. **Vision and Strategy Framework** - Confirmed approved and merged 2025-12-16\n2. **Info Action for Cardano 2030** - Submitted on-chain 2025-12-17, confirmed successful 2026-01-20\n3. **Committee Budget Guide v1** - Reviewed 2026-02-10\n4. **Budget Proposal Document** - Draft reviewed multiple meetings, confirmed \"no major feedback by Board\" 2026-03-31\n\n**Programs Launched:**\n1. **Ecosystem Funding Working Group** - First session held per 2026-01-20 update\n2. **Product Research Grant Program** - Grant evaluation completed 2026-03-10, moving to contract stage 2026-03-24\n\n**Workshops Conducted:**\n1. Singapore, Osaka, Tokyo workshops - Confirmed completed 2025-10-14\n2. Barcelona workshop - Confirmed completed 2025-10-21\n3. Buenos Aires workshop - Confirmed occurred (multiple updates)\n4. Berlin workshop - Confirmed occurred (multiple updates)\n5. London workshop - PR approved 2025-11-25\n6. Nairobi workshop - Outcomes reviewed 2026-02-24\n\n**External Engagement:**\n1. Session with Cardano Foundation - Multiple confirmed meetings\n2. Session with Budget Committee - Confirmed 2025-10-28\n3. Session with Intersect Board - Confirmed 2025-11-04\n4. Business call with Good Nature Agro presented 2025-11-04"
+        },
+        {
+          "title": "Part 3: Gap Analysis",
+          "body": "**Total Commitments:** 12 tracked\n- DELIVERED: 5 (41.7%)\n- PARTIAL: 1 (8.3%)\n- NOT DELIVERED: 4 (33.3%)\n- PENDING: 2 (16.7%)\n\n**Delivery Rate:** 41.7% fully delivered, 50% including partial\n\n**Biggest Failures:**\n1. **Developer Experience Working Group** - Discussed 2026-02-17, never established despite acknowledged need\n2. **OSC Alignment Meeting** - Mentioned multiple times, still pending by 2026-02-24\n3. **X Spaces** - Two separate X space commitments (December and January) with no evidence of execution\n\n**Most Reliable:**\n- Secretary (Lorenzo Bruno): Delivered on major commitments including info action submission, meeting bookings\n- Committee collective decisions on workshops and budget work\n\n**Patterns:**\n- Strategic documents and formal processes (info actions, budgets) get delivered\n- External communications (X spaces) consistently fail\n- Cross-committee coordination (OSC, developer experience) struggles\n- Workshops execute successfully when assigned to specific members"
+        },
+        {
+          "title": "Part 4: Overall Assessment",
+          "body": "**Is this committee delivering value to Cardano?**\n\nYES, but with significant room for improvement.\n\n**Evidence of Value:**\n1. Successfully delivered the Cardano 2030 Vision/Strategy framework through extensive global workshops\n2. Achieved on-chain approval via info action - demonstrating governance legitimacy\n3. Established systematic approaches (budget guide, research grants, working groups)\n4. Conducted 6+ international workshops for community input\n\n**Key Concerns:**\n1. 50% delivery rate on tracked commitments\n2. Weak external communication (failed X spaces)\n3. Poor cross-committee coordination (OSC, developer experience)\n4. Limited evidence of tactical execution beyond strategic planning\n\n**DRep Funding Recommendation:**\n\nContinue funding with conditions:\n1. Require quarterly delivery metrics reporting\n2. Mandate external communication plan with accountability\n3. Set clear KPIs for cross-committee coordination\n4. Shift focus from strategy development (now complete) to tactical execution\n\nThe committee has proven capable of delivering major strategic initiatives but struggles with operational execution and external engagement. The successful info action demonstrates they can achieve consensus on big-picture items. However, the pattern of unfulfilled communication commitments and stalled cross-functional initiatives raises concerns about their ability to drive adoption and implementation of their strategic vision."
+        }
+      ],
+      "promises": [
+        {
+          "num": 1,
+          "promise": "Submit info action with Vision, Strategy and 2026 Tactical strategy/roadmap in epoch 598 or 599",
+          "made_by": "Committee decision",
+          "first_promised": "2025-10-21",
+          "repeated": "Yes (mentioned 2025-10-28, 2025-11-04, 2025-12-02)",
+          "status": "delivered",
+          "evidence": "Info action submitted 2025-12-17 per 2025-12-16 notes; successful outcome confirmed 2026-01-20"
+        },
+        {
+          "num": 2,
+          "promise": "Book follow-up meeting with GMC representatives for Business Dev WG",
+          "made_by": "Secretary",
+          "first_promised": "2025-12-09",
+          "repeated": "No",
+          "status": "delivered",
+          "evidence": "Meeting occurred per 2025-12-16 update"
+        },
+        {
+          "num": 3,
+          "promise": "Book X space for Friday 19th December",
+          "made_by": "Committee",
+          "first_promised": "2025-12-16",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 4,
+          "promise": "Book X space from Intersect X account for info action",
+          "made_by": "Committee",
+          "first_promised": "2026-01-13",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 5,
+          "promise": "TSC to join session to share KPI feedback",
+          "made_by": "Committee",
+          "first_promised": "2026-01-13",
+          "repeated": "No",
+          "status": "delivered",
+          "evidence": "TSC attended 2026-01-20 meeting"
+        },
+        {
+          "num": 6,
+          "promise": "Post async vote on product committee channel for research grant",
+          "made_by": "Secretary",
+          "first_promised": "2026-02-03",
+          "repeated": "Yes (mentioned 2026-02-10)",
+          "status": "partial",
+          "evidence": "Vote mentioned as in progress 2026-02-10, no final confirmation"
+        },
+        {
+          "num": 7,
+          "promise": "Review questions asynchronously for elections",
+          "made_by": "Committee",
+          "first_promised": "2026-02-17",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 8,
+          "promise": "Establish developer experience working group",
+          "made_by": "Committee",
+          "first_promised": "2026-02-17",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 9,
+          "promise": "Plan meeting with OSC for developer experience",
+          "made_by": "Committee",
+          "first_promised": "2026-02-17",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "Noted as \"still pending\" 2026-02-24"
+        },
+        {
+          "num": 10,
+          "promise": "Confirm reviewers for product research applications",
+          "made_by": "Committee",
+          "first_promised": "2026-02-24",
+          "repeated": "No",
+          "status": "delivered",
+          "evidence": "Evaluation completed per 2026-03-10"
+        },
+        {
+          "num": 11,
+          "promise": "Move regular sessions to Wednesday",
+          "made_by": "Secretary/Committee",
+          "first_promised": "2026-03-31",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "Cannot assess"
+        },
+        {
+          "num": 12,
+          "promise": "Begin Business Dev WG following week",
+          "made_by": "Committee",
+          "first_promised": "2026-03-31",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "Cannot assess"
+        }
+      ]
     },
     "critical_observations": {
-      "available": false
+      "available": true,
+      "header": {
+        "committee": "CPC",
+        "period": "20251014 -> 20260331",
+        "meetings_count": 21,
+        "has_transcripts": false,
+        "generated": "2026-04-16 17:52"
+      },
+      "sections": [
+        {
+          "title": "Governance Red Flags: The Information Action Rush",
+          "body": "The most significant governance concern centers on the committee's handling of the Cardano 2030 information action. On December 16, 2025, the committee approved content for submission \"on the following day\" after minimal review time. Lorenzo Bruno stated: \"Committee reviewed and approved the content of the info action for vision, mission and strategy\" with the decision to submit immediately.\n\nThis compressed timeline becomes more problematic when examining the feedback collection process. On January 13, 2026, after the vote had already begun, the committee was still \"review[ing] community feedback on the info action collected from DReps rationales.\" This suggests the committee submitted the proposal before adequately engaging with the community it purports to represent."
+        },
+        {
+          "title": "Cultural Dynamics: Performative Urgency",
+          "body": "The committee exhibits a pattern of rushing major decisions while leaving smaller items unresolved. The December 16 meeting exemplifies this: while pushing through the info action approval, the same committee had been discussing KPIs since October without meaningful progress. TSC representatives had to attend the January 20 meeting to provide feedback that should have been incorporated months earlier.\n\nKevin Hammond (TSC Chair) and other TSC members \"shared their feedback on current KPIs and discussed with committee members\" on January 20, 2026 \u2014 well after the info action had been submitted. This sequence suggests the committee prioritized the appearance of progress over substantive deliberation."
+        },
+        {
+          "title": "Information Asymmetry: The Secretary's Outsized Influence",
+          "body": "Lorenzo Bruno, as Secretary, controls significant information flow. He provides \"updates\" on virtually every topic, presents draft documents, and manages reimbursements. The October 28, 2025 meeting shows Bruno presenting the Statement of Work, stipends policy overview, workshop PR, timeline for info action, and member survey \u2014 effectively controlling the entire agenda.\n\nThis concentration becomes concerning when combined with the committee's passive response patterns. Members rarely challenge or deeply engage with presented materials. The meetings read as briefings rather than deliberative sessions."
+        },
+        {
+          "title": "External Influence: Budget Committee Shadow Governance",
+          "body": "The Budget Committee's influence over the Product Committee appears substantial but opaque. On October 21, 2025, Budget Committee representatives (Simo Simovic, Lloyd Duhon) attended to share \"an overview of the budget process and how product committee effort fits into that.\"\n\nBy October 28, multiple Budget Committee members (Simo Simovic, Kriss Baird, Kristijan Kowalsky) were attending Product Committee meetings. The summary notes \"Chair and Vice-Chair provided update on the session held with Budget Committee\" but provides no details about what was discussed or decided in these parallel sessions.\n\nThis pattern suggests key decisions may be occurring outside the formal committee structure, with the recorded meetings serving to ratify pre-negotiated positions."
+        },
+        {
+          "title": "Recurring Themes Without Resolution",
+          "body": "**KPIs**: First mentioned October 14, 2025, still unresolved by March 31, 2026. The committee repeatedly \"discusses\" KPIs without producing them. January 20: \"TSC members present shared their feedback on current KPIs\" \u2014 indicating KPIs existed but weren't finalized. March 24: \"The Committee discussed feedback received and need for refinement.\" March 31: \"The Committee agreed to collect input from TSC and GMC to support KPI refinement.\"\n\n**Business Development Working Group**: First proposed December 9, 2025. By March 31, 2026, still \"confirming\" structure and timeline. December 16: \"Secretary provided update on GMC meeting booked for the following Thursday for Business Dev WG.\" March 10: \"The Committee reviewed limited progress due to availability constraints.\" March 31: \"The Committee aligned on running the working group on Wednesdays.\"\n\nThis pattern of perpetual discussion without conclusion suggests either lack of leadership or deliberate delay tactics."
+        },
+        {
+          "title": "Member Dynamics: The Silent Majority",
+          "body": "Several voting members rarely speak or contribute meaningfully in meetings. Naushad Fouze attended 0 of the first 9 meetings before being replaced. Giorgio Zinetti and Christian Schmitz show sporadic attendance after joining in November.\n\nThe active core consists of Lorenzo Bruno (Secretary), Samuel Leathers (Chair), Kyle Solomon (Vice-Chair), and to a lesser extent Juan Sierra and James Meidinger. This creates an effective oligarchy within the committee structure."
+        },
+        {
+          "title": "Cross-Committee Coordination: Parallel Structures",
+          "body": "The committee maintains opaque relationships with other committees. The Ecosystem Funding Working Group, led by committee member Alexandre Maaza, operates separately but reports back selectively. On January 13, 2026: \"Ecosystem Funding WG provided update on plans for first session (following day).\"\n\nSimilarly, Juan Sierra provides \"update on activities from FIU\" (January 20) without clear documentation of what FIU is or how it relates to committee work."
+        },
+        {
+          "title": "Budget and Resources: Reimbursement Without Transparency",
+          "body": "The committee handles reimbursements through informal processes. December 9, 2025: \"Secretary provided update on committee rewards, Github PRs, and reimbursements for workshops and business calls.\" The Storm Partners business call reimbursement was \"reviewed and approved\" without public documentation of amounts or justification.\n\nOn January 20, 2026, the secretary presented \"the draft of the first Product research grant\" after minimal committee input on scope or criteria."
+        },
+        {
+          "title": "Community Engagement: Managed Participation",
+          "body": "The committee's engagement with the broader community appears carefully managed. Workshops are conducted with pre-selected participants. The Barcelona workshop (October 21) and Asia workshops (October 14) are mentioned only in passing, with no substantive documentation of community input.\n\nThe January 13, 2026 discussion of \"booking an X space from the Intersect X account\" for the info action reveals a top-down communication approach rather than genuine dialogue."
+        },
+        {
+          "title": "Tool and Process Dysfunction",
+          "body": "References to Miro boards and Google Drive recordings suggest work happens across multiple platforms, but the committee struggles with basic coordination. The February 17 meeting notes: \"The Committee discussed the need to review questions asynchronously\" for elections, indicating even simple tasks require multiple touches.\n\nThe March 31 discussion about \"adjusting the regular meeting schedule\" after months of operation suggests the basic meeting cadence wasn't working for members."
+        },
+        {
+          "title": "Conclusion",
+          "body": "The Cardano Product Committee exhibits troubling patterns of rushed decision-making on major items while failing to complete basic operational tasks. The concentration of information and process control in the Secretary role, combined with passive participation from most voting members, creates conditions ripe for capture. The committee's relationship with external bodies like the Budget Committee lacks transparency, while community engagement remains performative rather than substantive. These dynamics culminated in pushing through a major governance action (Cardano 2030) with minimal deliberation or community input, raising questions about whether the committee serves its stated coordination function or merely legitimizes predetermined outcomes."
+        }
+      ]
     }
   },
   "stats": {
-    "total_promises": 0,
-    "delivered": 0,
-    "partial": 0,
-    "failed": 0,
+    "total_promises": 12,
+    "delivered": 4,
+    "partial": 1,
+    "failed": 7,
     "recurring": 0,
-    "delivery_rate": 0
+    "delivery_rate": 33
   },
-  "generated": "2026-04-01T00:14:43.871415"
+  "generated": "2026-04-16T18:01:29.017081"
 }

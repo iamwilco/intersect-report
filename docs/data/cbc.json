@@ -34,25 +34,429 @@
       "available": false
     },
     "member_participation": {
-      "available": false
+      "available": true,
+      "header": {
+        "committee": "CBC",
+        "period": "20251006 -> 20260316",
+        "meetings_count": 18,
+        "has_transcripts": false,
+        "generated": "2026-04-16 17:53"
+      },
+      "sections": [
+        {
+          "title": "Committee Composition Analysis",
+          "body": "**Dataset Overview:**\nThe dataset contains 18 meetings from October 6, 2025 to March 16, 2026:\n1. October 6, 2025\n2. October 13, 2025\n3. October 27, 2025\n4. November 3, 2025\n5. November 24, 2025\n6. December 1, 2025\n7. December 8, 2025\n8. December 15, 2025\n9. January 5, 2026\n10. January 12, 2026\n11. January 19, 2026\n12. January 26, 2026\n13. February 2, 2026\n14. February 9, 2026\n15. February 16, 2026\n16. February 23, 2026\n17. March 2, 2026\n18. March 16, 2026\n\n**Committee Transition:**\nThe transcripts reveal a committee transition occurred in late October 2025. From November 3, 2025 meeting: \"Committee elections are on track; results expected in a little over a week following audit and validation.\" The transition appears complete by the November 24, 2025 meeting, which shows a significantly different attendee roster.\n\n**Current Elected/Voting Members (Post-Election):**\nBased on explicit identification in transcripts as voting members:\n- Megan Hess (Chair)\n- Kristijan (Chris) Kowalsky (identified as Chair in multiple meetings)\n- Kriss Baird\n- Nicolas Cerny\n- Rita Mistry (resigned February 9, 2026 per explicit statement)\n- Dimitri (Dynamic Strategies)\n- Jose Velazquez\n- Shunsuke Murasaki\n- Eric Helms (SCATDAO)\n- Ot\u00e1vio Lima\n- Mercy (appears only in first meeting)\n\n**Staff/Non-Voting Attendees:**\n- Lloyd Duhon (Budget Secretary)\n- Simo Simovic (Project Manager, Budget Process)\n- Jack Briggs (Interim Executive Director, Intersect)"
+        },
+        {
+          "title": "Part 1: Attendance Grid",
+          "body": "### Elected Members Attendance\n\n| Member | Oct 6 | Oct 13 | Oct 27 | Nov 3 | Nov 24 | Dec 1 | Dec 8 | Dec 15 | Jan 5 | Jan 12 | Jan 19 | Jan 26 | Feb 2 | Feb 9 | Feb 16 | Feb 23 | Mar 2 | Mar 16 | Rate |\n|--------|-------|---------|---------|--------|---------|--------|--------|---------|--------|---------|---------|---------|--------|--------|---------|---------|--------|---------|------|\n| Megan Hess | P | A | A | A | P | P | P | P | P | P | P | P | P | A | A | P | P | P | 13/18 |\n| Kristijan Kowalsky | A | P | P | P | P | P | P | P | P | P | P | P | P | A | P | P | P | P | 16/18 |\n| Kriss Baird | A | P | P | A | P | P | P | A | A | P | P | P | P | P | P | P | P | P | 14/18 |\n| Nicolas Cerny | A | A | P | P | A | P | P | A | P | P | P | P | P | A | A | P | P | P | 12/18 |\n| Rita Mistry | P | A | P | A | P | P | A | A | P | P | P | A | P | P* | N/A | N/A | N/A | N/A | 10/14 |\n| Dimitri | P | A | A | P | A | P | P | P | P | P | P | P | A | P | A | P | P | P | 13/18 |\n| Jose Velazquez | A | A | P | P | P | P | P | P | A | A | A | A | P | A | A | A | P | A | 8/18 |\n| Shunsuke Murasaki | A | A | P | P | A | P | A | A | A | P | P | A | A | A | A | A | A | A | 5/18 |\n| Eric Helms | A | A | A | A | A | A | P | A | A | A | P | P | P | P | A | P | P | P | 8/18 |\n| Ot\u00e1vio Lima | A | A | A | A | A | A | A | A | P | P | A | P | A | A | A | P | P | P | 6/18 |\n| Mercy | P | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | 1/18 |\n\n*Rita Mistry resigned effective February 9, 2026 (announced during that meeting)\n\n### Notes on Attendance Determination:\n- Presence (P) recorded if name appears in attendee list OR person speaks in transcript\n- Absence (A) recorded if name does not appear at all in meeting record\n- N/A used only for Rita Mistry post-resignation as explicitly stated in transcript"
+        },
+        {
+          "title": "Part 2: Per-Member Deep Analysis",
+          "body": "### Megan Hess (Chair)\n- **Attendance rate:** 13/18 meetings (72%)\n- **Speaking frequency:** Moderate. Speaks when present but often defers to Lloyd for operational matters. Silent in Oct 6 (present but no recorded speech).\n- **Substantive contributions:** \n  - Nov 24: Moved to advance NCL to Board\n  - Dec 1: Called for formal vote procedures\n  - Jan 12: Asked clarifying questions about procedures\n  - Mar 2: Requested clarification on budget approval process\n- **Work between meetings:** No explicit evidence in transcripts\n- **Quality of engagement:** Procedural focus; ensures proper governance but limited strategic input\n- **Accountability:** No specific action items assigned in transcripts\n- **Trajectory:** Flat - consistent procedural leadership without growth\n\n### Kristijan (Chris) Kowalsky\n- **Attendance rate:** 16/18 meetings (89%)\n- **Speaking frequency:** Heavy. Dominant speaker in most meetings attended.\n- **Substantive contributions:**\n  - Oct 13: Stressed importance of avoiding voter fatigue on NCL\n  - Nov 3: Proposed contractual expert committee model\n  - Nov 24: Moved to accept Budget Process Info Action\n  - Dec 1: Raised concerns about NCL timing\n  - Feb 2: Moved to accept BPIA with amendments\n  - Feb 16: Noted UI mockup limitations\n  - Mar 16: Advocated for pushing process start date\n- **Work between meetings:** Explicitly involved in Board engagement (Dec 15)\n- **Quality of engagement:** High value - strategic thinking and practical concerns\n- **Accountability:** Followed through on board communication commitments\n- **Trajectory:** Consistent high performance throughout\n\n### Kriss Baird\n- **Attendance rate:** 14/18 meetings (78%)\n- **Speaking frequency:** Heavy when present. Major contributor to discussions.\n- **Substantive contributions:**\n  - Oct 13: Seconded blog post release motion\n  - Nov 24: Expressed NCL might be too low\n  - Jan 26: Raised concerns about user acceptance testing\n  - Feb 2: Raised need for substantial communications plan\n  - Feb 9: Personnel update - transition from IO to CF\n  - Feb 16: Raised concern about KPI subjectivity\n  - Mar 16: Strongly advocated for comms strategy alignment\n- **Work between meetings:** No explicit evidence\n- **Quality of engagement:** High - brings operational experience and practical concerns\n- **Accountability:** No specific tracked items\n- **Trajectory:** Consistent valuable contributor\n\n### Nicolas Cerny\n- **Attendance rate:** 12/18 meetings (67%)\n- **Speaking frequency:** Heavy when present. Constitutional and governance expertise.\n- **Substantive contributions:**\n  - Oct 27: Explained constitutional timing issues for NCL\n  - Nov 3: Summarized constitutional amendment changes\n  - Jan 5: Flagged NCL constitutional interpretation issues\n  - Jan 12: Initiated formal member offboarding motion\n  - Mar 2: Noted NCL-setting methodology gaps\n  - Mar 16: Raised RACI framework concerns\n- **Work between meetings:** Engaged with Governance Advisory Team (Oct 27)\n- **Quality of engagement:** Very high - critical constitutional expertise\n- **Accountability:** Completed NCL document edits as assigned\n- **Trajectory:** Consistent high-value contributions\n\n### Rita Mistry\n- **Attendance rate:** 10/14 meetings (71% - resigned Feb 9)\n- **Speaking frequency:** Moderate. Finance and template expertise.\n- **Substantive contributions:**\n  - Oct 6: Shared NCL calculation figures\n  - Nov 3: Context on CF treasury practices\n  - Jan 19: Described evolving template approach\n  - Jan 26: Confirmed intent for parallel work\n  - Feb 9: Announced resignation, confirmed handovers complete\n- **Work between meetings:** Extensive template development work referenced\n- **Quality of engagement:** High - brought critical finance expertise\n- **Accountability:** Completed template work as referenced\n- **Trajectory:** Strong contributor until departure\n\n### Dimitri (Dynamic Strategies)\n- **Attendance rate:** 13/18 meetings (72%)\n- **Speaking frequency:** Heavy when present. Financial modeling expertise.\n- **Substantive contributions:**\n  - Oct 6: Agreed on investment approach to NCL\n  - Nov 3: Presented comprehensive NCL modeling\n  - Jan 5: Agreed to update inflow figures\n  - Feb 9: Presented ADA/USD volatility blog post\n  - Feb 23: Suggested NCL sustainability workshops\n  - Mar 16: Suggested market-rate compensation for reviewers\n- **Work between meetings:** Extensive modeling work completed\n- **Quality of engagement:** Very high - substantive analytical contributions\n- **Accountability:** Delivered NCL modeling and volatility analysis\n- **Trajectory:** Consistent high-value technical contributor\n\n### Jose Velazquez\n- **Attendance rate:** 8/18 meetings (44%)\n- **Speaking frequency:** Light. Rarely speaks when present.\n- **Substantive contributions:**\n  - Oct 27: Noted work scheduling challenges\n  - Feb 2: Suggested tying fee to USD value\n  - Dec 8: Questioned absentee member policy\n- **Work between meetings:** No evidence\n- **Quality of engagement:** Minimal - attendance without substantial input\n- **Accountability:** No tracked items\n- **Trajectory:** Declining - decreasing attendance and engagement\n\n### Shunsuke Murasaki\n- **Attendance rate:** 5/18 meetings (28%)\n- **Speaking frequency:** Light to moderate when present.\n- **Substantive contributions:**\n  - Oct 27: Scheduled Blockdaemon meeting\n  - Nov 3: Raised amendment wording concerns\n  - Nov 24: Voted no on NCL citing timing concerns\n  - Jan 12: Facilitated Japanese DRep outreach\n- **Work between meetings:** External stakeholder engagement noted\n- **Quality of engagement:** Moderate - regional perspective valuable\n- **Accountability:** Followed through on Japanese outreach\n- **Trajectory:** Poor attendance undermines potential value\n\n### Eric Helms (SCATDAO)\n- **Attendance rate:** 8/18 meetings (44%)\n- **Speaking frequency:** Light. Limited recorded speech.\n- **Substantive contributions:**\n  - Jan 19: Requested private communication support\n  - Feb 2: Voted on BPIA\n  - Limited other recorded contributions\n- **Work between meetings:** Contributed to Step 3&4 rationale (Jan 19)\n- **Quality of engagement:** Low - minimal documented input\n- **Accountability:** Some evidence of between-meeting work\n- **Trajectory:** Late joiner with minimal impact\n\n### Ot\u00e1vio Lima\n- **Attendance rate:** 6/18 meetings (33%)\n- **Speaking frequency:** Silent in all attended meetings\n- **Substantive contributions:** None recorded in transcripts\n- **Work between meetings:** No evidence\n- **Quality of engagement:** None - pure attendance only\n- **Accountability:** No items tracked\n- **Trajectory:** Non-contributor despite attendance\n\n### Mercy\n- **Attendance rate:** 1/18 meetings (6%)\n- **Speaking frequency:** Silent in only attended meeting\n- **Substantive contributions:** None\n- **Work between meetings:** No evidence\n- **Quality of engagement:** None\n- **Accountability:** None\n- **Trajectory:** Effectively absent from committee"
+        },
+        {
+          "title": "Part 3: Power Dynamics",
+          "body": "**Speaking Time Dominance:**\n1. **Lloyd Duhon** (Secretary) - Dominates nearly every meeting as operational lead\n2. **Kristijan Kowalsky** - Heavy speaker, strategic thinker\n3. **Kriss Baird** - Significant speaking time, operational focus\n4. **Nicolas Cerny** - Constitutional expertise gives weight despite lower attendance\n5. **Dimitri** - Technical presentations command attention when present\n\n**Consistently Sidelined:**\n- **Ot\u00e1vio Lima** - Present but never speaks (6 meetings, zero recorded comments)\n- **Mercy** - Single appearance, no contribution\n- **Eric Helms** - Minimal speaking despite 44% attendance\n\n**Visible Alliances:**\n- Lloyd/Simo/Jack form an operational triad\n- Kristijan/Kriss often align on strategic matters\n- Nicolas operates independently as constitutional expert\n\n**Work vs. Attendance:**\n- **High work output:** Lloyd, Simo, Dimitri, Rita (before resignation)\n- **Meeting-only participation:** Ot\u00e1vio, Mercy, Jose (minimal between-meeting evidence)\n- **Balanced contributors:** Kristijan, Kriss, Nicolas"
+        },
+        {
+          "title": "Part 4: Summary Rankings",
+          "body": "**Most to Least Effective Elected Members:**\n\n1. **Kristijan Kowalsky** - 89% attendance, heavy strategic contributions, board engagement\n2. **Nicolas Cerny** - Constitutional expertise invaluable despite 67% attendance\n3. **Dimitri** - Critical financial modeling, substantive analysis, 72% attendance\n4. **Kriss Baird** - 78% attendance, operational experience, consistent value\n5. **Rita Mistry** (until resignation) - Finance expertise, template work, proper handover\n6. **Megan Hess** - Chair role fulfilled but limited strategic input, 72% attendance\n7. **Jose Velazquez** - 44% attendance, minimal contributions when present\n8. **Shunsuke Murasaki** - 28% attendance undermines regional perspective value\n9. **Eric Helms** - 44% attendance, minimal documented contributions\n10. **Ot\u00e1vio Lima** - 33% attendance, zero speaking record\n11. **Mercy** - 6% attendance, no contributions\n\n**Critical Findings:**\n- Three members (Ot\u00e1vio, Mercy, Eric) show minimal to zero substantive contributions\n- Attendance alone ranges from 89% (Kristijan) to 6% (Mercy)\n- The committee relies heavily on 4-5 active members plus staff for actual work\n- Several members appear to collect stipends without meaningful participation"
+        }
+      ],
+      "members": [
+        {
+          "name": "Megan Hess",
+          "attended": 13,
+          "total": 18,
+          "rate": 72
+        },
+        {
+          "name": "Kristijan Kowalsky",
+          "attended": 16,
+          "total": 18,
+          "rate": 89
+        },
+        {
+          "name": "Kriss Baird",
+          "attended": 14,
+          "total": 18,
+          "rate": 78
+        },
+        {
+          "name": "Nicolas Cerny",
+          "attended": 12,
+          "total": 18,
+          "rate": 67
+        },
+        {
+          "name": "Rita Mistry",
+          "attended": 10,
+          "total": 14,
+          "rate": 71
+        },
+        {
+          "name": "Dimitri",
+          "attended": 13,
+          "total": 18,
+          "rate": 72
+        },
+        {
+          "name": "Jose Velazquez",
+          "attended": 8,
+          "total": 18,
+          "rate": 44
+        },
+        {
+          "name": "Shunsuke Murasaki",
+          "attended": 5,
+          "total": 18,
+          "rate": 28
+        },
+        {
+          "name": "Eric Helms",
+          "attended": 8,
+          "total": 18,
+          "rate": 44
+        },
+        {
+          "name": "Ot\u00e1vio Lima",
+          "attended": 6,
+          "total": 18,
+          "rate": 33
+        },
+        {
+          "name": "Mercy",
+          "attended": 1,
+          "total": 18,
+          "rate": 6
+        }
+      ]
     },
     "leadership_assessment": {
-      "available": false
+      "available": true,
+      "header": {
+        "committee": "CBC",
+        "period": "20251006 -> 20260316",
+        "meetings_count": 18,
+        "has_transcripts": false,
+        "generated": "2026-04-16 17:54"
+      },
+      "sections": [
+        {
+          "title": "CBC Leadership Team Identification",
+          "body": "Based on the transcript evidence, the leadership structure during October 2025 - March 2026 was:\n\n### **Chair: Megan Hess**\n- **Evidence**: Consistently identified as \"Chair\" in meeting minutes starting from 20251027 onwards\n- **Notable**: In 20251006, she is listed as \"Vice Chair\", but by 20251027 and all subsequent meetings, she is explicitly identified as \"Chair\"\n- **Transition**: The transcript does not provide explicit evidence of when or how this transition occurred, but between October 6 and October 27, 2025, Megan Hess moved from Vice Chair to Chair\n\n### **Vice Chair: Position Vacant/Unclear**\n- **Evidence**: After Megan Hess's transition to Chair, no one is explicitly identified as Vice Chair in any transcript\n- The position appears to have been vacant throughout the period under review\n\n### **Secretary: Lloyd Duhon**\n- **Evidence**: Consistently identified as \"Budget Secretary\" (20251006) or \"Secretary\" in all subsequent meetings\n- No change in this role throughout the period"
+        },
+        {
+          "title": "Leadership Performance Analysis",
+          "body": "### Chair - Megan Hess\n\n**Meeting Facilitation**: Mixed effectiveness\n- **Positive**: Called for clarifications when needed (20260202: \"requested clarification on what approval means\")\n- **Negative**: Limited evidence of active facilitation; Lloyd Duhon appears to run most meetings despite Megan being Chair\n- **Evidence**: Lloyd consistently opens meetings and drives agenda (20260105: \"Lloyd opened the first Budget Committee meeting of 2026\")\n\n**Decision-Making**: Adequate but passive\n- Properly seconded motions (20251124: \"Seconded by: Megan Hess\")\n- Participated in votes but rarely initiated proposals\n- Limited evidence of driving strategic decisions\n\n**Strategic Direction**: Minimal\n- No evidence of setting vision or strategic direction\n- Appears to fulfill ceremonial role rather than active leadership\n\n**Power Usage**: Appropriate but underutilized\n- No evidence of overreach or abuse\n- Conversely, no evidence of utilizing Chair authority to drive committee effectiveness\n\n### Vice Chair - Position Vacant\n\nThe absence of a Vice Chair throughout most of the review period represents a **significant governance failure**. No evidence exists of attempts to fill this position after Megan Hess's promotion to Chair.\n\n### Secretary - Lloyd Duhon\n\n**Administrative Execution**: Highly effective\n- Consistently prepared agendas and managed logistics\n- Coordinated with development teams (20260126: \"Lloyd will obtain accurate figures from Thomas Linseth's Treasury tracking tool\")\n- Managed tool development and stakeholder coordination\n\n**Boundary Violations**: Severe and persistent\n- **Acted as de facto Chair**: Opens and runs virtually every meeting\n- **Policy advocacy**: Pushed specific positions on NCL strategy (20251103: \"Lloyd's Position: Budget Process Info Action already references Vision/Mission/KPIs conceptually\")\n- **Brought unauthorized guests**: Multiple instances of guests attending without committee sanction\n- **Contract conflicts**: Used personal contracts for committee work (20260209: \"Video walkthroughs (up to 3/month, covered under Lloyd's contract)\")\n\n**Communication Management**: Effective but overreaching\n- Managed Discord, forums, and external communications\n- However, often spoke on behalf of the committee without explicit authorization"
+        },
+        {
+          "title": "Overall Leadership Assessment",
+          "body": "### Is the committee well-led?\n**No.** The committee suffers from:\n1. An absent/passive Chair who allows the Secretary to run meetings\n2. No Vice Chair for the majority of the period\n3. A Secretary who has effectively usurped the Chair's role while maintaining administrative duties\n\n### Biggest Leadership Failure\nThe **role confusion between Chair and Secretary** represents the most significant failure. Lloyd Duhon operates as Chair, Secretary, spokesperson, and policy advocate simultaneously, while Megan Hess appears to be Chair in name only. This concentration of power in a non-elected administrative role undermines governance principles.\n\n**Evidence of the dysfunction**:\n- 20260112: \"Lloyd opened the meeting, welcomed attendees\" (repeatedly, despite Chair being present)\n- 20251201: \"Lloyd opened the meeting\" (with Megan Hess present as Chair)\n- 20260209: Lloyd announces his own resignation timeline from Rita (a voting member), demonstrating insider knowledge and control\n\n### What would you change?\n1. **Immediate**: Enforce proper role boundaries - the Chair must actually chair meetings\n2. **Fill the Vice Chair position** immediately through proper election\n3. **Separate administrative and governance roles**: The Secretary should manage logistics, not run meetings or advocate policy positions\n4. **Review Lloyd Duhon's multiple contracts** for conflicts of interest\n5. **Establish clear protocols** for guest attendance and require committee approval\n\nThe committee operates more as \"Lloyd Duhon and others\" than as a properly functioning governance body with distributed leadership and clear accountability."
+        }
+      ]
     },
     "promises_vs_reality": {
-      "available": false
+      "available": true,
+      "header": {
+        "committee": "CBC",
+        "period": "20251006 -> 20260316",
+        "meetings_count": 18,
+        "has_transcripts": false,
+        "generated": "2026-04-16 17:55"
+      },
+      "sections": [
+        {
+          "title": "Part 1: The Tracker",
+          "body": "| # | Promise/Commitment | Made by | First promised (date) | Repeated? | Status | Evidence |\n|---|-------------------|---------|---------------------|-----------|---------|----------|\n| 1 | Share NCL calculation figures with CF/treasurer | Rita Mistry | 20251006 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 2 | Communicate committee's consensus (300M NCL) to board | Lloyd Duhon | 20251006 | No | DELIVERED | 20251013: \"board approval was granted on Friday\" |\n| 3 | Finalize 2026 Budget Roadmap one-pager | Simo Simovic | 20251006 | No | NOT DELIVERED | No evidence of one-pager completion |\n| 4 | Prepare 30-60-90 Day Roadmap | Lloyd Duhon | 20251006 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 5 | Share strategic thoughts on NCL with committee this week | Jack Briggs | 20251006 | No | DELIVERED | 20251013: Jack discussed six-month NCL concerns |\n| 6 | Ping Fred Tanaka with Japanese survey | Simo Simovic | 20251006 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 7 | Follow up with Fred on survey distribution | Jack Briggs | 20251006 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 8 | Prepare long-form narrative anchor content | Lloyd Duhon | 20251006 | No | DELIVERED | 20260126: Lloyd confirmed explainer articles produced |\n| 9 | Release budget process blog post | Committee | 20251013 | No | DELIVERED | 20251013: \"motion to release...unanimous approval\" |\n| 10 | Schedule X Spaces and AMA sessions | Lloyd/Simo | 20251013 | No | DELIVERED | 20251027: Event link shared |\n| 11 | Engage Governance Advisory Team | Nicolas | 20251027 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 12 | Blockdaemon meeting Wednesday | Shunsuke | 20251027 | No | NOT DELIVERED | No evidence of outcome |\n| 13 | Update NCL rationale with actual inflows | Lloyd/Simo | 20251201 | Yes (20260105) | DELIVERED | 20260105: Dimitri agreed to provide actual figures |\n| 14 | Update Budget Committee knowledge base | Lloyd/Simo | 20260112 | No | NOT DELIVERED | No evidence of completion |\n| 15 | NCL voting outreach across channels | Lloyd | 20260112 | No | DELIVERED | 20260119: Lloyd reviewed current progress, ~40.38% approval |\n| 16 | Offboard Rajitha and contact runner-ups | Lloyd/Simo | 20260112 | No | NOT DELIVERED | No evidence of completion |\n| 17 | Calculate 12-month moving average exchange rate | Lloyd | 20260216 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 18 | Submit BPIA to board for final approval | Committee/Simo | 20260202 | Yes (20260302) | DELIVERED | 20260302: Simo reported BPIA scheduled for board approval |\n| 19 | Develop working demo of budget tool | Ecclesia team | 20260126 | Yes (20260202, 20260216) | DELIVERED | 20260223: Simo reported preprod environment developed |\n| 20 | Create example \"ideal proposal\" for testing | Committee/Rita | 20260202 | No | NOT DELIVERED | No evidence in subsequent transcripts |\n| 21 | Publish proposal submission form to comms channels | Simo/Lloyd | 20260316 | No | PENDING (near final meeting) | Cannot assess |\n| 22 | Coordinate Wednesday comms plan presentation | Lloyd | 20260316 | No | PENDING (final meeting) | Cannot assess |"
+        },
+        {
+          "title": "Part 2: Concrete Deliverables",
+          "body": "**Documents Published:**\n1. **Budget Process Blog Post** - Approved and released (20251013)\n2. **Net Change Limit (NCL) 2026-27** - Successfully posted on-chain (confirmed 20260112)\n3. **Budget Process Info Action (BPIA)** - Unanimously approved by committee (20260202), submitted to board (20260302)\n\n**Tools and Systems:**\n1. **Ecclesia Budget Tool** - Development confirmed underway (20260126), preprod environment created (20260223)\n2. **X Space Sessions** - Multiple sessions held (links shared 20251027)\n\n**Governance Actions Completed:**\n1. **NCL Vote** - Passed with ~48% approval, went into effect (20260209)\n2. **Committee member offboarding decision** - Unanimous vote to remove Rajitha (20260112)\n3. **Budget Framework approval** - Four work packages unanimously approved (20260302)\n\n**Budget Proposals:**\n1. **Committee Budget 2026-27** - Four initiatives identified and approved:\n   - Facilitate Budget Process 2027\n   - Budget Tooling Updates\n   - Financial Audit of Treasury Withdrawal\n   - Treasury Transparency Initiative Pilot (TTIP)"
+        },
+        {
+          "title": "Part 3: Gap Analysis",
+          "body": "**Total Commitments Tracked:** 22\n- DELIVERED: 9 (41%)\n- NOT DELIVERED: 11 (50%)\n- PENDING: 2 (9%)\n\n**Delivery Rate:** 41% confirmed delivery\n\n**Biggest Failures (Never Delivered Despite Importance):**\n1. 30-60-90 Day Roadmap (Lloyd) - Never produced despite being communication cornerstone\n2. Budget Committee knowledge base update - Despite being \"outdated\" per Nico\n3. Rajitha offboarding execution - Vote passed but no evidence of follow-through\n4. Multiple Japanese community outreach items - Fred Tanaka coordination never confirmed\n\n**Most Reliable Promise-Keepers:**\n1. **Committee as collective** - Major votes and documents generally delivered\n2. **Simo Simovic** - Tool development coordination delivered\n\n**Least Reliable:**\n1. **Lloyd Duhon** - 5 commitments tracked, only 2 confirmed delivered (40%)\n2. **Jack Briggs** - Japanese outreach items not followed through\n\n**Patterns:**\n- **High delivery:** Formal governance actions, board-required documents\n- **Low delivery:** Administrative tasks, community outreach, internal documentation\n- **Mixed:** Tool development (delivered but with delays)"
+        },
+        {
+          "title": "Part 4: Overall Assessment",
+          "body": "**Value Delivered to Cardano:**\n\n**Positive:**\n- Successfully established NCL for 2026-27, preventing treasury freeze\n- Created repeatable budget process framework\n- Developed open-source tooling for proposal submission\n- Established clear budget categories and templates\n\n**Negative:**\n- 50% of commitments not demonstrably delivered\n- Poor follow-through on community engagement (especially non-English)\n- Administrative basics (knowledge base, member management) neglected\n- Communication materials promised but not consistently delivered\n\n**Assessment for DReps:**\n\nThis committee delivers on critical governance requirements but struggles with execution of supporting activities. The 41% delivery rate on tracked commitments is concerning, particularly for administrative and outreach tasks.\n\n**Recommendation:** Continue funding with conditions:\n1. Require quarterly reporting on commitment delivery\n2. Establish clear accountability for administrative tasks\n3. Separate \"must-have\" governance functions from \"nice-to-have\" initiatives\n4. Consider dedicated administrative support rather than relying on volunteer committee members\n\nThe committee successfully prevents governance crises (NCL expiration) and creates needed frameworks, but operational excellence remains elusive. Given the critical nature of budget oversight, continued funding is warranted, but performance improvement measures are essential."
+        }
+      ],
+      "promises": [
+        {
+          "num": 1,
+          "promise": "Share NCL calculation figures with CF/treasurer",
+          "made_by": "Rita Mistry",
+          "first_promised": "20251006",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 2,
+          "promise": "Communicate committee's consensus (300M NCL) to board",
+          "made_by": "Lloyd Duhon",
+          "first_promised": "20251006",
+          "repeated": "No",
+          "status": "delivered",
+          "evidence": "20251013: \"board approval was granted on Friday\""
+        },
+        {
+          "num": 3,
+          "promise": "Finalize 2026 Budget Roadmap one-pager",
+          "made_by": "Simo Simovic",
+          "first_promised": "20251006",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence of one-pager completion"
+        },
+        {
+          "num": 4,
+          "promise": "Prepare 30-60-90 Day Roadmap",
+          "made_by": "Lloyd Duhon",
+          "first_promised": "20251006",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 5,
+          "promise": "Share strategic thoughts on NCL with committee this week",
+          "made_by": "Jack Briggs",
+          "first_promised": "20251006",
+          "repeated": "No",
+          "status": "delivered",
+          "evidence": "20251013: Jack discussed six-month NCL concerns"
+        },
+        {
+          "num": 6,
+          "promise": "Ping Fred Tanaka with Japanese survey",
+          "made_by": "Simo Simovic",
+          "first_promised": "20251006",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 7,
+          "promise": "Follow up with Fred on survey distribution",
+          "made_by": "Jack Briggs",
+          "first_promised": "20251006",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 8,
+          "promise": "Prepare long-form narrative anchor content",
+          "made_by": "Lloyd Duhon",
+          "first_promised": "20251006",
+          "repeated": "No",
+          "status": "delivered",
+          "evidence": "20260126: Lloyd confirmed explainer articles produced"
+        },
+        {
+          "num": 9,
+          "promise": "Release budget process blog post",
+          "made_by": "Committee",
+          "first_promised": "20251013",
+          "repeated": "No",
+          "status": "delivered",
+          "evidence": "20251013: \"motion to release...unanimous approval\""
+        },
+        {
+          "num": 10,
+          "promise": "Schedule X Spaces and AMA sessions",
+          "made_by": "Lloyd/Simo",
+          "first_promised": "20251013",
+          "repeated": "No",
+          "status": "delivered",
+          "evidence": "20251027: Event link shared"
+        },
+        {
+          "num": 11,
+          "promise": "Engage Governance Advisory Team",
+          "made_by": "Nicolas",
+          "first_promised": "20251027",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 12,
+          "promise": "Blockdaemon meeting Wednesday",
+          "made_by": "Shunsuke",
+          "first_promised": "20251027",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence of outcome"
+        },
+        {
+          "num": 13,
+          "promise": "Update NCL rationale with actual inflows",
+          "made_by": "Lloyd/Simo",
+          "first_promised": "20251201",
+          "repeated": "Yes (20260105)",
+          "status": "delivered",
+          "evidence": "20260105: Dimitri agreed to provide actual figures"
+        },
+        {
+          "num": 14,
+          "promise": "Update Budget Committee knowledge base",
+          "made_by": "Lloyd/Simo",
+          "first_promised": "20260112",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence of completion"
+        },
+        {
+          "num": 15,
+          "promise": "NCL voting outreach across channels",
+          "made_by": "Lloyd",
+          "first_promised": "20260112",
+          "repeated": "No",
+          "status": "delivered",
+          "evidence": "20260119: Lloyd reviewed current progress, ~40.38% approval"
+        },
+        {
+          "num": 16,
+          "promise": "Offboard Rajitha and contact runner-ups",
+          "made_by": "Lloyd/Simo",
+          "first_promised": "20260112",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence of completion"
+        },
+        {
+          "num": 17,
+          "promise": "Calculate 12-month moving average exchange rate",
+          "made_by": "Lloyd",
+          "first_promised": "20260216",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 18,
+          "promise": "Submit BPIA to board for final approval",
+          "made_by": "Committee/Simo",
+          "first_promised": "20260202",
+          "repeated": "Yes (20260302)",
+          "status": "delivered",
+          "evidence": "20260302: Simo reported BPIA scheduled for board approval"
+        },
+        {
+          "num": 19,
+          "promise": "Develop working demo of budget tool",
+          "made_by": "Ecclesia team",
+          "first_promised": "20260126",
+          "repeated": "Yes (20260202, 20260216)",
+          "status": "delivered",
+          "evidence": "20260223: Simo reported preprod environment developed"
+        },
+        {
+          "num": 20,
+          "promise": "Create example \"ideal proposal\" for testing",
+          "made_by": "Committee/Rita",
+          "first_promised": "20260202",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "No evidence in subsequent transcripts"
+        },
+        {
+          "num": 21,
+          "promise": "Publish proposal submission form to comms channels",
+          "made_by": "Simo/Lloyd",
+          "first_promised": "20260316",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "Cannot assess"
+        },
+        {
+          "num": 22,
+          "promise": "Coordinate Wednesday comms plan presentation",
+          "made_by": "Lloyd",
+          "first_promised": "20260316",
+          "repeated": "No",
+          "status": "failed",
+          "evidence": "Cannot assess"
+        }
+      ]
     },
     "critical_observations": {
-      "available": false
+      "available": true,
+      "header": {
+        "committee": "CBC",
+        "period": "20251006 -> 20260316",
+        "meetings_count": 18,
+        "has_transcripts": false,
+        "generated": "2026-04-16 17:57"
+      },
+      "sections": [
+        {
+          "title": "Executive Summary",
+          "body": "This report examines six months of Cardano Budget Committee operations, revealing significant governance challenges beneath a veneer of procedural compliance. While the committee successfully delivered key outputs\u2014a Net Change Limit and Budget Process Info Action\u2014the transcripts reveal concerning patterns of concentrated influence, inadequate community representation, and structural conflicts that undermine democratic governance."
+        },
+        {
+          "title": "Governance Red Flags: The Intersect Dominance Pattern",
+          "body": "The most striking governance concern is the pervasive influence of Intersect staff over what should be an independent committee. Jack Briggs, Intersect's Executive Director, appears to shape major decisions despite not being a voting member. On December 1, 2025, Jack reported that \"Board wants a **clearer justification** for the 350M ADA number\" and suggested the Board was \"open to a **higher NCL**.\" The committee immediately pivoted its discussion to accommodate these preferences, with no evidence of pushback or independent analysis.\n\nThis pattern repeats throughout the transcripts. Lloyd Duhon, ostensibly the committee secretary, functions more as Intersect's representative than a neutral facilitator. On January 26, 2026, when discussing development costs, Lloyd stated: \"Development costs will be covered by **Intersect's budget**.\" This casual assumption that Intersect controls funding decisions reveals how deeply the organization has captured the committee's operations.\n\nThe February 9, 2026 meeting provides the clearest evidence of inappropriate influence. When Rita Mistry announced her resignation, the discussion immediately shifted to how Intersect staff would handle the transition. No committee member questioned why Intersect staff were managing what should be a committee-driven process."
+        },
+        {
+          "title": "Cultural Dynamics: Performative Governance",
+          "body": "The committee exhibits a troubling pattern of performative governance\u2014going through motions of democratic decision-making while real power lies elsewhere. The November 24, 2025 vote on the NCL illustrates this perfectly. Despite Kriss Baird expressing that \"350M ADA may be **too low**\" and Murasaki voting against the proposal due to timing concerns, the committee rushed to approval. Lloyd's response to dissent was telling: \"another NCL can always be introduced later if needed\"\u2014effectively dismissing concerns rather than addressing them.\n\nThis rush to consensus appears repeatedly. On February 2, 2026, when voting on the Budget Process Info Action, Kriss Baird explicitly stated he would vote \"**no today** because edits were still being made live.\" Yet minutes later, he voted yes after minimal discussion. This suggests members feel pressure to conform despite reservations.\n\nThe committee's reaction to external criticism further reveals this dynamic. When Utah questioned NCL rationale language on social media, Nico Cerny's response was revealing: \"The committee should not overreact to individual DRep preferences; not every comment requires major concession\" (January 12, 2026). This dismissive attitude toward community feedback contradicts the committee's stated commitment to transparency and engagement."
+        },
+        {
+          "title": "Information Asymmetry: The Knowledge Gap",
+          "body": "A severe information imbalance exists between Intersect insiders and other committee members. On October 27, 2025, Nicolas Cerny shared detailed voting stake data and reporting tools that other members clearly lacked access to. He casually mentioned \"**67% active voting stake threshold:** ~21 DReps required\" while other members scrambled to understand basic voting mechanics.\n\nThis asymmetry extends to financial information. During the November 3, 2025 meeting, Giorgio Zanetti from Cardano Foundation revealed that CF \"has its **own treasury** diversified across ADA, Bitcoin, stocks, and bonds\" with sophisticated modeling\u2014information that surprised committee members who were struggling with basic NCL calculations.\n\nMost concerning is the pattern of last-minute information disclosure. Critical documents appear days or hours before votes, preventing meaningful review. The February 16, 2026 meeting exemplifies this, with Lorenzo Bruno presenting major changes to the proposal system while acknowledging the form hadn't been fully tested: \"the first implementation prototype from Matt Orchestra and Adam Dean teams is expected this week.\""
+        },
+        {
+          "title": "External Influence: The Founding Entities' Shadow",
+          "body": "The founding entities\u2014IOG, Cardano Foundation, and Emurgo\u2014maintain disproportionate influence despite Cardano's supposed decentralization. The December 1, 2025 discussion of the Critical Integrations Budget reveals how these entities coordinate behind the scenes. Jack Briggs described it as a \"**joint effort** involving: Founding entities, Intersect, Midnight\"\u2014presenting a fait accompli to the committee.\n\nWhen discussing Treasury management on November 3, 2025, the conversation repeatedly deferred to founding entity preferences. Lloyd suggested establishing a working group with \"Representatives from **founding entities**, IO, CF, Midnight, major service providers.\" This perpetuates centralized control under the guise of stakeholder consultation.\n\nThe January 26, 2026 meeting provides perhaps the clearest example. When Christina Gianelloni (from Pragma) offered practical insights about vendor contingency planning, her expertise was welcomed precisely because she represented an established ecosystem player. New voices without such credentials remain effectively excluded."
+        },
+        {
+          "title": "Tool and Process Dysfunction: Technology as Barrier",
+          "body": "The committee's reliance on hastily developed tools creates significant barriers to participation. The Budget Process Info Action approved on February 2, 2026 depends entirely on the Ecclesia platform\u2014a tool that, as of February 16, hadn't been tested with real proposals. Kriss Baird's concern was prescient: \"No fully loaded, granular proposal had been tested through the UI.\"\n\nThe authentication requirements compound this problem. Proposals must include a \"**Transaction hash** proving treasury fee payment\" with the \"Same wallet used for fee payment must authenticate into the tool\" (February 23, 2026). This technical barrier effectively excludes participants without sophisticated crypto knowledge, concentrating power among existing players.\n\nMost troubling is the committee's casual acceptance of untested technology. When Lorenzo Bruno presented the proposal system on February 16, 2026, he acknowledged \"the current UI mockup is AI-generated and not yet a fully functional program.\" Yet the committee proceeded as if this were a minor detail rather than a fundamental risk to the entire process."
+        },
+        {
+          "title": "Recurring Themes: The Volatility Excuse",
+          "body": "ADA price volatility emerges repeatedly as an excuse for inaction or conservative approaches. The February 9, 2026 meeting devoted significant time to Dimitri's volatility analysis, with implied volatility \"approximately 70% annually.\" While price risk is real, the committee uses it to justify maintaining status quo power structures.\n\nThis volatility narrative serves multiple purposes: it justifies conservative NCL limits, excuses vendor failures, and rationalizes why only well-capitalized entities can participate. Abbie Yeates revealed on February 9 that \"vendors initially budgeted at 50 cents per ADA and are now experiencing approximately 50% loss.\" Rather than addressing this systemic issue, the committee's response was to require vendors to include larger contingency buffers\u2014further advantaging established players."
+        },
+        {
+          "title": "Member Dynamics: The Active Few and Silent Many",
+          "body": "A clear hierarchy exists within the committee. Lloyd Duhon and Kristijan Kowalsky dominate discussions, while several elected members remain largely silent. Jose Velazquez, despite attending multiple meetings, rarely contributes substantively. On October 27, 2025, Jose noted \"challenges joining at this time due to work\"\u2014yet continued attending without participating, suggesting obligation rather than engagement.\n\nThe treatment of Rajitha Vikramasan is particularly revealing. Despite being elected in May 2025, Rajitha never attended a single meeting. Not until January 12, 2026\u2014eight months later\u2014did the committee formally address this absence. Lloyd's explanation was damning: \"Rajitha is a voting member and has been contacted repeatedly with **no response**, including stipend outreach.\"\n\nThis suggests some members view committee positions as resume builders rather than working roles, while the committee lacks mechanisms to ensure accountability."
+        },
+        {
+          "title": "Cross-Committee Coordination: Silos and Dependencies",
+          "body": "The transcripts reveal poor coordination between committees, creating bottlenecks and confusion. The Budget Committee repeatedly found itself waiting on other committees' outputs. On January 19, 2026, Rita asked about \"Product Committee roadmap/strategy timelines,\" to which Lloyd could only offer that it \"impacts launching the budget process itself, but does **not block** socializing.\"\n\nThis dependency chain\u2014Budget waiting on Product, Product waiting on Technical, Technical waiting on Constitutional\u2014creates a governance gridlock that Intersect staff exploit to maintain control. When formal processes stall, informal power structures fill the vacuum."
+        },
+        {
+          "title": "Budget and Resources: Following the Money",
+          "body": "The committee's approach to budgeting reveals troubling priorities. The March 2, 2026 discussion of the committee's own budget is illuminating. Lloyd stated they should target \"between **100,000-300,000 ADA**\" for basic operations, yet simultaneously discussed allocating resources for vague initiatives like \"Treasury Transparency Initiative Pilot (TTIP)\" without clear deliverables.\n\nMore concerning is the revelation that development costs flow through opaque channels. The February 23, 2026 meeting notes \"Development costs will be covered by **Intersect's budget**\" for the Ecclesia tool, yet the pricing was \"still being confirmed\" and subject to \"confidentiality clearance.\" This lack of transparency about resource allocation contradicts the committee's stated oversight role."
+        },
+        {
+          "title": "Community Engagement: The Illusion of Openness",
+          "body": "While the committee conducts various \"engagement\" activities\u2014X Spaces, forum posts, translations\u2014these serve more as broadcast channels than genuine dialogue. The December 15, 2025 shift to \"Contributor-style meetings\" is telling. Lloyd explained: \"Only **contributors** can participate actively unless elevated by hosts.\" This creates a two-tier system where community members can watch but not meaningfully participate.\n\nThe treatment of community feedback further reveals this dynamic. When discussing proposal fees on February 2, 2026, Lloyd noted \"DReps have consistently requested a **proposal fee**\" ranging from \"**500 ADA**, **1000 ADA**\" to even \"**50,000\u2013100,000 ADA deposits**.\" Rather than questioning why DReps want to create barriers to participation, the committee simply implemented fees, excluding smaller participants."
+        },
+        {
+          "title": "Critical Patterns: Democracy Theater",
+          "body": "The totality of evidence reveals the Cardano Budget Committee as an example of \"democracy theater\"\u2014maintaining procedural appearances while substantive power remains concentrated among Intersect staff and founding entities. Key decisions arrive pre-made from board rooms and private conversations. Committee members largely rubber-stamp these decisions after performative debate.\n\nThe November 3, 2025 discussion of treasury management crystallizes this dynamic. While committee members engaged in sophisticated discussion about sovereign wealth fund models and investment strategies, Jack Briggs had already framed the acceptable boundaries: \"Board had previously indicated interest in a **temporary NCL**.\" The committee's \"independent\" analysis conveniently aligned with these pre-set parameters.\n\nThis pattern\u2014sophisticated discussion leading to predetermined outcomes\u2014repeats throughout the transcripts. It suggests committee members understand their role: provide intellectual cover for decisions made elsewhere while maintaining the fiction of decentralized governance."
+        },
+        {
+          "title": "Conclusion: Structural Capture",
+          "body": "The Cardano Budget Committee exhibits signs of structural capture by Intersect and founding entities. While individual committee members appear competent and well-intentioned, they operate within constraints that predetermine outcomes. The rush to implement complex processes with untested tools, the exclusion of dissenting voices, and the concentration of real decision-making power among unelected staff all point to a governance system designed to appear democratic while preserving existing power structures.\n\nMost troubling is how normalized these patterns have become. Committee members no longer question why Intersect staff shape agendas, why founding entities receive special consideration, or why community feedback is systematically minimized. The system perpetuates itself through a combination of technical barriers, information asymmetry, and social pressure to maintain consensus.\n\nUntil these structural issues are addressed\u2014through genuine independence, transparent resource allocation, and meaningful community participation\u2014the Cardano Budget Committee will remain a sophisticated example of governance theater rather than genuine democratic oversight."
+        }
+      ]
     }
   },
   "stats": {
-    "total_promises": 0,
-    "delivered": 0,
+    "total_promises": 22,
+    "delivered": 9,
     "partial": 0,
-    "failed": 0,
+    "failed": 13,
     "recurring": 0,
-    "delivery_rate": 0
+    "delivery_rate": 41
   },
-  "generated": "2026-04-16T02:11:19.552307"
+  "generated": "2026-04-16T18:01:29.025200"
 }

@@ -1,13 +1,13 @@
 {
   "committee": "CCC",
-  "full_name": "Cardano Civics Committee",
+  "full_name": "Constitution & Civics Committee",
   "period": {
     "start": "20251127",
-    "end": "20260319"
+    "end": "20260409"
   },
-  "meetings_count": 12,
-  "summary_count": 12,
-  "transcript_count": 12,
+  "meetings_count": 14,
+  "summary_count": 14,
+  "transcript_count": 14,
   "has_transcripts": true,
   "dates": [
     "20251127",
@@ -21,7 +21,9 @@
     "20260226",
     "20260303",
     "20260312",
-    "20260319"
+    "20260319",
+    "20260326",
+    "20260409"
   ],
   "reports": {
     "summaries_vs_transcripts": {
@@ -48,5 +50,5 @@
     "recurring": 0,
     "delivery_rate": 0
   },
-  "generated": "2026-04-01T00:14:43.874964"
+  "generated": "2026-04-16T18:01:29.023120"
 }
