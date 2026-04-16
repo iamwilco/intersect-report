@@ -1,182 +1,204 @@
 # Member Participation Analysis
 
 **Committee:** TSC  
-**Period:** 20251001 -> 20260325  
-**Meetings:** 23  
+**Period:** 20251119 -> 20260415  
+**Meetings:** 20  
 **Transcripts available:** Yes  
-**Generated:** 2026-03-31 22:48  
+**Generated:** 2026-04-16 17:26  
 
 ---
 
-# TECHNICAL STEERING COMMITTEE (TSC) UNIFIED PARTICIPATION ANALYSIS
-## October 2025 - March 2026
+# Technical Steering Committee Unified Participation Analysis
 
-### EXECUTIVE SUMMARY
+## Executive Summary
 
-This analysis examines TSC performance across 23 meetings from October 1, 2025 to March 25, 2026. The dataset reveals a committee transition in mid-November 2025, with elections concluding November 7 and new members starting November 19. Of 14 members who served during this period, only 5 consistently delivered high-value contributions. Three members provided minimal to no value despite holding voting seats.
+This analysis covers TSC participation across 20 meetings from November 19, 2025 to April 15, 2026. The dataset reveals a committee transition after the first meeting, with 10 members elected for the new term. Performance varies dramatically, from exemplary participation by Kevin Hammond and Leandros Holleman (100% attendance) to complete failure by Seungheon Oh (0% attendance).
 
-### COMMITTEE COMPOSITION
+## Dataset and Committee Composition
 
-**Pre-Election Committee (October 1 - November 5, 2025):**
-- 10 voting members served through 6 meetings
-- Clear evidence of transition: November 5 meeting discusses "committee elections" with "voting from October 27th to November 7th"
+### Meeting Coverage
+The analysis covers 20 weekly meetings:
+- Meeting 1: November 19, 2025 (outgoing committee)
+- Meetings 2-20: November 26, 2025 through April 15, 2026 (new committee)
 
-**Post-Election Committee (November 19, 2025 - March 25, 2026):**
-- 10 elected positions, 1 vacant from December 17 onwards
-- Election results announced November 19: "Tex, the TSC secretary, confirmed the re-election of Kevin and the election of Ryan, Udai, Leandro (Leo), and Seung"
-- Terms: Kevin Hammond, Ryan Wiley, Udai Solanki, Leandros Holleman, Seungheon Oh (October 2026); Nicolas Biri, Duncan Coutts, Sebastian Nagel, Neil Davies, Alexander Moser (April 2026)
+### Committee Transition
+A committee transition occurred between meetings 1 and 2. Evidence from meeting 20251119:
+- Terence: "Kevin Hammond who has been reelected of course. we are joined now by Ryan Uday Leandro or Leo who we have here and Seungheon Oh as well who was with us last week. so they have all been elected to the committee for the next year"
+- Kevin: "thank you everyone who is leading the committee who has served so diligently over the last 12 months"
 
-**Non-Voting Support:**
-- Terence 'Tex' McCutcheon (Secretary)
-- Bosko Majdanac (Secretary)
-- Lorenzo Bruno (Secretary)
-- Christian Taylor (Community)
+### Current Committee Members (Meetings 2-20)
+**Elected/Voting Members:**
+1. Kevin Hammond (Chair, continuing from previous term)
+2. Nicolas Biri (continuing)
+3. Duncan Coutts (continuing)
+4. Sebastian Nagel (continuing)
+5. Neil Davies (continuing)
+6. Alexander Moser (continuing)
+7. Ryan Wiley (new)
+8. Udai Solanki (new)
+9. Leandros Holleman (new)
+10. Seungheon Oh (new - seat became vacant)
 
-### ATTENDANCE ANALYSIS
+**Non-voting Staff:**
+- Bosko Majdanac (Secretary, Intersect Staff)
+- Terence "Tex" McCutcheon (Alt-Secretary, Intersect Staff)
 
-**Pre-Election Period (6 meetings):**
+**Note:** Meeting 20260107 mentions "one member needs to step away due to personal commitments." The committee operated with 9 voting members from approximately February 2026 onward.
 
-| Member | Meetings Attended | Rate |
-|--------|------------------|------|
-| Neil Davies | 6/6 | 100% |
-| Jonathan Kelly | 5/6 | 83% |
-| Sebastian Nagel | 5/6 | 83% |
-| Duncan Coutts | 4/6 | 67% |
-| Markus Gufler | 4/6 | 67% |
-| Nicolas Biri | 3/6 | 50% |
-| Benjamin Hart | 3/6 | 50% |
-| Adam Dean | 2/6 | 33% |
-| Alexander Moser | 2/6 | 33% |
-| Kevin Hammond | 1/6 | 17% |
+## Unified Attendance Analysis
 
-**Post-Election Period (17 meetings):**
+### Full Period Attendance (Meetings 2-20)
 
-| Member | Meetings Attended | Rate |
-|--------|------------------|------|
-| Kevin Hammond | 17/17 | 100% |
-| Neil Davies | 17/17 | 100% |
-| Ryan Wiley | 17/17 | 100% |
-| Leandros Holleman | 17/17 | 100% |
-| Sebastian Nagel | 16/17 | 94% |
-| Nicolas Biri | 15/17 | 88% |
-| Alexander Moser | 13/17 | 76% |
-| Duncan Coutts | 13/17 | 76% |
-| Udai Solanki | 11/17 | 65% |
-| Seungheon Oh | 4/17 | 24% |
+| Member | Total Meetings | Present | Absent | Attendance Rate |
+|--------|---------------|---------|--------|-----------------|
+| Kevin Hammond | 19 | 18 | 1 | 94.7% |
+| Leandros Holleman | 19 | 19 | 0 | 100% |
+| Neil Davies | 19 | 18 | 1 | 94.7% |
+| Ryan Wiley | 19 | 15 | 4 | 78.9% |
+| Nicolas Biri | 19 | 13 | 6 | 68.4% |
+| Sebastian Nagel | 19 | 16 | 3 | 84.2% |
+| Alexander Moser | 19 | 13 | 6 | 68.4% |
+| Udai Solanki | 19 | 9 | 10 | 47.4% |
+| Duncan Coutts | 19 | 8 | 11 | 42.1% |
+| Seungheon Oh | 19* | 0 | 19 | 0% |
 
-### INDIVIDUAL MEMBER ANALYSIS
+*Seungheon Oh's seat became vacant during the period
 
-**TOP PERFORMERS**
+## Individual Performance Analysis
 
-**1. Neil Davies**
-- **Attendance:** 23/23 meetings (100%)
-- **Contributions:** Technical excellence throughout. October 15: "raised critical concerns about parameter change tooling and SPO voting requirements." November 26: Led "chain partition forensic working group." February 25: "Linear Leios risk assessment"
-- **Work Between Meetings:** Constitution v2.4 technical review, forensic working group participation
-- **Trajectory:** Consistent technical leadership
+### 1. Kevin Hammond (Chair) - 94.7% Attendance
+**Substantive Contributions:**
+- Led TSC operational budget development (20251217, 20260107, 20260114, 20260204)
+- Conducted technical review of Constitution v2.4 (February 2026 meetings)
+- Coordinated chain incident response and van Rossem hard fork planning
+- Drafted goals and objectives document (20260121)
 
-**2. Kevin Hammond (Chair)**
-- **Attendance:** 18/23 meetings (78% overall, 100% post-election)
-- **Pre-election:** Only 1/6 meetings attended
-- **Post-election:** Complete transformation - 17/17 meetings, effective leadership
-- **Contributions:** December onwards: TSC operational budget development, Constitution review leadership, hard fork coordination
-- **Trajectory:** Dramatic improvement post-election
+**Quality:** Exemplary leadership, strategic direction, and technical depth
+**Accountability:** Excellent - follows through on all chair responsibilities
+**Between-meeting work:** Extensive - budget drafting, executive coordination, constitutional review
 
-**3. Sebastian Nagel**
-- **Attendance:** 21/23 meetings (91%)
-- **Contributions:** October 15: "Volunteered to compile annual report using AI tools" (delivered). February 25, March 4: "Linear Leios progress updates and risk management"
-- **Work Between Meetings:** Annual report compilation, CIP 164 work, Leios development
-- **Trajectory:** Consistent technical depth
+### 2. Leandros Holleman - 100% Attendance
+**Substantive Contributions:**
+- Created and refined 2030 Vision KPI framework (20260107, 20260114, 20260128, February meetings)
+- Set specific targets: 15% protocol revenue improvement, $3B TVL (main), $9B TVL (stretch)
+- Coordinated with IOG researchers on chain quality metrics
+- Led Product Committee KPI critique
 
-**4. Leandros Holleman**
-- **Attendance:** 17/17 post-election meetings (100%)
-- **Contributions:** Led 2030 Vision KPI development across multiple meetings (January 14, 21, February 4, 11, 18). Created "comprehensive KPI targets document with quarterly breakdown"
-- **Work Between Meetings:** Extensive stakeholder engagement, document preparation
-- **Trajectory:** Strong new member performance
+**Quality:** High-value focused contributions in KPI domain
+**Accountability:** Excellent - delivered all KPI commitments
+**Between-meeting work:** Significant document refinement and cross-committee coordination
 
-**5. Ryan Wiley**
-- **Attendance:** 17/17 post-election meetings (100%)
-- **Contributions:** February 4: "Led K-parameter analysis with stake pool math." February 25: "Created on-chain survey tool for CIP prioritization." Also authored "DRep compensation paper" and "Net Change Limit CIP proposal"
-- **Work Between Meetings:** Extensive math analysis, proposal writing, tool development
-- **Trajectory:** Exceptional new member
+### 3. Neil Davies - 94.7% Attendance
+**Substantive Contributions:**
+- Technical analysis on chain incident (20251126, 20251203)
+- Raised critical Plutus cost model concerns (March 2026)
+- Identified constitutional issues in v2.4 (20260225)
+- Led KPI framework discussion: "aspirations, requirements, execution and assurance" (20260121)
+- Chaired meeting in Kevin's absence (20260128)
 
-**MIDDLE PERFORMERS**
+**Quality:** Exceptionally high - provides crucial technical oversight and challenges poor decisions
+**Accountability:** Good, though some delays noted
+**Between-meeting work:** Active in working groups and constitutional review
 
-**6. Alexander Moser**
-- **Attendance:** 15/23 meetings (65%)
-- **Contributions:** October 1: "Formal proposal for Plutus parameter update." Led successful "SPO outreach coordination" for parameter changes
-- **Work Between Meetings:** Parameter committee liaison work, SPO and exchange outreach
-- **Trajectory:** Sporadic but impactful when present
+### 4. Ryan Wiley - 78.9% Attendance
+**Substantive Contributions:**
+- K-parameter analysis and stake pool mathematics (20260114, 20260121, 20260128)
+- Drafted DRep compensation paper with "Exclude K, Pay N" model (March 2026)
+- Developed on-chain survey tool for CIP prioritization
+- Presentation on lowering minPoolCost to 75 (20260114)
 
-**7. Duncan Coutts**
-- **Attendance:** 17/23 meetings (74%)
-- **Speaking Frequency:** Light - rarely speaks even when present
-- **Contributions:** October 8: "Technical analysis of Leios waste work and delays." Limited other concrete contributions
-- **Trajectory:** Declining engagement despite attendance
+**Quality:** High - data-driven, innovative governance solutions
+**Accountability:** Delivers detailed analyses when promised
+**Between-meeting work:** Extensive analysis work, script development
 
-**8. Nicolas Biri**
-- **Attendance:** 18/23 meetings (78%)
-- **Pre-election:** 3/6 meetings, minimal engagement
-- **Post-election:** 15/17 meetings, improved attendance
-- **Contributions:** Acted as "boundary enforcer for committee scope," pushed back on TSC overreach
-- **Trajectory:** Improved post-election but limited impact
+### 5. Sebastian Nagel - 84.2% Attendance
+**Substantive Contributions:**
+- Annual report compilation (20251119)
+- Comprehensive Linear Leios updates (March-April 2026)
+- Reported EBS relay prototype development
+- Identified "storm" threats in Leios (625MB worst case)
+- Led Layer 2 working group discussions
 
-**UNDERPERFORMERS**
+**Quality:** Very high technical depth, especially on Leios
+**Accountability:** Excellent on technical deliverables
+**Between-meeting work:** Extensive Leios development leadership
 
-**9. Udai Solanki**
-- **Attendance:** 11/17 post-election meetings (65%)
-- **Speaking Frequency:** Minimal - January 28: admitted being "very new" and unable to contribute
-- **Contributions:** January 28: "Offered developer team resources" - only substantive contribution recorded
-- **Trajectory:** Declining attendance, minimal engagement
+### 6. Nicolas Biri - 68.4% Attendance
+**Substantive Contributions:**
+- GitHub Health Files proposal (20251203)
+- Challenged TSC scope on constitutional review (February 2026)
+- Opposed budget line items: "I'm totally opposed to this part of the budget" (20260204)
+- Advocated for remote-first workshops and election neutrality
 
-**10. Seungheon Oh**
-- **Attendance:** 4/17 post-election meetings (24%)
-- **Speaking Frequency:** Zero - never spoke in any attended meeting
-- **Contributions:** None identified
-- **Impact:** Position left vacant from December 17: "Empty Seat (noted from December 17 onwards)"
-- **Trajectory:** Complete failure to participate
+**Quality:** High when engaged - provides important contrarian perspectives
+**Accountability:** Adequate on IOG-related items
+**Between-meeting work:** IOG coordination
 
-**PRE-ELECTION ONLY MEMBERS**
+### 7. Alexander Moser - 68.4% Attendance
+**Substantive Contributions:**
+- Led parameter update voting campaign (February 2026)
+- Coordinated Plutus cost model governance actions
+- Managed K=1000 and minPoolCost discussions
+- SPO voting analysis and outreach
 
-- **Jonathan Kelly:** 5/6 meetings, delivered disaster recovery fire drill
-- **Markus Gufler:** 4/6 meetings, CF coordination work
-- **Benjamin Hart:** 3/6 meetings, minimal contributions
-- **Adam Dean:** 2/6 meetings, limited Vice Chair effectiveness
+**Quality:** High - effective bridge between technical and governance
+**Accountability:** Excellent on parameter committee items
+**Between-meeting work:** Extensive parameter committee leadership
 
-### POWER DYNAMICS
+### 8. Udai Solanki - 47.4% Attendance
+**Substantive Contributions:**
+- Offered team resources at no cost (20260128)
+- Advocated for increased security budget to $100k (March 2026)
+- Proposed commissioned technical reports
+- Expressed learning curve: "I'm still learning and I'm not able to contribute much" (20260128)
 
-**Dominant Voices:**
-- Neil Davies "consistently dominates technical discussions with deep expertise"
-- Kevin Hammond "dominates procedurally as Chair (post-election)"
-- Sebastian Nagel "frequently leads technical topics"
-- Ryan Wiley emerged as major technical contributor post-election
+**Quality:** Limited but practical suggestions when engaged
+**Accountability:** Minimal commitments made
+**Between-meeting work:** No evidence
 
-**Work Distribution:**
-The analysis reveals severe work concentration:
-- Heavy contributors: Neil Davies, Kevin Hammond, Sebastian Nagel, Ryan Wiley, Leandros Holleman
-- Moderate contributors: Alexander Moser (when present)
-- Minimal contributors: Duncan Coutts, Nicolas Biri, Udai Solanki, Seungheon Oh
+### 9. Duncan Coutts - 42.1% Attendance
+**Substantive Contributions:**
+- Nested transactions technical discussion (20251119)
+- Chain incident root cause analysis insights (20251203)
+- Minimal contributions in later meetings
 
-### CRITICAL FINDINGS
+**Quality:** High technical quality in early meetings, then disengagement
+**Accountability:** Poor due to attendance
+**Between-meeting work:** No evidence
+**Trajectory:** Sharp decline - present early, then largely absent
 
-1. **Leadership Transformation:** Kevin Hammond's attendance improved from 17% pre-election to 100% post-election, demonstrating accountability to electoral mandate
+### 10. Seungheon Oh - 0% Attendance
+**Substantive Contributions:** None
+**Quality:** Complete non-participation
+**Accountability:** Total failure to fulfill committee obligations
+**Note:** Seat became vacant during the period
 
-2. **Dead Weight:** Seungheon Oh attended only 4/17 meetings (24%) and never spoke, effectively abandoning an elected position. The committee operated with a vacant 11th seat from December 17 onwards
+## Power Dynamics and Work Distribution
 
-3. **Silent Attendance:** Multiple members (Duncan Coutts, Udai Solanki) regularly attend but rarely contribute substantively
+### Dominant Voices
+- **Kevin Hammond** and **Neil Davies** form an effective leadership duo
+- **Sebastian Nagel** dominates technical discussions on Leios
+- **Alexander Moser** leads parameter governance discussions
+- **Ryan Wiley** emerging as influential through data-driven contributions
 
-4. **New Member Success:** Two new members (Ryan Wiley, Leandros Holleman) immediately became top contributors with 100% attendance and substantial work output
+### Work Distribution
+**Heavy Lifters (5):** Kevin Hammond, Leandros Holleman, Neil Davies, Ryan Wiley, Sebastian Nagel
+**Moderate Contributors (2):** Nicolas Biri, Alexander Moser
+**Minimal Contributors (2):** Udai Solanki, Duncan Coutts
+**Non-Contributors (1):** Seungheon Oh
 
-5. **Effective Size:** Despite 10-11 positions, only 5-7 members consistently provide value. The committee "would function equally well as a 7-person body"
+### Critical Finding
+One seat (Seungheon Oh) provided zero value throughout the entire period, representing 10% of the committee's voting power being effectively vacant. Combined with sporadic attendance from Duncan Coutts and Udai Solanki, approximately 30% of the committee's capacity was underutilized.
 
-### FINAL RANKINGS
+## Final Rankings
 
-1. **Neil Davies** - 100% attendance, exceptional technical contributions throughout
-2. **Ryan Wiley** - 100% post-election attendance, outstanding new member performance
-3. **Kevin Hammond** - Transformed leadership post-election, 100% attendance as Chair
-4. **Sebastian Nagel** - 91% attendance, consistent technical excellence
-5. **Leandros Holleman** - 100% post-election attendance, owns KPI workstream
-6. **Alexander Moser** - 65% attendance but high-impact parameter work
-7. **Nicolas Biri** - Improved post-election, boundary-setting value
-8. **Duncan Coutts** - Shows up but minimal contributions
-9. **Udai Solanki** - Poor attendance, admitted inability to contribute
-10. **Seungheon Oh** - 24% attendance, zero contributions, abandoned position
+1. **Leandros Holleman** - 100% attendance, delivered critical KPI framework
+2. **Kevin Hammond** - 94.7% attendance, exemplary chair leadership
+3. **Neil Davies** - 94.7% attendance, essential technical oversight
+4. **Ryan Wiley** - 78.9% attendance, innovative governance contributions
+5. **Sebastian Nagel** - 84.2% attendance, Leios technical leadership
+6. **Alexander Moser** - 68.4% attendance, effective parameter governance
+7. **Nicolas Biri** - 68.4% attendance, valuable contrarian voice
+8. **Udai Solanki** - 47.4% attendance, minimal contributions
+9. **Duncan Coutts** - 42.1% attendance, early engagement then absence
+10. **Seungheon Oh** - 0% attendance, complete failure to participate

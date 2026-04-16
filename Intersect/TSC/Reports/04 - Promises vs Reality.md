@@ -1,154 +1,121 @@
 # Promises vs. Reality — Achievement Audit
 
 **Committee:** TSC  
-**Period:** 20251001 -> 20260325  
-**Meetings:** 23  
+**Period:** 20251119 -> 20260415  
+**Meetings:** 20  
 **Transcripts available:** Yes  
-**Generated:** 2026-03-31 22:48  
+**Generated:** 2026-04-16 17:31  
 
 ---
 
-# CARDANO TECHNICAL STEERING COMMITTEE - UNIFIED ACCOUNTABILITY REPORT
-## October 2025 - March 2026
+# Technical Steering Committee Consolidated Accountability Report
 
-## Executive Summary
+## Part 1: Unified Commitment Tracker
 
-The Technical Steering Committee (TSC) demonstrates mixed performance with a **53-57% delivery rate** on tracked commitments. While delivering critical technical infrastructure and governance decisions, the committee struggles with administrative follow-through, internal governance, and sustained coordination efforts.
+| # | Promise/Commitment | Made by | First promised | Status | Evidence |
+|---|-------------------|---------|----------------|---------|-----------|
+| 1 | Produce annual report for TSC activities | Kevin Hammond | 2025-11-19 | DELIVERED | 2025-11-26 - Sebastian submitted compiled report |
+| 2 | Provide document on nested transactions concerns | Michele Nuzzi | 2025-11-19 | DELIVERED | 2025-11-26 - Bosko confirms response sent |
+| 3 | Create TSC X account and organize communications | Bosko Majdanac | 2025-11-19 | DELIVERED | TSC account operational by 2025-12-17 |
+| 4 | Complete Chain Incident Partition Report | Working Group | 2025-11-26 | DELIVERED | 2026-02-04 - Kevin confirms "report is concluded" |
+| 5 | Submit van Rossem naming governance action | Ryan Williams | 2025-12-17 | DELIVERED | 2026-01-07 - "submitted on-chain" |
+| 6 | Schedule parameter committee meetings | Alex | 2025-12-03 | DELIVERED | Multiple meetings held, confirmed 2026-01-14 |
+| 7 | Calculate stake pool math for K=1000 | Ryan C | 2026-01-21 | DELIVERED | 2026-02-04 - Full analysis presented |
+| 8 | Contact Carlos about incentive report timeline | Nicolas | 2026-01-28 | DELIVERED | 2026-02-04 - "I chatted with Carlos" |
+| 9 | Submit Plutus cost model parameter update | Parameter Committee | 2026-01-21 | DELIVERED | Enacted on Preview, confirmed 2026-04-15 |
+| 10 | Draft TSC Operational Budget | Kevin Hammond | 2025-12-10 | DELIVERED | Budget submitted April 13, 2026 (~$400,000) |
+| 11 | Check Plutus Core version for hard fork | Sebastian/Kevin | 2025-11-26 | PARTIAL | Update provided 2026-01-14 but full confirmation pending |
+| 12 | Review Constitution v2.4 | Kevin/Neil | 2026-01-21 | PARTIAL | Initial review done but formal statement pending |
+| 13 | Create KPI refinement document | Leandros | 2026-01-14 | PARTIAL | Shared with Product Committee but work ongoing |
+| 14 | Implement RSS feed for technical updates | Bosko Majdanac | 2026-03-11 | PARTIAL | Pivoted to Discord read-only channels |
+| 15 | Investigate SPO auto-abstain mechanism | Alexander Moser | 2026-02-11 | PARTIAL | Post drafted but published late (2026-04-01) |
+| 16 | Write blog post about Constitution Committee size | Alexander Moser | 2025-12-17 | NOT DELIVERED | No evidence of publication through 2026-04-15 |
+| 17 | Nominate Vice Chair | Multiple calls | 2025-11-26 | NOT DELIVERED | Still vacant as of 2026-04-15 |
+| 18 | Coordinate Linear Leios risk management session | Bosko Majdanac | 2026-02-25 | NOT DELIVERED | Repeatedly deferred through 2026-04-08 |
+| 19 | Draft Professional Technical Review process | Neil Davies/Kevin | 2026-03-25 | NOT DELIVERED | Deferred as "not urgent" |
+| 20 | Organize 10 technical workshops | TSC (Kevin) | Budget proposal | NOT DELIVERED | Budgeted but none confirmed |
 
-## Part 1: Consolidated Commitment Tracker
+## Part 2: Concrete Deliverables
 
-### Delivery Statistics Across All Reports:
-- **Total unique commitments tracked: 39**
-- **Delivered: 21 (54%)**
-- **Partially delivered: 5 (13%)**
-- **Not delivered: 12 (31%)**
-- **Pending (from final meeting): 1 (2%)**
+**Documents Published:**
+- Annual Report 2025 - Completed November 26, 2025
+- Nested Transactions Response - November 26, 2025
+- Chain Incident Partition Report v0.5 - Finalized January 7, 2026
+- TSC Operational Budget 2026 (~$400,000) - Submitted April 13, 2026
+- Parameter Committee Recommendations (K=1000, minPoolCost=75) - April 2026
 
-### Key Deliverables by Category:
+**Programs/Initiatives Launched:**
+- TSC X/Twitter Account - Operational December 17, 2025
+- Hard Fork Working Group - Bi-weekly meetings from December 2025
+- Chain Partition Incident Working Group - Completed and disbanded January 2026
 
-**✅ DELIVERED - Critical Technical Work:**
-1. **Governance Actions**
-   - PCP00003 Parameter Change (ratified on testnets - Alexander Moser, 20251105)
-   - Plutus Memory Limits Update (86% DRep support - Alexander Moser, 20260218)
-   - Hard Fork Naming "Max Van Rossem" (7 Yes, 1 Abstain - 20251217)
+**Governance Actions:**
+- van Rossem hard fork naming - Submitted on-chain January 7, 2026
+- Plutus memory unit limits increase - Passed February 13, 2026 (86% DRep support)
 
-2. **Working Groups & Processes**
-   - Hard Fork Working Group reformed (first meeting 20251202 - Bosko)
-   - Chain Partition Incident Working Group (report completed 20260107)
-   - Temperature Check Process for SIP-1694 (established by 20251112)
-   - Weekly cadence for Hard Fork meetings (transitioned from bi-weekly)
+**External Coordination:**
+- Joint session with Product Committee on 2030 Vision (January 21, 2026)
+- SPO Roundtable for parameter changes (February 4, 2026)
+- Multiple X Spaces participation
+- Virtual Hub sessions for elections
 
-3. **Documentation**
-   - TSC Annual Report (completed by 20251126)
-   - Chain Partition Incident Report v0.5 (finalized 20260114)
-   - SanchoNet Retrospective (confirmed complete 20260225)
-   - 2030 Vision KPIs Document (shared with Product Committee 20260211)
+## Part 3: Gap Analysis
 
-4. **Budget & Planning**
-   - TSC 2026 Operational Budget ($371,000 proposal submitted by 20260325)
-   - Repository Adoption Votes (IOSIM and Type Protocols - 8 Yes, 0 No, 20251119)
-   - Chair Election (Kevin Hammond elected unanimously 20251203)
+**Total Commitments Tracked:** 20
+- DELIVERED: 10 (50%)
+- PARTIAL: 5 (25%)
+- NOT DELIVERED: 5 (25%)
 
-**⚠️ PARTIAL - Work in Progress:**
-1. Risk Register for Van Rossem hardfork (draft created but still being populated - 20260325)
-2. Constitution v2.4 Technical Review (repeatedly postponed, "waiting for Neil" - 20260318)
-3. SPO Auto-abstain Mechanism promotion (post drafted but not published)
-4. CIP Prioritization Process for Dijkstra (tool developed, process outlined but not implemented)
-5. Nested Transactions Response (AI draft created but never sent - 20251210)
+**Biggest Failures:**
+1. **Vice Chair Position** - Vacant for entire tracked period despite calls at every meeting
+2. **Linear Leios Risk Session** - Promised 5+ times, never scheduled
+3. **Technical Workshops** - Zero delivered despite $40,000+ budget allocation
+4. **Professional Technical Review Process** - Repeatedly deferred over 3 months
 
-**❌ NOT DELIVERED - Failed Commitments:**
-1. **Vice Chair Position** - Mentioned in EVERY meeting from 20251001-20260325, never filled
-2. **Discord Bot Setup** - Promised 20251029, still unresolved by 20260318
-3. **Linear Leios Technical Deep-dive** - Promised 20260225, Doodle poll mentioned but never scheduled
-4. **DRep Compensation Paper Review** - Feedback requested multiple times, never provided
-5. **Fire Drill Written Report** - Promised by Jonathan 20251022, never delivered
-6. **CIP for Leios** - Nicolas Biri promised 20251015, no evidence of delivery
-7. **IUR Progress Review Feedback** - Kevin promised 20251001, never delivered
+**Most Reliable Promise-Keepers:**
+- Kevin Hammond - Delivered annual report, budget, most coordination tasks
+- Ryan C/Ryan Williams - Delivered complex technical analyses when promised
+- Nicolas Biri - Followed through on external coordination
 
-## Part 2: Attendance & Participation Analysis
+**Least Reliable:**
+- Bosko Majdanac - Multiple deferred items (Leios, RSS feed)
+- Alexander Moser - Mixed record (parameter work good, blog posts failed)
+- Neil Davies - Technical review process never materialized
 
-### Meeting Quorum Issues:
-- Multiple meetings barely quorate or cancelled due to attendance
-- 20260325: Neil Davies calls out "minimal quorum...there are only five people here"
-- Persistent issue throughout 6-month period
+**Patterns:**
+- Core governance functions (parameter updates, reports) get done
+- Administrative tasks requiring sustained effort often fail
+- External coordination succeeds when deadline-driven
+- Strategic initiatives repeatedly deferred
 
-### Most Active Members:
-1. **Kevin Hammond** - Chair, present at nearly all meetings
-2. **Alexander Moser** - Reliable delivery on parameter updates
-3. **Bosko Majdanac** - Consistent meeting coordination
-4. **Leandros Holleman** - Persistent work on KPIs and Product Committee liaison
+## Part 4: Overall Assessment
 
-### Least Active/Reliable:
-1. **Nicolas Biri** - Made commitment but no follow-through
-2. **Committee collectively** - Failed to recruit Vice Chair despite universal acknowledgment
+**Value Delivery:**
+The TSC delivers essential technical coordination but underperforms on strategic initiatives.
 
-## Part 3: Financial & Resource Analysis
+**Strengths:**
+- Successfully prevented governance lockout through parameter updates
+- Maintained weekly meetings with 60-70% attendance
+- Produced critical technical documentation
+- Established working communication channels
 
-### Budget Evolution:
-- Initial request: Operational budget needed since June 2025
-- Final proposal: $371,000 for 2026 across 4 work packages
-- Breakdown:
-  - WP1: Community Facing Coordination
-  - WP2: Security and Incident Response
-  - WP3: Protocol Governance and Devolution
-  - WP4: Technical Review
-- Includes 10 workshops (4 in-person, 6 virtual)
+**Weaknesses:**
+- 50% of commitments incomplete or undelivered
+- Basic governance (Vice Chair) remains unfilled
+- Zero technical workshops despite significant budget
+- Reactive rather than proactive on strategic issues
 
-### Resource Constraints Impact:
-- Operating entirely on volunteer effort through Q4 2025
-- Kevin Hammond: "I've not had time to do that" (regarding budget draft - 20251210)
-- Direct correlation between lack of resources and 46% non-delivery rate
+**Critical Issues:**
+1. **Budget vs. Delivery Mismatch** - Requesting ~$400,000 with 50% delivery rate
+2. **Administrative Dysfunction** - Cannot fill basic positions or maintain consistent processes
+3. **Community Engagement Gap** - Workshops budgeted but not executed
 
-## Part 4: Critical Patterns & Insights
+**DRep Recommendation:**
+The TSC serves a necessary function but requires significant accountability improvements:
 
-### What Gets Done:
-1. **External deadlines** - Parameter updates, governance votes
-2. **Crisis response** - Chain partition incident handled effectively
-3. **Formal processes** - Elections, voting, approvals
-4. **Budget-related items** - When finally prioritized
+1. **Funding:** Approve only 60% of requested budget ($240,000) until delivery improves
+2. **Conditions:** Require quarterly delivery reports with specific KPIs
+3. **Priorities:** Mandate completion of: Vice Chair appointment, Leios risk assessment, technical workshop schedule
+4. **Support:** Consider dedicated administrative support to improve follow-through
 
-### What Doesn't:
-1. **Internal governance** - Vice Chair position vacant 6+ months
-2. **Written reports without deadlines** - Fire drill report, Constitution review
-3. **Cross-committee coordination** - Linear Leios session, DRep compensation review
-4. **External communications** - Nested transactions response drafted but never sent
-
-### Systemic Issues:
-1. **Communication gaps** - Kevin Hammond: "We're not reaching developers effectively"
-2. **Professional standards** - Neil Davies: "Proposal reviews lack professional rigor" (20260325)
-3. **Volunteer limitations** - Everything takes longer than promised
-4. **Follow-through weakness** - 31% complete non-delivery on commitments
-
-## Part 5: Final Assessment & Recommendations
-
-### Is the TSC delivering value to Cardano?
-
-**YES, but operating below potential due to resource constraints and organizational weaknesses.**
-
-### Strengths:
-- Successfully manages critical technical infrastructure
-- Effective crisis response (chain partition recovery)
-- Provides essential parameter oversight preventing breaking changes
-- Maintains consistent meeting schedule despite challenges
-
-### Critical Weaknesses:
-- 46% failure rate on commitments (31% not delivered + 13% partial)
-- Cannot fill basic leadership positions
-- Poor external communication (multiple examples of drafted but unsent responses)
-- Attendance issues threatening operational continuity
-
-### DRep Recommendation:
-
-**FUND WITH CONDITIONS**
-
-The TSC provides irreplaceable technical governance infrastructure. The $371,000 budget is justified given their scope and the critical nature of their work. However, funding should be contingent on:
-
-1. **Quarterly Accountability Reports** - Track commitment delivery rates
-2. **Vice Chair Resolution** - Fill position within 60 days or restructure governance
-3. **Communication Improvements** - Implement RSS feed and developer outreach plan
-4. **Professional Standards** - Adopt formal review processes per Neil Davies' critique
-5. **Attendance Policy** - Establish minimum attendance requirements
-
-The committee has demonstrated it can deliver critical technical decisions when properly focused. With adequate resources and accountability measures, the current 54% delivery rate should improve to >75%. Without funding, expect continued degradation of service delivery and potential governance failures.
-
-**Bottom line:** Cardano cannot function without the TSC's technical oversight. Fund them, but demand professional operations in return.
+The committee's technical coordination is valuable, but current performance does not justify full funding. A 50% delivery rate indicates either overcommitment or execution failures that must be addressed before increasing financial support.
