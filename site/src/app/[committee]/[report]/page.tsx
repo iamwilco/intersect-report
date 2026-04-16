@@ -8,7 +8,12 @@ import {
   ALL_REPORT_SLUGS,
 } from "@/lib/constants";
 import { renderMarkdown, formatDate } from "@/lib/markdown";
-import type { ReportData, ReportSection, PromiseData } from "@/lib/types";
+import type {
+  ReportData,
+  ReportSection,
+  PromiseData,
+  MemberData,
+} from "@/lib/types";
 
 /* ── Static params ── */
 
@@ -42,17 +47,61 @@ export async function generateMetadata({
 
 /* ── Helpers ── */
 
-function SectionBlock({ section }: { section: ReportSection }) {
+function slugify(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "")
+    .slice(0, 80);
+}
+
+function SectionBlock({
+  section,
+  index,
+}: {
+  section: ReportSection;
+  index?: number;
+}) {
+  const id = slugify(section.title);
   return (
-    <section className="mb-12">
-      <h3
-        className="font-serif font-bold text-xl mt-10 mb-4"
-        style={{ borderBottom: "1px solid var(--color-rule)", paddingBottom: 6 }}
-      >
-        {section.title}
-      </h3>
-      <div dangerouslySetInnerHTML={{ __html: renderMarkdown(section.body) }} />
+    <section id={id} className="section-card">
+      {typeof index === "number" && (
+        <span className="section-card-eyebrow">§ {index + 1}</span>
+      )}
+      <h3 className="section-card-title">{section.title}</h3>
+      <div
+        className="prose-body"
+        dangerouslySetInnerHTML={{ __html: renderMarkdown(section.body) }}
+      />
     </section>
+  );
+}
+
+function ReportTOC({ sections }: { sections: ReportSection[] }) {
+  if (sections.length < 3) return null;
+  return (
+    <nav className="report-toc" aria-label="Report sections">
+      <div className="report-toc-label">In this report</div>
+      <div className="report-toc-list">
+        {sections.map((s, i) => (
+          <a key={i} href={`#${slugify(s.title)}`}>
+            <span className="report-toc-num">{String(i + 1).padStart(2, "0")}</span>
+            {s.title.length > 60 ? s.title.slice(0, 60) + "…" : s.title}
+          </a>
+        ))}
+      </div>
+    </nav>
+  );
+}
+
+function SectionList({ sections }: { sections: ReportSection[] }) {
+  return (
+    <>
+      <ReportTOC sections={sections} />
+      {sections.map((section, i) => (
+        <SectionBlock key={i} section={section} index={i} />
+      ))}
+    </>
   );
 }
 
@@ -118,15 +167,23 @@ function evidenceIssueUrl(committee: string, p: PromiseData) {
 function StatusCell({ p }: { p: PromiseData }) {
   const verified = p.verified_status === "verified-delivered";
   const disputed = p.verified_status === "disputed";
+  const effective = verified ? "delivered" : p.status;
+  const label = verified ? "delivered ✓" : p.status;
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-      <span className={`status-pill s-${p.status}`}>{p.status}</span>
-      {verified && (
-        <span className="status-pill s-delivered" title="Evidence reviewed and accepted">
-          ✓ verified
-        </span>
-      )}
-      {disputed && (
+      <span
+        className={`status-pill s-${effective}`}
+        title={
+          verified
+            ? "Verified by accepted evidence"
+            : disputed
+            ? "Conflicting claims under review"
+            : "Derived from transcripts"
+        }
+      >
+        {label}
+      </span>
+      {disputed && !verified && (
         <span className="status-pill s-partial" title="Conflicting claims under review">
           ⚠ disputed
         </span>
@@ -232,8 +289,9 @@ function renderSummariesVsTranscripts(sections: ReportSection[]) {
 
   return (
     <>
+      <ReportTOC sections={regularSections} />
       {regularSections.map((section, i) => (
-        <SectionBlock key={i} section={section} />
+        <SectionBlock key={i} section={section} index={i} />
       ))}
       {isOverallPatterns && lastSection && (
         <div className="verdict-box verdict-negative">
@@ -249,24 +307,65 @@ function renderSummariesVsTranscripts(sections: ReportSection[]) {
   );
 }
 
-function renderMemberAnalysis(sections: ReportSection[]) {
+function AttendanceTable({ members }: { members: MemberData[] }) {
+  if (!members.length) return null;
+  const sorted = [...members].sort((a, b) => b.rate - a.rate || a.name.localeCompare(b.name));
+  const barClass = (rate: number) =>
+    rate >= 80 ? "" : rate >= 60 ? "med" : "low";
+  return (
+    <div className="attendance-summary">
+      <h3 className="section-card-title" style={{ marginBottom: 12 }}>
+        Meeting Attendance
+      </h3>
+      <div className="overflow-x-auto">
+        <table className="data-table">
+          <thead>
+            <tr>
+              <th>Member</th>
+              <th>Attended</th>
+              <th style={{ width: "40%" }}>Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sorted.map((m) => (
+              <tr key={m.name}>
+                <td style={{ whiteSpace: "nowrap" }}>{m.name}</td>
+                <td>
+                  {m.attended}/{m.total}
+                </td>
+                <td>
+                  <span className="attendance-bar" aria-hidden>
+                    <span
+                      className={`attendance-bar-fill ${barClass(m.rate)}`}
+                      style={{ width: `${m.rate}%`, display: "block" }}
+                    />
+                  </span>
+                  <span style={{ fontVariantNumeric: "tabular-nums" }}>
+                    {m.rate}%
+                  </span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function renderMemberAnalysis(report: ReportData) {
+  const sections = report.sections || [];
+  const members = report.members || [];
   return (
     <>
-      {sections.map((section, i) => (
-        <SectionBlock key={i} section={section} />
-      ))}
+      {members.length > 0 && <AttendanceTable members={members} />}
+      <SectionList sections={sections} />
     </>
   );
 }
 
 function renderLeadership(sections: ReportSection[]) {
-  return (
-    <>
-      {sections.map((section, i) => (
-        <SectionBlock key={i} section={section} />
-      ))}
-    </>
-  );
+  return <SectionList sections={sections} />;
 }
 
 function renderPromises(report: ReportData, committee: string) {
@@ -278,22 +377,13 @@ function renderPromises(report: ReportData, committee: string) {
           <PromiseTable committee={committee} promises={report.promises} />
         </>
       )}
-      {report.sections &&
-        report.sections.map((section, i) => (
-          <SectionBlock key={i} section={section} />
-        ))}
+      {report.sections && <SectionList sections={report.sections} />}
     </>
   );
 }
 
 function renderCriticalObservations(sections: ReportSection[]) {
-  return (
-    <>
-      {sections.map((section, i) => (
-        <SectionBlock key={i} section={section} />
-      ))}
-    </>
-  );
+  return <SectionList sections={sections} />;
 }
 
 function renderMeetings(dates: string[]) {
@@ -383,8 +473,8 @@ export default async function ReportPage({
         renderSummariesVsTranscripts(reportData.sections)}
 
       {report === "member-analysis" &&
-        reportData?.sections &&
-        renderMemberAnalysis(reportData.sections)}
+        reportData &&
+        renderMemberAnalysis(reportData)}
 
       {report === "leadership" &&
         reportData?.sections &&

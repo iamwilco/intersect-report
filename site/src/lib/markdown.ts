@@ -1,47 +1,173 @@
 export function renderMarkdown(md: string): string {
   if (!md) return "";
 
-  let html = md
-    // Escape HTML
+  const esc = md
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    // Headers
-    .replace(/^#### (.+)$/gm, '<h4 class="mt-6 mb-2 font-serif font-bold text-base">$1</h4>')
-    .replace(/^### (.+)$/gm, '<h3 class="mt-8 mb-3 font-serif font-bold text-lg">$1</h3>')
-    .replace(/^## (.+)$/gm, '<h2 class="mt-10 mb-4 font-serif font-bold text-xl">$1</h2>')
-    // Horizontal rules
-    .replace(/^---$/gm, '<hr class="my-8 border-rule" />')
-    // Bold and italic
-    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*(.+?)\*/g, "<em>$1</em>")
-    // Tables
-    .replace(/^\|(.+)\|$/gm, (match) => {
-      const cells = match
-        .split("|")
-        .filter((c) => c.trim())
-        .map((c) => c.trim());
-      // Check if separator row
-      if (cells.every((c) => /^[-:]+$/.test(c))) {
-        return "<!--table-sep-->";
-      }
-      return `<tr>${cells.map((c) => `<td class="px-3 py-2 border-b border-rule text-sm">${c}</td>`).join("")}</tr>`;
-    })
-    // Wrap table rows
-    .replace(
-      /((?:<tr>.*<\/tr>\n?)+)/g,
-      '<div class="overflow-x-auto my-4"><table class="w-full border-collapse">$1</table></div>'
-    )
-    .replace(/<!--table-sep-->\n?/g, "")
-    // Unordered lists
-    .replace(/^- (.+)$/gm, '<li class="ml-4 mb-1">$1</li>')
-    .replace(/((?:<li[^>]*>.*<\/li>\n?)+)/g, '<ul class="list-disc pl-4 my-3 text-sm leading-relaxed">$1</ul>')
-    // Numbered lists
-    .replace(/^\d+\. (.+)$/gm, '<li class="ml-4 mb-1">$1</li>')
-    // Paragraphs - wrap remaining text lines
-    .replace(/^(?!<[hludtro]|<!\-\-)(.+)$/gm, '<p class="my-2 text-sm leading-relaxed text-ink-muted">$1</p>');
+    .replace(/>/g, "&gt;");
 
-  return html;
+  const lines = esc.split("\n");
+  const out: string[] = [];
+
+  type Block =
+    | { kind: "para"; lines: string[] }
+    | { kind: "ul"; items: string[] }
+    | { kind: "ol"; items: string[] }
+    | { kind: "table"; header: string[]; rows: string[][] }
+    | { kind: "quote"; lines: string[] };
+
+  let cur: Block | null = null;
+
+  const flush = () => {
+    if (!cur) return;
+    if (cur.kind === "para") {
+      const text = cur.lines.join(" ").trim();
+      if (text) out.push(`<p class="prose-p">${inline(text)}</p>`);
+    } else if (cur.kind === "ul") {
+      out.push(
+        `<ul class="prose-ul">${cur.items
+          .map((i) => `<li>${inline(i)}</li>`)
+          .join("")}</ul>`
+      );
+    } else if (cur.kind === "ol") {
+      out.push(
+        `<ol class="prose-ol">${cur.items
+          .map((i) => `<li>${inline(i)}</li>`)
+          .join("")}</ol>`
+      );
+    } else if (cur.kind === "table") {
+      const thead = `<thead><tr>${cur.header
+        .map((h) => `<th>${inline(h)}</th>`)
+        .join("")}</tr></thead>`;
+      const tbody = `<tbody>${cur.rows
+        .map(
+          (r) =>
+            `<tr>${r.map((c) => `<td>${inline(c)}</td>`).join("")}</tr>`
+        )
+        .join("")}</tbody>`;
+      out.push(
+        `<div class="prose-table-wrap"><table class="prose-table">${thead}${tbody}</table></div>`
+      );
+    } else if (cur.kind === "quote") {
+      out.push(
+        `<blockquote class="prose-quote">${cur.lines
+          .map((l) => inline(l))
+          .join("<br/>")}</blockquote>`
+      );
+    }
+    cur = null;
+  };
+
+  const splitRow = (line: string): string[] =>
+    line
+      .trim()
+      .replace(/^\|/, "")
+      .replace(/\|$/, "")
+      .split("|")
+      .map((c) => c.trim());
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmed = line.trim();
+
+    if (trimmed === "") {
+      flush();
+      continue;
+    }
+
+    // Horizontal rule
+    if (/^---+$/.test(trimmed)) {
+      flush();
+      out.push(`<hr class="prose-hr" />`);
+      continue;
+    }
+
+    // Headers
+    let h = /^(#{1,4})\s+(.+)$/.exec(trimmed);
+    if (h) {
+      flush();
+      const level = h[1].length;
+      out.push(
+        `<h${level} class="prose-h${level}">${inline(h[2])}</h${level}>`
+      );
+      continue;
+    }
+
+    // Blockquote
+    if (trimmed.startsWith("&gt;")) {
+      const content = trimmed.replace(/^&gt;\s?/, "");
+      if (cur?.kind === "quote") cur.lines.push(content);
+      else {
+        flush();
+        cur = { kind: "quote", lines: [content] };
+      }
+      continue;
+    }
+
+    // Table
+    if (trimmed.startsWith("|") && trimmed.includes("|", 1)) {
+      const cells = splitRow(trimmed);
+      const next = (lines[i + 1] || "").trim();
+      const isHeader =
+        next.startsWith("|") &&
+        splitRow(next).every((c) => /^:?-+:?$/.test(c));
+      const existing = cur as Block | null;
+      if (existing && existing.kind === "table") {
+        existing.rows.push(cells);
+      } else if (isHeader) {
+        flush();
+        cur = { kind: "table", header: cells, rows: [] };
+        i++; // skip separator row
+      } else {
+        flush();
+        cur = { kind: "table", header: cells, rows: [] };
+      }
+      continue;
+    }
+
+    // Unordered list
+    let ulm = /^[-*+]\s+(.+)$/.exec(trimmed);
+    if (ulm) {
+      if (cur?.kind === "ul") cur.items.push(ulm[1]);
+      else {
+        flush();
+        cur = { kind: "ul", items: [ulm[1]] };
+      }
+      continue;
+    }
+
+    // Ordered list
+    let olm = /^\d+\.\s+(.+)$/.exec(trimmed);
+    if (olm) {
+      if (cur?.kind === "ol") cur.items.push(olm[1]);
+      else {
+        flush();
+        cur = { kind: "ol", items: [olm[1]] };
+      }
+      continue;
+    }
+
+    // Paragraph
+    if (cur?.kind === "para") cur.lines.push(trimmed);
+    else {
+      flush();
+      cur = { kind: "para", lines: [trimmed] };
+    }
+  }
+  flush();
+
+  return out.join("\n");
+}
+
+function inline(text: string): string {
+  return text
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/(^|[^*])\*([^*]+)\*/g, "$1<em>$2</em>")
+    .replace(/`([^`]+)`/g, "<code class=\"prose-code\">$1</code>")
+    .replace(
+      /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,
+      '<a href="$2" target="_blank" rel="noopener noreferrer" class="prose-link">$1</a>'
+    );
 }
 
 export function formatDate(dateStr: string): string {
