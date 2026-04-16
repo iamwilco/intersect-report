@@ -21,6 +21,40 @@ from config import (
     VAULT_ROOT, COMMITTEES, COMMITTEE_FULL_NAMES, SITE_DATA_DIR, ELECTION_START,
 )
 
+EVIDENCE_DIR = SITE_DATA_DIR / "evidence"
+
+
+def load_evidence_overlay(committee: str) -> dict:
+    """Load human-curated evidence overlay for a committee.
+
+    File shape: { "promises": { "<num>": {
+        "verified_status": "verified-delivered" | "disputed",
+        "submissions": [ { url, type, submitted_by, submitted_at, note, accepted } ]
+    } } }
+    """
+    path = EVIDENCE_DIR / f"{committee.lower()}.json"
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        print(f"  WARN: invalid JSON in {path}, skipping overlay")
+        return {}
+
+
+def apply_evidence_overlay(promises: list[dict], overlay: dict) -> list[dict]:
+    by_num = overlay.get("promises", {})
+    for p in promises:
+        entry = by_num.get(str(p["num"]))
+        if not entry:
+            continue
+        if "verified_status" in entry:
+            p["verified_status"] = entry["verified_status"]
+        subs = [s for s in entry.get("submissions", []) if s.get("accepted")]
+        if subs:
+            p["evidence_submissions"] = subs
+    return promises
+
 
 def parse_report_header(text: str) -> dict:
     """Extract metadata from the standard report header."""
@@ -208,7 +242,9 @@ def build_committee_data(committee: str) -> dict | None:
 
             # Add structured data for specific reports
             if key == "promises_vs_reality":
-                report_data["promises"] = parse_promises_report(text)
+                promises = parse_promises_report(text)
+                overlay = load_evidence_overlay(committee)
+                report_data["promises"] = apply_evidence_overlay(promises, overlay)
             elif key == "member_participation":
                 report_data["members"] = parse_attendance_section(text)
 
@@ -225,11 +261,12 @@ def build_committee_data(committee: str) -> dict | None:
     if reports["promises_vs_reality"].get("available"):
         for p in reports["promises_vs_reality"].get("promises", []):
             total_promises += 1
-            if p["status"] == "delivered":
+            effective = "delivered" if p.get("verified_status") == "verified-delivered" else p["status"]
+            if effective == "delivered":
                 delivered += 1
-            elif p["status"] == "partial":
+            elif effective == "partial":
                 partial += 1
-            elif p["status"] == "recurring":
+            elif effective == "recurring":
                 recurring += 1
             else:
                 failed += 1

@@ -1,0 +1,83 @@
+name: Evidence Submission
+description: Submit proof that a tracked promise was delivered (off-transcript work, workshops, async deliveries, PRs, recordings, etc.)
+title: "[Evidence] <committee> #<num>: <short summary>"
+labels: ["evidence-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form if a promise on the report is marked as failed/partial/recurring but you have proof it was actually delivered.
+
+        Submissions are reviewed publicly. Accepted evidence is added to the site with a ✓ verified badge linking to the artifact. Rejected submissions are closed with a reason. Prefer GitHub, but you can also email **chat@wilco.space**.
+
+  - type: input
+    id: promise-id
+    attributes:
+      label: Promise ID
+      description: Format `<COMMITTEE>#<num>` (e.g. `MCC#7`). Pre-filled if you used the "Submit evidence" link.
+      placeholder: "MCC#7"
+    validations:
+      required: true
+
+  - type: textarea
+    id: promise-quote
+    attributes:
+      label: Promise text (as shown on report)
+      description: Paste or pre-fill the promise text from the report row.
+    validations:
+      required: true
+
+  - type: input
+    id: evidence-url
+    attributes:
+      label: Evidence URL
+      description: Link to recording, doc, PR, screenshot, channel post, etc. Public link required.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: evidence-type
+    attributes:
+      label: Evidence type
+      options:
+        - recording
+        - doc
+        - pr
+        - screenshot
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: delivered-on
+    attributes:
+      label: Date delivered
+      description: YYYY-MM-DD
+      placeholder: "2026-04-15"
+    validations:
+      required: true
+
+  - type: input
+    id: submitter-role
+    attributes:
+      label: Your name and role
+      description: e.g. "Wilco — MCC observer", "Sanjaya — MCC member"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      description: Any context the reviewer should know — e.g. why this satisfies the promise, what was scoped down, relevant timestamps.
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: The evidence URL is publicly accessible (or I will provide access on request).
+          required: true
+        - label: I understand this submission and any review decision will be public.
+          required: true

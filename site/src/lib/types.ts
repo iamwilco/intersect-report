@@ -32,14 +32,28 @@ export interface MemberData {
   rate: number;
 }
 
+export type AiStatus = "delivered" | "partial" | "failed" | "recurring";
+export type VerifiedStatus = "verified-delivered" | "disputed";
+
+export interface EvidenceSubmission {
+  url: string;
+  type: "recording" | "doc" | "pr" | "screenshot" | "other";
+  submitted_by: string;
+  submitted_at: string;
+  note?: string;
+  accepted: boolean;
+}
+
 export interface PromiseData {
   num: number;
   promise: string;
   made_by: string;
   first_promised: string;
   repeated: string;
-  status: "delivered" | "partial" | "failed" | "recurring";
+  status: AiStatus;
   evidence: string;
+  verified_status?: VerifiedStatus;
+  evidence_submissions?: EvidenceSubmission[];
 }
 
 export interface ReportData {

@@ -57,10 +57,13 @@ function SectionBlock({ section }: { section: ReportSection }) {
 }
 
 function PromiseStatStrip({ promises }: { promises: PromiseData[] }) {
-  const delivered = promises.filter((p) => p.status === "delivered").length;
-  const partial = promises.filter((p) => p.status === "partial").length;
-  const failed = promises.filter((p) => p.status === "failed").length;
-  const recurring = promises.filter((p) => p.status === "recurring").length;
+  const effective = (p: PromiseData) =>
+    p.verified_status === "verified-delivered" ? "delivered" : p.status;
+  const delivered = promises.filter((p) => effective(p) === "delivered").length;
+  const partial = promises.filter((p) => effective(p) === "partial").length;
+  const failed = promises.filter((p) => effective(p) === "failed").length;
+  const recurring = promises.filter((p) => effective(p) === "recurring").length;
+  const verifiedCount = promises.filter((p) => p.verified_status === "verified-delivered").length;
 
   return (
     <div className="stat-strip">
@@ -88,13 +91,106 @@ function PromiseStatStrip({ promises }: { promises: PromiseData[] }) {
         </span>
         <span className="stat-label">Recurring</span>
       </div>
+      {verifiedCount > 0 && (
+        <div className="stat-item">
+          <span className="stat-num" style={{ color: "var(--color-teal)" }}>
+            {verifiedCount}
+          </span>
+          <span className="stat-label">✓ Verified by evidence</span>
+        </div>
+      )}
     </div>
   );
 }
 
-function PromiseTable({ promises }: { promises: PromiseData[] }) {
+const REPO_ISSUES = "https://github.com/iamwilco/intersect-report/issues/new";
+
+function evidenceIssueUrl(committee: string, p: PromiseData) {
+  const params = new URLSearchParams({
+    template: "evidence-submission.yml",
+    title: `[Evidence] ${committee} #${p.num}: ${p.promise.slice(0, 60)}`,
+    "promise-id": `${committee}#${p.num}`,
+    "promise-quote": p.promise,
+  });
+  return `${REPO_ISSUES}?${params.toString()}`;
+}
+
+function StatusCell({ p }: { p: PromiseData }) {
+  const verified = p.verified_status === "verified-delivered";
+  const disputed = p.verified_status === "disputed";
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+      <span className={`status-pill s-${p.status}`}>{p.status}</span>
+      {verified && (
+        <span className="status-pill s-delivered" title="Evidence reviewed and accepted">
+          ✓ verified
+        </span>
+      )}
+      {disputed && (
+        <span className="status-pill s-partial" title="Conflicting claims under review">
+          ⚠ disputed
+        </span>
+      )}
+    </div>
+  );
+}
+
+function EvidenceCell({ committee, p }: { committee: string; p: PromiseData }) {
+  const subs = p.evidence_submissions ?? [];
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+      <span>{p.evidence}</span>
+      {subs.length > 0 && (
+        <ul style={{ margin: 0, paddingLeft: 16, fontSize: "0.85em" }}>
+          {subs.map((s, i) => (
+            <li key={i}>
+              <a href={s.url} target="_blank" rel="noopener noreferrer">
+                {s.type}
+              </a>{" "}
+              — {s.submitted_by}
+            </li>
+          ))}
+        </ul>
+      )}
+      <a
+        href={evidenceIssueUrl(committee, p)}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ fontSize: "0.8em", textDecoration: "underline" }}
+      >
+        Submit evidence
+      </a>
+    </div>
+  );
+}
+
+function EvidenceDisclaimer() {
+  return (
+    <div
+      className="verdict-box"
+      style={{
+        background: "var(--color-surface, #f8f8f5)",
+        border: "1px solid var(--color-rule)",
+        padding: "12px 16px",
+        marginBottom: 16,
+        fontSize: "0.9em",
+      }}
+    >
+      <strong>Note on delivery status:</strong> AI status reflects what is
+      findable in the public meeting transcripts only. Off-transcript work
+      (workshops, async deliveries, side-channels) won&rsquo;t be captured here.
+      Committee members and the public can submit evidence via the{" "}
+      <em>Submit evidence</em> link on each row, or email{" "}
+      <a href="mailto:chat@wilco.space">chat@wilco.space</a>. Verified items
+      get a ✓ badge with a link to the artifact.
+    </div>
+  );
+}
+
+function PromiseTable({ committee, promises }: { committee: string; promises: PromiseData[] }) {
   return (
     <div className="overflow-x-auto mb-12">
+      <EvidenceDisclaimer />
       <table className="data-table">
         <thead>
           <tr>
@@ -113,12 +209,8 @@ function PromiseTable({ promises }: { promises: PromiseData[] }) {
               <td>{p.promise}</td>
               <td>{p.made_by}</td>
               <td style={{ whiteSpace: "nowrap" }}>{p.first_promised}</td>
-              <td>
-                <span className={`status-pill s-${p.status}`}>
-                  {p.status}
-                </span>
-              </td>
-              <td>{p.evidence}</td>
+              <td><StatusCell p={p} /></td>
+              <td><EvidenceCell committee={committee} p={p} /></td>
             </tr>
           ))}
         </tbody>
@@ -177,13 +269,13 @@ function renderLeadership(sections: ReportSection[]) {
   );
 }
 
-function renderPromises(report: ReportData) {
+function renderPromises(report: ReportData, committee: string) {
   return (
     <>
       {report.promises && report.promises.length > 0 && (
         <>
           <PromiseStatStrip promises={report.promises} />
-          <PromiseTable promises={report.promises} />
+          <PromiseTable committee={committee} promises={report.promises} />
         </>
       )}
       {report.sections &&
@@ -298,7 +390,7 @@ export default async function ReportPage({
         reportData?.sections &&
         renderLeadership(reportData.sections)}
 
-      {report === "promises" && reportData && renderPromises(reportData)}
+      {report === "promises" && reportData && renderPromises(reportData, data.committee)}
 
       {report === "critical-observations" &&
         reportData?.sections &&
