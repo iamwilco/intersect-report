@@ -434,5 +434,7 @@
     "recurring": 0,
     "delivery_rate": 0
   },
-  "generated": "2026-04-16T18:01:29.021099"
+  "generated": "2026-04-16T20:28:50.126186",
+  "needs_rerun": true,
+  "report_period_inferred": 21
 }

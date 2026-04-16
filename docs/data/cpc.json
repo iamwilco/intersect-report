@@ -2,18 +2,14 @@
   "committee": "CPC",
   "full_name": "Civics & Participation Committee",
   "period": {
-    "start": "20251014",
+    "start": "20251118",
     "end": "20260331"
   },
-  "meetings_count": 21,
-  "summary_count": 21,
+  "meetings_count": 17,
+  "summary_count": 17,
   "transcript_count": 0,
   "has_transcripts": false,
   "dates": [
-    "20251014",
-    "20251021",
-    "20251028",
-    "20251104",
     "20251118",
     "20251125",
     "20251202",
@@ -353,5 +349,7 @@
     "recurring": 0,
     "delivery_rate": 33
   },
-  "generated": "2026-04-16T18:01:29.017081"
+  "generated": "2026-04-16T20:28:50.095819",
+  "needs_rerun": true,
+  "report_period_inferred": 21
 }

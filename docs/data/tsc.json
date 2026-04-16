@@ -83,7 +83,68 @@
           "body": "1. **Leandros Holleman** - 100% attendance, delivered critical KPI framework\n2. **Kevin Hammond** - 94.7% attendance, exemplary chair leadership\n3. **Neil Davies** - 94.7% attendance, essential technical oversight\n4. **Ryan Wiley** - 78.9% attendance, innovative governance contributions\n5. **Sebastian Nagel** - 84.2% attendance, Leios technical leadership\n6. **Alexander Moser** - 68.4% attendance, effective parameter governance\n7. **Nicolas Biri** - 68.4% attendance, valuable contrarian voice\n8. **Udai Solanki** - 47.4% attendance, minimal contributions\n9. **Duncan Coutts** - 42.1% attendance, early engagement then absence\n10. **Seungheon Oh** - 0% attendance, complete failure to participate"
         }
       ],
-      "members": []
+      "members": [
+        {
+          "name": "Kevin Hammond",
+          "attended": 18,
+          "total": 19,
+          "rate": 95
+        },
+        {
+          "name": "Leandros Holleman",
+          "attended": 19,
+          "total": 19,
+          "rate": 100
+        },
+        {
+          "name": "Neil Davies",
+          "attended": 18,
+          "total": 19,
+          "rate": 95
+        },
+        {
+          "name": "Ryan Wiley",
+          "attended": 15,
+          "total": 19,
+          "rate": 79
+        },
+        {
+          "name": "Nicolas Biri",
+          "attended": 13,
+          "total": 19,
+          "rate": 68
+        },
+        {
+          "name": "Sebastian Nagel",
+          "attended": 16,
+          "total": 19,
+          "rate": 84
+        },
+        {
+          "name": "Alexander Moser",
+          "attended": 13,
+          "total": 19,
+          "rate": 68
+        },
+        {
+          "name": "Udai Solanki",
+          "attended": 9,
+          "total": 19,
+          "rate": 47
+        },
+        {
+          "name": "Duncan Coutts",
+          "attended": 8,
+          "total": 19,
+          "rate": 42
+        },
+        {
+          "name": "Seungheon Oh",
+          "attended": 0,
+          "total": 19,
+          "rate": 0
+        }
+      ]
     },
     "leadership_assessment": {
       "available": true,
@@ -254,5 +315,7 @@
     "recurring": 0,
     "delivery_rate": 0
   },
-  "generated": "2026-04-16T18:01:29.015135"
+  "generated": "2026-04-16T20:28:50.092467",
+  "needs_rerun": false,
+  "report_period_inferred": 0
 }

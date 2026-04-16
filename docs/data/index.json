@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-16T18:01:29.026707",
+  "generated": "2026-04-16T20:28:50.188861",
   "committees": [
     {
       "id": "MCC",
@@ -43,10 +43,10 @@
       "id": "CPC",
       "name": "Civics & Participation Committee",
       "period": {
-        "start": "20251014",
+        "start": "20251118",
         "end": "20260331"
       },
-      "meetings_count": 21,
+      "meetings_count": 17,
       "has_transcripts": false,
       "report_count": 4,
       "stats": {
@@ -62,10 +62,10 @@
       "id": "OSC",
       "name": "Open Source Committee",
       "period": {
-        "start": "20251002",
+        "start": "20251120",
         "end": "20260402"
       },
-      "meetings_count": 15,
+      "meetings_count": 11,
       "has_transcripts": true,
       "report_count": 0,
       "stats": {
@@ -119,10 +119,10 @@
       "id": "CBC",
       "name": "Community & Budget Committee",
       "period": {
-        "start": "20251006",
+        "start": "20251124",
         "end": "20260316"
       },
-      "meetings_count": 18,
+      "meetings_count": 14,
       "has_transcripts": false,
       "report_count": 4,
       "stats": {
@@ -138,10 +138,10 @@
       "id": "ISC",
       "name": "Intersect Steering Committee",
       "period": {
-        "start": "20251006",
+        "start": "20251124",
         "end": "20260330"
       },
-      "meetings_count": 23,
+      "meetings_count": 17,
       "has_transcripts": false,
       "report_count": 3,
       "stats": {

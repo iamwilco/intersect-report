@@ -2,18 +2,14 @@
   "committee": "CBC",
   "full_name": "Community & Budget Committee",
   "period": {
-    "start": "20251006",
+    "start": "20251124",
     "end": "20260316"
   },
-  "meetings_count": 18,
-  "summary_count": 18,
+  "meetings_count": 14,
+  "summary_count": 14,
   "transcript_count": 0,
   "has_transcripts": false,
   "dates": [
-    "20251006",
-    "20251013",
-    "20251027",
-    "20251103",
     "20251124",
     "20251201",
     "20251208",
@@ -458,5 +454,7 @@
     "recurring": 0,
     "delivery_rate": 41
   },
-  "generated": "2026-04-16T18:01:29.025200"
+  "generated": "2026-04-16T20:28:50.165173",
+  "needs_rerun": true,
+  "report_period_inferred": 18
 }

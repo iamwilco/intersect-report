@@ -2,18 +2,14 @@
   "committee": "OSC",
   "full_name": "Open Source Committee",
   "period": {
-    "start": "20251002",
+    "start": "20251120",
     "end": "20260402"
   },
-  "meetings_count": 15,
-  "summary_count": 15,
-  "transcript_count": 15,
+  "meetings_count": 11,
+  "summary_count": 11,
+  "transcript_count": 11,
   "has_transcripts": true,
   "dates": [
-    "20251002",
-    "20251016",
-    "20251030",
-    "20251106",
     "20251120",
     "20251204",
     "20251218",
@@ -51,5 +47,7 @@
     "recurring": 0,
     "delivery_rate": 0
   },
-  "generated": "2026-04-16T18:01:29.018302"
+  "generated": "2026-04-16T20:28:50.098224",
+  "needs_rerun": false,
+  "report_period_inferred": 0
 }

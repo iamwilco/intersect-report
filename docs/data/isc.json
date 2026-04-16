@@ -2,20 +2,14 @@
   "committee": "ISC",
   "full_name": "Intersect Steering Committee",
   "period": {
-    "start": "20251006",
+    "start": "20251124",
     "end": "20260330"
   },
-  "meetings_count": 23,
-  "summary_count": 23,
+  "meetings_count": 17,
+  "summary_count": 17,
   "transcript_count": 0,
   "has_transcripts": false,
   "dates": [
-    "20251006",
-    "20251013",
-    "20251020",
-    "20251027",
-    "20251103",
-    "20251117",
     "20251124",
     "20251201",
     "20251208",
@@ -357,5 +351,7 @@
     "recurring": 0,
     "delivery_rate": 40
   },
-  "generated": "2026-04-16T18:01:29.026260"
+  "generated": "2026-04-16T20:28:50.186903",
+  "needs_rerun": true,
+  "report_period_inferred": 25
 }
