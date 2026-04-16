@@ -128,6 +128,28 @@ export default async function CommitteeOverviewPage({
         &larr; All committees
       </Link>
 
+      {data.needs_rerun && (
+        <div
+          style={{
+            border: "1px solid var(--color-amber)",
+            background: "var(--color-amber-light)",
+            padding: "12px 16px",
+            borderRadius: 4,
+            marginBottom: 24,
+            fontSize: "13px",
+            lineHeight: 1.6,
+          }}
+        >
+          <strong>Data freshness notice:</strong> This committee&rsquo;s report
+          narrative was generated before the post-election filter was applied.
+          The period shown above ({data.meetings_count} meetings from{" "}
+          {periodStr.replace(" \u2192 ", " to ")}) is correct, but the report
+          text below references up to {data.report_period_inferred} meetings
+          including the outgoing committee. A re-run is pending to scrub
+          pre-election content from the narrative.
+        </div>
+      )}
+
       {/* Intro block */}
       <div className="intro-block">
         <div>

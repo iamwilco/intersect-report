@@ -116,75 +116,113 @@ def parse_promises_report(text: str) -> list[dict]:
     return promises
 
 
-RATIO_RE = re.compile(r"^\s*(\d+)\s*/\s*(\d+)\s*$")
+RATIO_RE = re.compile(r"(\d+)\s*/\s*(\d+)")
+INT_RE = re.compile(r"(\d+)")
+
+
+def _identify_columns(headers: list[str]) -> dict:
+    """Given normalized (lowercased) header cells, find which index holds what.
+
+    Returns a dict with any of: total, attended, absent, rate.
+    """
+    cols = {}
+    for i, h in enumerate(headers):
+        h = h.lower()
+        if "total" in h and "total" not in cols:
+            cols["total"] = i
+        elif ("present" in h or "attend" in h) and "attended" not in cols:
+            cols["attended"] = i
+        elif "absent" in h and "absent" not in cols:
+            cols["absent"] = i
+        elif "rate" in h and "rate" not in cols:
+            cols["rate"] = i
+    return cols
 
 
 def parse_attendance_section(text: str) -> list[dict]:
     """Extract member attendance data from Prompt 2 report.
 
-    Handles multiple table formats:
-      | Name | 11/25 | 12/02 | ... | 11/11 |      (MCC: ratio in LAST cell)
-      | Name | 6/6   | 100%  |                   (TSC: ratio in SECOND cell)
-    Picks the last cell that is a clean "N/M" ratio. Columns that look like
-    dates (e.g. "11/25") in the header region are not candidates because we
-    only inspect body cells and take the ratio furthest to the right.
+    Handles multiple table formats — detected per-table from the header row:
+      1) Ratio style:  | Name | ... | 11/11 |         (first matching N/M cell)
+      2) Columnar:     | Name | Total | Present | Absent | Rate |
+      3) Legacy TSC:   | Name | 6/6 | 100% |           (N/M in any cell)
+
+    If the same member appears in multiple tables (e.g. a report kept a pre-
+    election and a post-election table), the LATER occurrence wins. We do not
+    sum — a rerun with ELECTION_START set should be the source of truth.
     """
-    members = []
+    members: list[dict] = []
     by_name: dict[str, dict] = {}
     lines = text.split("\n")
-    in_table = False
 
-    for line in lines:
-        stripped = line.strip()
+    i = 0
+    while i < len(lines):
+        stripped = lines[i].strip()
         if not stripped.startswith("|"):
-            if in_table:
-                in_table = False
+            i += 1
             continue
 
-        cells = [c.strip() for c in stripped.strip("|").split("|")]
-
-        if all(set(c) <= {"-", " ", ":"} for c in cells):
-            in_table = True
+        header_cells = [c.strip() for c in stripped.strip("|").split("|")]
+        sep = (lines[i + 1] or "").strip() if i + 1 < len(lines) else ""
+        sep_cells = [c.strip() for c in sep.strip("|").split("|")] if sep.startswith("|") else []
+        if not (sep_cells and all(set(c) <= {"-", " ", ":"} for c in sep_cells)):
+            i += 1
             continue
 
-        if not in_table or len(cells) < 2:
-            continue
+        cols = _identify_columns(header_cells)
+        # Advance past separator
+        j = i + 2
+        while j < len(lines) and lines[j].strip().startswith("|"):
+            row = [c.strip() for c in lines[j].strip().strip("|").split("|")]
+            j += 1
+            if len(row) < 2:
+                continue
+            if all(set(c) <= {"-", " ", ":"} for c in row):
+                continue
+            name = row[0]
+            if not name or set(name) <= {"-", " "}:
+                continue
 
-        name = cells[0]
-        if not name or set(name) <= {"-", " "}:
-            continue
+            attended: int | None = None
+            total: int | None = None
 
-        ratio_cell = None
-        for c in reversed(cells[1:]):
-            m = RATIO_RE.match(c)
-            if m:
-                ratio_cell = m
-                break
-        if not ratio_cell:
-            continue
+            # Columnar format
+            if "total" in cols and "attended" in cols:
+                t_cell = row[cols["total"]] if cols["total"] < len(row) else ""
+                a_cell = row[cols["attended"]] if cols["attended"] < len(row) else ""
+                t_m = INT_RE.search(t_cell)
+                a_m = INT_RE.search(a_cell)
+                if t_m and a_m:
+                    total = int(t_m.group(1))
+                    attended = int(a_m.group(1))
 
-        try:
-            attended = int(ratio_cell.group(1))
-            total_meetings = int(ratio_cell.group(2))
-        except ValueError:
-            continue
-        if total_meetings == 0:
-            continue
+            # Ratio format
+            if attended is None or total is None:
+                for c in reversed(row[1:]):
+                    m = RATIO_RE.search(c)
+                    if m:
+                        attended = int(m.group(1))
+                        total = int(m.group(2))
+                        break
 
-        existing = by_name.get(name)
-        if existing:
-            existing["attended"] += attended
-            existing["total"] += total_meetings
-            existing["rate"] = round(existing["attended"] / existing["total"] * 100)
-        else:
+            if attended is None or total is None or total <= 0:
+                continue
+
             entry = {
                 "name": name,
                 "attended": attended,
-                "total": total_meetings,
-                "rate": round(attended / total_meetings * 100),
+                "total": total,
+                "rate": round(attended / total * 100),
             }
-            by_name[name] = entry
-            members.append(entry)
+            if name in by_name:
+                # Overwrite: later tables (post-election) win
+                existing = by_name[name]
+                existing.update(entry)
+            else:
+                by_name[name] = entry
+                members.append(entry)
+
+        i = j
 
     return members
 
@@ -285,6 +323,14 @@ def build_committee_data(committee: str) -> dict | None:
         else:
             reports[key] = {"available": False}
 
+    # Detect stale reports: if the report text's max member-total exceeds the
+    # filtered meeting count, the narrative was generated on pre-election data
+    # and needs a rerun once credits are available.
+    mp = reports.get("member_participation", {})
+    members_in_report = mp.get("members", []) if mp.get("available") else []
+    max_member_total = max((m["total"] for m in members_in_report), default=0)
+    needs_rerun = max_member_total > len(dates) and len(dates) > 0
+
     # Compute summary stats
     total_promises = 0
     delivered = 0
@@ -326,6 +372,8 @@ def build_committee_data(committee: str) -> dict | None:
             "delivery_rate": round(delivered / total_promises * 100) if total_promises else 0,
         },
         "generated": datetime.now().isoformat(),
+        "needs_rerun": needs_rerun,
+        "report_period_inferred": max_member_total if needs_rerun else 0,
     }
 
     return data

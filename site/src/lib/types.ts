@@ -82,6 +82,8 @@ export interface CommitteeData {
   };
   stats: CommitteeStats;
   generated: string;
+  needs_rerun?: boolean;
+  report_period_inferred?: number;
 }
 
 export interface IndexCommittee {
