@@ -41,7 +41,7 @@
     },
     {
       "id": "CPC",
-      "name": "Civics & Participation Committee",
+      "name": "Cardano Product Committee",
       "period": {
         "start": "20251014",
         "end": "20260203"
@@ -98,7 +98,7 @@
     },
     {
       "id": "CCC",
-      "name": "Constitution & Civics Committee",
+      "name": "Cardano Civics Committee",
       "period": {
         "start": "20251127",
         "end": "20260319"
@@ -117,7 +117,7 @@
     },
     {
       "id": "CBC",
-      "name": "Community & Budget Committee",
+      "name": "Cardano Budget Committee",
       "period": {
         "start": "20251006",
         "end": "20260316"

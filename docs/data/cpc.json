@@ -3,10 +3,10 @@
   "full_name": "Civics & Participation Committee",
   "period": {
     "start": "20251014",
-    "end": "20260203"
+    "end": "20260331"
   },
-  "meetings_count": 13,
-  "summary_count": 13,
+  "meetings_count": 21,
+  "summary_count": 21,
   "transcript_count": 0,
   "has_transcripts": false,
   "dates": [
@@ -22,7 +22,15 @@
     "20260113",
     "20260120",
     "20260127",
-    "20260203"
+    "20260203",
+    "20260210",
+    "20260217",
+    "20260224",
+    "20260303",
+    "20260310",
+    "20260317",
+    "20260324",
+    "20260331"
   ],
   "reports": {
     "summaries_vs_transcripts": {
@@ -49,5 +57,5 @@
     "recurring": 0,
     "delivery_rate": 0
   },
-  "generated": "2026-04-01T00:14:43.871415"
+  "generated": "2026-04-16T02:11:19.548318"
 }

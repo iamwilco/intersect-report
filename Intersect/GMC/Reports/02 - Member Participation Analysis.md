@@ -1,236 +1,183 @@
 # Member Participation Analysis
 
 **Committee:** GMC  
-**Period:** 20251014 -> 20260210  
-**Meetings:** 14  
+**Period:** 20251118 -> 20260414  
+**Meetings:** 18  
 **Transcripts available:** Yes  
-**Generated:** 2026-03-27 21:40  
+**Generated:** 2026-04-16 01:57  
 
 ---
 
-# UNIFIED GMC COMMITTEE PARTICIPATION ANALYSIS
-## October 14, 2025 - February 10, 2026
+# GMC Performance Analysis: Unified Report
 
-### Dataset Overview
+## Committee Composition and Dataset Overview
 
-The analysis covers **11 unique meeting dates** from the provided transcripts:
-- October 14, 2025
-- October 21, 2025  
-- October 28, 2025
-- November 4, 2025
-- November 18, 2025 (post-election)
-- November 25, 2025
-- December 2, 2025
-- December 16, 2025
-- January 6, 2026
-- January 13, 2026
-- January 20, 2026
-- January 27, 2026
-- February 3, 2026
-- February 10, 2026
+### Meeting Count Reconciliation
+The complete dataset contains **21 meetings** spanning November 18, 2025 to April 14, 2026. Part 1 analyzed 17 meetings (Nov 2025 - Mar 2026), while Part 2 analyzed 7 meetings with gaps. The consolidated timeline:
+- November 18, 2025 through December 16, 2025 (3 meetings)
+- January 6, 2026 through March 17, 2026 (14 meetings)
+- March 24, 2026 through April 14, 2026 (4 meetings)
 
-**Committee Transition:** A committee election occurred between November 4 and November 18, 2025. The November 4 transcript confirms "it ends on 7th of November" for voting (Anuj Chaudhary, 00:02:58).
+### Committee Transition
+**No mid-term transition occurred.** The apparent membership changes between Part 1 and Part 2 reflect dataset inconsistencies, not actual transitions. Evidence from transcripts confirms:
+- Elections occurred October 2025 (before dataset)
+- Current term runs through April 2026 elections
+- Members serve staggered terms (April and October cycles)
 
-### Committee Composition
+### Current Elected Members (11 voting seats)
+1. Tim Harrison (Chair, April 2026 cycle)
+2. Laura Mattiucci (Vice Chair from January 2026, April 2026 cycle)
+3. Andy Hung (April 2026 cycle)
+4. Anuj Chaudhary (April 2026 cycle)
+5. Hasitha Raymond (April 2026 cycle)
+6. Maggie Schmidt (October 2026 cycle)
+7. Otavio Lima (October 2026 cycle)
+8. Reshan Fernando (October 2026 cycle)
+9. Wes Parkinson (October 2026 cycle)
+10. Yoram Ben Zvi (October 2026 cycle)
+11. [One seat unclear from transcripts]
 
-**Pre-Election Committee (October 14 - November 4):**
-- Wes Parkinson (Chair)
-- Tim Harrison (Vice Chair)
-- Laura Mattiucci
-- Nathan Acton  
-- Mubarak Oladimeji
-- Anuj Chaudhary
-- Andy Hung
-- Hasitha Raymond
+**Non-voting participants:**
+- Lara Bonasorte (Secretary)
+- Terence McCutcheon (Intersect staff liaison)
 
-**Post-Election Committee (November 18 onwards):**
-- Tim Harrison (Chair)
-- Laura Mattiucci (Vice Chair from January 20)
-- Wes Parkinson (re-elected)
-- Andy Hung (continuing)
-- Anuj Chaudhary (continuing)
-- Hasitha Raymond (continuing)
-- Maggie Schmidt (new)
-- Otavio Lima (new)
-- Reshan Fernando (new)
-- Yoram Ben Zvi (new)
+## Consolidated Attendance Analysis
 
-**Non-voting Staff:** Terence 'Tex' McCutcheon (Secretary through December), Lara Bonasorte (Secretary from December onwards)
+### Complete Attendance Grid (21 meetings)
 
-## UNIFIED ATTENDANCE ANALYSIS
+| Member | Nov-Dec 2025 | Jan-Mar 2026 | Mar-Apr 2026 | Total | Rate |
+|--------|--------------|--------------|--------------|--------|------|
+| Tim Harrison | 4/5 | 6/9 | 3/4 | 13/18 | 72.2% |
+| Laura Mattiucci | 3/4 | 11/12 | 4/4 | 18/20 | 90.0% |
+| Andy Hung | 2/4 | 10/12 | 3/4 | 15/20 | 75.0% |
+| Anuj Chaudhary | 4/5 | 11/12 | 4/4 | 19/21 | 90.5% |
+| Hasitha Raymond | 4/5 | 8/12 | 4/4 | 16/21 | 76.2% |
+| Maggie Schmidt | 1/4 | 2/12 | 0/4 | 3/20 | 15.0% |
+| Otavio Lima | 0/4 | 5/12 | 4/4 | 9/20 | 45.0% |
+| Reshan Fernando | 2/4 | 8/12 | 3/4 | 13/20 | 65.0% |
+| Wes Parkinson | 2/4 | 4/12 | 2/4 | 8/20 | 40.0% |
+| Yoram Ben Zvi | 3/4 | 10/12 | 4/4 | 17/20 | 85.0% |
 
-### Pre-Election Period Attendance
+## Individual Performance Analysis
 
-| Member | Oct 14 | Oct 21 | Oct 28 | Nov 4 | Rate |
-|--------|---------|---------|---------|--------|------|
-| Wes Parkinson | P | P | P | A | 3/4 |
-| Tim Harrison | P | P | P | A | 3/4 |
-| Laura Mattiucci | P | A | P | P | 3/4 |
-| Nathan Acton | A | A | A | A | 0/4 |
-| Mubarak Oladimeji | A | A | A | A | 0/4 |
-| Anuj Chaudhary | A | P | P | P | 3/4 |
-| Andy Hung | P | A/P* | P | A | 2/4 |
-| Hasitha Raymond | P | P | P | P | 4/4 |
+### 1. Laura Mattiucci (Vice Chair) - **TOP PERFORMER**
+- **Attendance:** 90% (18/20 meetings)
+- **Contributions:** Dominant force in committee operations
+  - Led summit planning and executed 2025 event
+  - Developed budget framework with 5-pillar structure
+  - Created digital trust infrastructure framework
+  - Coordinated Service Plan engagement
+  - Stepped up during Chair absences
+- **Evidence:** "Working on a new version of the budget and framework" (March 31, 2026); presented summit results showing "37 countries represented" (February 17, 2026)
+- **Verdict:** Carries the committee's operational load
 
-*Conflict in records - marked absent in table but spoke in transcript
+### 2. Anuj Chaudhary - **CONSISTENT REGIONAL EXECUTOR**
+- **Attendance:** 90.5% (19/21 meetings)
+- **Contributions:** India ecosystem development
+  - Executed India Blockchain Week
+  - Managed hackathon partnerships (Dora Hacks, Hack India)
+  - Developed ONDC partnership
+  - Produced Asia ecosystem report
+- **Evidence:** "India Blockchain Week coordination and updates" (multiple meetings); "Asia ecosystem report" referenced (March 17, 2026)
+- **Verdict:** Reliable regional contributor
 
-### Post-Election Period Attendance (Consolidated)
+### 3. Yoram Ben Zvi - **STRATEGIC ENTERPRISE LEAD**
+- **Attendance:** 85% (17/20 meetings)
+- **Contributions:** Enterprise strategy and execution
+  - Developed enterprise onboarding framework
+  - Created vertical pilot programs
+  - Designed business network strategy
+  - Contributed to budget framework with Laura
+- **Evidence:** "Agricultural supply chain use case" (February 3, 2026); "Explained Cardano Builder DAO model" (March 24, 2026)
+- **Verdict:** High-value strategic contributor
 
-| Member | Nov-Dec 2025 | Jan-Feb 2026 | Overall Rate |
-|--------|--------------|--------------|--------------|
-| Tim Harrison | 4/4 | 5/5 | 9/9 (100%) |
-| Laura Mattiucci | 2/4 | 4/5 | 6/9 (67%) |
-| Wes Parkinson | 3/4 | 2/5 | 5/9 (56%) |
-| Andy Hung | 3/4 | 5/5 | 8/9 (89%) |
-| Anuj Chaudhary | 3/4 | 5/5 | 8/9 (89%) |
-| Hasitha Raymond | 4/4 | 5/5 | 9/9 (100%) |
-| Yoram Ben Zvi | 4/4 | 4/5 | 8/9 (89%) |
-| Reshan Fernando | 3/4 | 3/5 | 6/9 (67%) |
-| Maggie Schmidt | 1/4 | 2/5 | 3/9 (33%) |
-| Otavio Lima | 1/4 | 2/5 | 3/9 (33%) |
-
-## UNIFIED MEMBER PERFORMANCE ANALYSIS
-
-### Top Performers
-
-**1. Tim Harrison**
-- **Attendance:** 12/13 meetings overall (92%)
-- **Role Evolution:** Vice Chair → Chair
-- **Key Contributions:**
-  - Led marketing survey analysis and white paper development
-  - Established KPI framework and strategic priorities
-  - Coordinated with external agencies (Service Plan, Waxman)
+### 4. Tim Harrison (Chair) - **INCONSISTENT LEADER**
+- **Attendance:** 72.2% (13/18 meetings)
+- **Contributions:** Strategic leadership when present
   - Created Problem Statement Document template
-- **Speaking:** Heavy when present, strategic focus
-- **Evidence of Work:** Extensive between-meeting preparation documented
+  - Proposed northstar metrics framework
+  - Led KPI discussions
+- **Critical weakness:** Complete absence February 17 - March 17, 2026
+- **Evidence:** Absent for four consecutive meetings in crucial period
+- **Verdict:** Strong start undermined by extended absence
 
-**2. Yoram Ben Zvi** (Post-election member)
-- **Attendance:** 8/9 meetings (89%)
-- **Key Contributions:**
-  - Created enterprise adoption framework and challenge documents
-  - Brought concrete partnerships (100,000 farmers project, Barcelona FC)
-  - Proposed "$1B Bitcoin to Cardano" KPI
-  - Led Business Development workstream coordination
-- **Speaking:** Heavy, substantive
-- **Evidence of Work:** Multiple documents created between meetings
+### 5. Andy Hung - **SILENT ATTENDEE**
+- **Attendance:** 75% (15/20 meetings)
+- **Contributions:** None documented across all transcripts
+- **Evidence:** Present but never recorded speaking
+- **Verdict:** Occupies seat without contributing
 
-**3. Anuj Chaudhary**
-- **Attendance:** 11/13 meetings overall (85%)
-- **Key Contributions:**
-  - Organized Cardano Hackathon Asia (430 developers)
-  - Led India Blockchain Week initiatives (3,000+ registrations)
-  - Secured partnerships with HackToSkill, Midnight
-  - Proposed ONDC blockchain settlement integration
-- **Speaking:** Moderate to heavy when present
-- **Evidence of Work:** Extensive event organizing between meetings
+### 6. Hasitha Raymond - **SILENT ATTENDEE**
+- **Attendance:** 76.2% (16/21 meetings)
+- **Contributions:** Brief supportive comments only
+- **Evidence:** No substantive contributions recorded
+- **Verdict:** Regular attendance, zero impact
 
-### Middle Performers
+### 7. Reshan Fernando - **MINIMAL CONTRIBUTOR**
+- **Attendance:** 65% (13/20 meetings)
+- **Contributions:** Limited due to driving during meetings
+  - Regional hub clarification (January 27, 2026)
+  - Budget buffer suggestion (March 31, 2026)
+- **Evidence:** "Often driving during meetings"
+- **Verdict:** Participation hampered by multitasking
 
-**4. Laura Mattiucci**
-- **Attendance:** 9/13 meetings overall (69%)
-- **Key Contributions:**
-  - Pushed for 2-year roadmap creation
-  - Led enterprise adoption working group (biweekly meetings)
-  - Proposed website redesign for lead generation
-  - Elected Vice Chair (January 2026)
-- **Speaking:** Heavy when present
-- **Limitation:** Inconsistent attendance undermines impact
+### 8. Otavio Lima - **IMPROVING BUT WEAK**
+- **Attendance:** 45% (9/20 meetings) - improved to 100% in final quarter
+- **Contributions:** Minimal throughout
+- **Evidence:** One recorded contribution about regional summits (April 14, 2026)
+- **Verdict:** Poor overall performance despite late improvement
 
-**5. Wes Parkinson**
-- **Attendance:** 8/13 meetings overall (62%)
-- **Key Contributions:**
-  - As Chair: Announced Amplify Cardano Fund ($100K)
-  - Reported 700 wallet signups at Singapore Token2049
-  - Proposed vendor working group for DREP coordination
-  - Defended committee's strategic direction
-- **Speaking:** Moderate when present
-- **Limitation:** Attendance declined significantly after losing Chair position
+### 9. Wes Parkinson - **DECLINING PARTICIPANT**
+- **Attendance:** 40% (8/20 meetings)
+- **Contributions:** Quality input when present
+  - Vendor working group proposal (January 6, 2026)
+  - DAO timing concerns (March 24, 2026)
+- **Evidence:** Valuable contributions but deteriorating attendance
+- **Verdict:** Wasted potential due to absence
 
-### Consistent Attendees with Limited Contribution
+### 10. Maggie Schmidt - **NON-PARTICIPANT**
+- **Attendance:** 15% (3/20 meetings)
+- **Contributions:** None beyond brief introduction
+- **Evidence:** Absent from all 2026 meetings in Part 2 analysis
+- **Verdict:** Effectively not a committee member
 
-**6. Hasitha Raymond**
-- **Attendance:** 13/13 meetings (100%)
-- **Speaking:** Minimal across all meetings
-- **Contributions:** Rarely spoke beyond greetings and procedural comments
-- **Critical Issue:** Perfect attendance with near-zero substantive contribution
+## Power Dynamics and Work Distribution
 
-**7. Andy Hung**
-- **Attendance:** 10/13 meetings (77%)
-- **Speaking:** Minimal - mostly silent despite presence
-- **Contributions:** Reported on Midnight event (30-40 attendees) once
-- **Critical Issue:** Regular attendance without engagement
+**Work Concentration:** The committee operates on a 3-person engine:
+1. **Laura Mattiucci** - Operational leadership, framework development, summit execution
+2. **Yoram Ben Zvi** - Enterprise strategy, ecosystem partnerships
+3. **Anuj Chaudhary** - Regional execution in Asia
 
-**8. Reshan Fernando** (Post-election member)
-- **Attendance:** 6/9 meetings (67%)
-- **Speaking:** Light - mainly greetings and scheduling
-- **Contributions:** Explained regional hub funding history
-- **Often driving during meetings, limiting participation
+**Speaking Dominance:**
+- Laura Mattiucci commands most meetings
+- Service Plan presentations consume significant time
+- 5 of 11 members rarely or never speak
 
-### Poor Performers
+**Participation Categories:**
+- **Carry the load (3):** Laura, Yoram, Anuj
+- **Occasional value (2):** Tim (when present), Wes (when present)
+- **Seat warmers (3):** Andy, Hasitha, Reshan
+- **Absent/Minimal (3):** Maggie, Otavio, early Wes
 
-**9-10. Maggie Schmidt & Otavio Lima** (Post-election members)
-- **Attendance:** Both 3/9 meetings (33%)
-- **Speaking:** Light when present (mainly introductions)
-- **Contributions:** Minimal to none
-- **Critical Issue:** Chronic absenteeism
+## Final Rankings and Recommendations
 
-**11-12. Nathan Acton & Mubarak Oladimeji** (Pre-election members)
-- **Attendance:** 0/4 meetings (0%)
-- **Never attended a single meeting despite being elected members**
-- **No contributions whatsoever**
+### Performance Rankings (Most to Least Effective):
+1. **Laura Mattiucci** - 90% attendance, drives all major initiatives
+2. **Anuj Chaudhary** - 90.5% attendance, consistent regional execution
+3. **Yoram Ben Zvi** - 85% attendance, strategic enterprise value
+4. **Tim Harrison** - 72% attendance, leadership compromised by absence
+5. **Hasitha Raymond** - 76% attendance, but zero contributions
+6. **Andy Hung** - 75% attendance, but completely silent
+7. **Reshan Fernando** - 65% attendance, minimal input
+8. **Otavio Lima** - 45% attendance, negligible contributions
+9. **Wes Parkinson** - 40% attendance, wasted potential
+10. **Maggie Schmidt** - 15% attendance, non-functional member
 
-## POWER DYNAMICS ANALYSIS
+### Critical Finding
+**6 of 11 elected members (55%) contribute little to nothing** despite holding voting power. This represents a fundamental governance failure where:
+- 3 members attend but never meaningfully participate (Andy, Hasitha, Reshan)
+- 3 members have attendance below 50% (Maggie, Otavio, Wes)
+- The committee's work falls on 3 primary contributors (Laura, Anuj, Yoram)
 
-### Speaking Time Domination
-1. **Tim Harrison** - Dominated as Vice Chair and Chair
-2. **Yoram Ben Zvi** - Heavy speaker on enterprise/BD topics
-3. **Terence McCutcheon/Lara Bonasorte** - Secretaries often filled discussion gaps
-4. **External presenters** - Often dominated when invited
-
-### Consistently Sidelined
-- **Hasitha Raymond** - 100% attendance, minimal speaking
-- **Andy Hung** - Present but largely silent
-- **Reshan Fernando** - Limited by frequently driving during meetings
-
-### Visible Work Patterns
-**Active Workers:**
-- Tim Harrison, Yoram Ben Zvi, Anuj Chaudhary - consistent evidence of between-meeting work
-- Laura Mattiucci - enterprise working group leadership
-
-**Meeting Attendees Only:**
-- Hasitha Raymond, Andy Hung, Reshan Fernando - no evidence of work outside meetings
-
-**Non-Participants:**
-- Nathan Acton, Mubarak Oladimeji (pre-election) - never attended
-- Maggie Schmidt, Otavio Lima (post-election) - chronic absence
-
-## CRITICAL FINDINGS
-
-1. **Participation Crisis:** Approximately 40-50% of elected members either never attend or attend without contributing substantively.
-
-2. **Actual Work Concentration:** The committee's substantive work is carried by 3-4 members (Tim Harrison, Yoram Ben Zvi, Anuj Chaudhary, occasionally Laura Mattiucci).
-
-3. **Perfect Attendance ≠ Value:** Hasitha Raymond's 100% attendance with minimal contribution demonstrates that showing up is not sufficient for effective governance.
-
-4. **Post-Election Decline:** Several continuing members (Wes Parkinson, Andy Hung) showed decreased engagement after the November election.
-
-5. **New Member Integration:** Of four new members elected in November, only Yoram Ben Zvi became a significant contributor. Two (Maggie Schmidt, Otavio Lima) essentially abandoned their positions.
-
-## FINAL RANKINGS
-
-Based on comprehensive evidence across all meetings:
-
-1. **Tim Harrison** - Exceptional leadership, consistent delivery, strategic vision
-2. **Yoram Ben Zvi** - Outstanding new member, concrete partnerships, strategic frameworks  
-3. **Anuj Chaudhary** - Consistent event delivery, strong partnerships, regional leadership
-4. **Laura Mattiucci** - Strong when present, but attendance issues limit impact
-5. **Wes Parkinson** - Declined after election loss but contributed when engaged
-6. **Reshan Fernando** - Present but limited by circumstances
-7. **Andy Hung** - Chronic underperformance despite attendance
-8. **Hasitha Raymond** - Perfect attendance with negligible contribution
-9. **Maggie Schmidt** - Elected but abandoned position (33% attendance)
-10. **Otavio Lima** - Elected but abandoned position (33% attendance)
-11. **Nathan Acton** - Never attended despite election (0%)
-12. **Mubarak Oladimeji** - Never attended despite election (0%)
-
-The committee suffers from a severe engagement crisis, with effective work concentrated in less than one-third of its elected membership.
+### Recommendation
+The community should demand accountability measures for non-performing elected members, as over half the committee collects benefits while contributing negligible value to Cardano's governance mission.

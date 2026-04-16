@@ -1,220 +1,199 @@
 # Member Participation Analysis
 
 **Committee:** MCC  
-**Period:** 20251118 -> 20260317  
+**Period:** 20251125 -> 20260331  
 **Meetings:** 11  
 **Transcripts available:** Yes  
-**Generated:** 2026-03-31 23:35  
+**Generated:** 2026-04-16 01:32  
 
 ---
 
-## COMPREHENSIVE PARTICIPATION ANALYSIS: MCC Committee (November 18, 2025 - March 17, 2026)
+# MCC Participation Analysis (November 2025 - March 2026)
 
-### COMMITTEE COMPOSITION DETERMINATION
+## Committee Composition Analysis
 
-**Dataset contains 11 meetings:**
-1. November 18, 2025
-2. November 25, 2025
-3. December 2, 2025
-4. December 9, 2025
-5. December 16, 2025
-6. January 6, 2026
-7. January 20, 2026
-8. February 3, 2026
-9. February 17, 2026
-10. March 3, 2026
-11. March 17, 2026
+**Total Meetings in Dataset:** 11 meetings
+- 20251125, 20251202, 20251209, 20251216, 20260106, 20260120, 20260203, 20260217, 20260303, 20260317, 20260331
 
-**Committee Transition Identified:**
-The committee underwent a transition between the November 18 and November 25 meetings. Evidence from transcripts:
-- November 18: Darlington states "I will be stepping down" and mentions "outgoing members (Darlington, Matthew, and Ha)"
-- November 25: Maureen is confirmed as the new Chair, replacing Darlington
-- The transition involved an October 2025 election cycle
+**Committee Membership Status:** No mid-term transition detected. The same elected members appear throughout the entire period, with consistent role designations in each meeting summary.
 
-**Current Elected Members (post-transition):**
-1. Maureen Wepngong - Chair (from Nov 25)
-2. Sanjaya Wanigasekera - Vice Chair
-3. Akheel Fouze
-4. Boaz Balume
-5. Fanny Wijaya
-6. Ian McCullough
-7. Jose Iadicicco
-8. Laurentine Djatsa
-9. Nathan Kanapi
-10. Olivier Rishi Matabaro
+**Current Elected Members (Voting Seats):**
+1. Maureen Wepngong (Chair) - Election Cycle: April 2026
+2. Sanjaya Wanigasekera (Vice Chair) - Election Cycle: October 2026
+3. Akheel Fouze - Election Cycle: October 2026
+4. Boaz Balume - Election Cycle: April 2026
+5. Fanny Wijaya - Election Cycle: April 2026
+6. Ian McCullough - Election Cycle: October 2026
+7. Jose Iadicicco - Election Cycle: October 2026
+8. Laurentine Djatsa - Election Cycle: April 2026
+9. Nathan Kanapi - Election Cycle: April 2026
+10. Olivier Rishi Mataboro - Election Cycle: October 2026
 
-**Non-voting roles:**
-- Abhik Nag - Secretary (Intersect staff)
-- Terence McCutcheon - Intersect staff
+**Non-Voting Staff:** Abhik Nag (Secretary)
 
-### Part 1: ATTENDANCE GRID
+## Part 1: Attendance Grid
 
-| Member | Nov 18 | Nov 25 | Dec 2 | Dec 9 | Dec 16 | Jan 6 | Jan 20 | Feb 3 | Feb 17 | Mar 3 | Mar 17 | Rate |
-|--------|--------|--------|-------|-------|--------|-------|--------|-------|--------|-------|--------|------|
+| Member | 11/25 | 12/02 | 12/09 | 12/16 | 01/06 | 01/20 | 02/03 | 02/17 | 03/03 | 03/17 | 03/31 | Rate |
+|--------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|------|
 | Maureen Wepngong | P | P | P | P | P | P | P | P | P | P | P | 11/11 |
 | Sanjaya Wanigasekera | P | P | P | P | P | P | P | P | P | P | P | 11/11 |
-| Akheel Fouze | P | P | A | P | P | A | P | P | A | P | P | 8/11 |
+| Akheel Fouze | P | P | P | P | A | P | P | P | P | P | P | 10/11 |
 | Boaz Balume | P | P | P | P | P | P | P | P | P | P | P | 11/11 |
-| Fanny Wijaya | P | P | A | P | P | P | P | A | A | P | P | 8/11 |
-| Ian McCullough | P | P | P | P | P | P | P | P | A | A | A | 8/11 |
-| Jose Iadicicco | P | P | A | P | P | A | P | P | P | P | P | 9/11 |
-| Laurentine Djatsa | P | P | P | P | P | A | P | P | P | P | P | 10/11 |
+| Fanny Wijaya | P | P | P | P | P | P | P | A | P | P | P | 10/11 |
+| Ian McCullough | P | P | P | P | P | P | P | P | P | A | P | 10/11 |
+| Jose Iadicicco | P | P | P | P | A | P | P | P | P | P | P | 10/11 |
+| Laurentine Djatsa | P | P | P | P | A | P | P | P | P | P | A | 9/11 |
 | Nathan Kanapi | A | A | A | A | A | A | A | A | A | A | A | 0/11 |
-| Olivier Rishi Matabaro | P | P | P | P | P | P | P | P | A | P | A | 9/11 |
+| Olivier Rishi Mataboro | P | P | P | P | P | P | P | A | P | A | P | 9/11 |
 
-### Part 2: PER-MEMBER DEEP ANALYSIS
+## Part 2: Per-Member Deep Analysis
 
-**1. Maureen Wepngong (Chair)**
+### Maureen Wepngong (Chair)
 - **Attendance:** 11/11 (100%)
-- **Speaking frequency:** Heavy - Dominates most meetings as chair
+- **Speaking frequency:** Heavy - Dominates nearly every meeting as Chair
 - **Substantive contributions:**
-  - Created "Start Here" onboarding document (Dec 9, Feb 3)
-  - Drafted 2026 budget proposal with 300,000 ADA cap (Feb 17)
-  - Proposed event-based funding model replacing hubs (Mar 17)
-  - Built framework for workstream organization (Dec 16)
-- **Work between meetings:** Extensive - coordinated with Grid team, drafted documents, organized workstreams
-- **Quality:** High value - drives agenda, makes decisions, creates deliverables
-- **Accountability:** Strong - follows through on most commitments
-- **Trajectory:** Consistent leadership throughout
+  - Developed "Start Here" onboarding document (12/02, 01/06, 02/03)
+  - Created budget draft capped at 300,000 ADA (02/17, 03/03)
+  - Proposed framework for structured standups and project boards (11/25)
+  - Built hub funding mechanism proposal (02/03)
+  - Initiated translation workstream coordination (02/03)
+- **Work between meetings:** Extensive - created documents, coordinated with staff, built Mirror boards
+- **Quality:** High-value strategic leadership, though sometimes impatient with committee inaction
+- **Accountability:** Consistently followed through on commitments
+- **Trajectory:** Maintained high engagement throughout
 
-**2. Sanjaya Wanigasekera (Vice Chair)**
+### Sanjaya Wanigasekera (Vice Chair)
 - **Attendance:** 11/11 (100%)
-- **Speaking frequency:** Moderate to Heavy
+- **Speaking frequency:** Moderate - Regular contributions in most meetings
 - **Substantive contributions:**
-  - Led weekly Open Office Hours initiative (Jan 6 onwards)
-  - Co-authored Hub KPI document (multiple meetings)
-  - Created Google worksheet for tracking community concerns (Dec 9)
-- **Work between meetings:** Active in WhatsApp hub coordination group
-- **Quality:** Solid operational contributions
-- **Accountability:** Mixed - hub document delays noted
-- **Trajectory:** Improved after becoming Vice Chair
+  - Led Open Office Hours initiative starting January (01/06, 01/20)
+  - Created Google worksheet for tracking community concerns (12/09)
+  - Working on Hub KPI document (12/09, 02/03)
+  - Elected Co-Chair by majority vote (11/25)
+- **Work between meetings:** Active in WhatsApp coordination for hubs workstream
+- **Quality:** Solid operational contributions, good follow-through
+- **Accountability:** Delivered on office hours commitment
+- **Trajectory:** Increased responsibility and engagement over time
 
-**3. Nathan Kanapi**
-- **Attendance:** 0/11 (0%)
-- **Speaking frequency:** Silent - never attended
-- **Substantive contributions:** None
-- **Work between meetings:** No evidence
-- **Quality:** Non-participant
-- **Accountability:** Complete failure
-- **Trajectory:** Absent throughout
-- **Note:** Multiple discussions about replacing him due to non-participation
+### Akheel Fouze
+- **Attendance:** 10/11 (Absent 01/06)
+- **Speaking frequency:** Light to Moderate - Spoke when present but not extensively
+- **Substantive contributions:**
+  - Working on membership benefits document (01/20, 02/03)
+  - Developing Hub KPIs with Sanjaya (02/03)
+  - Proposed language/regional access support (02/03)
+- **Work between meetings:** Active in WhatsApp hub discussions
+- **Quality:** Technical contributions when engaged
+- **Accountability:** Admitted being "rusty on ClickUp" (12/16)
+- **Trajectory:** Moderate engagement throughout
 
-**4. Boaz Balume**
+### Boaz Balume
 - **Attendance:** 11/11 (100%)
-- **Speaking frequency:** Light - rarely speaks
+- **Speaking frequency:** Light - Minimal speaking despite perfect attendance
 - **Substantive contributions:**
-  - French translation work - translated 1,900+ terms (Feb 3, Mar 3)
-  - Reached 99% completion on site translation (Mar 17)
-- **Work between meetings:** Active on translation platform
-- **Quality:** Valuable specialized contribution
-- **Accountability:** Delivered on translation commitment
-- **Trajectory:** Consistent but limited to translation work
+  - Led French translation effort - translated 1,900+ terms (02/03, 03/03, 03/31)
+  - Completed 99% of French site translation
+- **Work between meetings:** Extensive translation work
+- **Quality:** High-quality specialized contribution
+- **Accountability:** Delivered translation milestone
+- **Trajectory:** Consistent specialized focus
 
-**5. Akheel Fouze**
-- **Attendance:** 8/11 (73%)
+### Fanny Wijaya
+- **Attendance:** 10/11 (Absent 02/17)
 - **Speaking frequency:** Moderate when present
 - **Substantive contributions:**
-  - Membership benefits document refinement (Feb 3)
-  - Hub KPI development (multiple meetings)
-  - Language support proposals
-- **Work between meetings:** Part of hub working group
-- **Quality:** Good when engaged
-- **Accountability:** Admitted being "rusty" with ClickUp
-- **Trajectory:** Inconsistent attendance impacts effectiveness
+  - Created community support framework/blueprint (02/03)
+  - Proposed 2026 budget framework for MCC (02/03)
+  - Working on Indonesian governance guide book (03/31)
+- **Work between meetings:** Active document creation
+- **Quality:** Good strategic contributions
+- **Accountability:** Delivered on documentation promises
+- **Trajectory:** Steady engagement
 
-**6. Fanny Wijaya**
-- **Attendance:** 8/11 (73%)
-- **Speaking frequency:** Moderate
-- **Substantive contributions:**
-  - Community support framework Phase 1 (Feb 3)
-  - Budget framework proposal (Mar 3)
-  - Contributor spotlight system design
-- **Work between meetings:** Active in hub discussions
-- **Quality:** Solid documentation work
-- **Accountability:** Delivered one-pagers on time
-- **Trajectory:** Consistent quality when present
+### Ian McCullough
+- **Attendance:** 10/11 (Absent 03/17)
+- **Speaking frequency:** Silent - No recorded speaking in any transcript
+- **Substantive contributions:** None documented
+- **Work between meetings:** No evidence
+- **Quality:** No engagement despite attendance
+- **Accountability:** N/A - no commitments made
+- **Trajectory:** Consistently absent from discussions
 
-**7. Ian McCullough (Cullah)**
-- **Attendance:** 8/11 (73%)
-- **Speaking frequency:** Heavy when present
+### Jose Iadicicco
+- **Attendance:** 10/11 (Absent 01/06)
+- **Speaking frequency:** Light - Occasional contributions
 - **Substantive contributions:**
-  - Built dashboard tool for hub transparency
-  - Provided historical hub data and context
-  - Constitutional committee engagement
-- **Work between meetings:** Dashboard development
-- **Quality:** High-value technical contributions
-- **Accountability:** Delivered dashboard as promised
-- **Trajectory:** Strong start, tapering attendance
-
-**8. Jose Iadicicco**
-- **Attendance:** 9/11 (82%)
-- **Speaking frequency:** Light to Moderate
-- **Substantive contributions:**
-  - Catalyst membership requirement proposal (Dec 16)
-  - Latin American hackathon experience sharing
-  - Japan tour updates
+  - Shared Latin American hackathon experience (01/20)
+  - Proposed Catalyst participant requirement for Intersect membership (02/03)
 - **Work between meetings:** Limited evidence
-- **Quality:** Ideas-focused rather than execution
-- **Accountability:** More talk than action
-- **Trajectory:** Consistent but limited impact
+- **Quality:** Ideas presented but limited follow-through
+- **Accountability:** Mixed
+- **Trajectory:** Sporadic engagement
 
-**9. Laurentine Djatsa**
-- **Attendance:** 10/11 (91%)
-- **Speaking frequency:** Moderate
+### Laurentine Djatsa
+- **Attendance:** 9/11 (Absent 01/06, 03/31)
+- **Speaking frequency:** Moderate when present
 - **Substantive contributions:**
-  - French translation partnership with Boaz
-  - Raised communication issues about meeting invites
-  - Advocated for inclusive hub processes
-- **Work between meetings:** Translation work
-- **Quality:** Constructive participation
-- **Accountability:** Reliable on translation
-- **Trajectory:** Steady contributor
+  - Co-led French translation to 99% completion (02/03, 03/03)
+  - Raised communication issues about not receiving invites (11/25)
+  - Advocated for inclusive hub participation (02/17)
+- **Work between meetings:** Translation work with Boaz
+- **Quality:** Good contributions when engaged
+- **Accountability:** Delivered on translation
+- **Trajectory:** Consistent when present
 
-**10. Olivier Rishi Matabaro**
-- **Attendance:** 9/11 (82%)
-- **Speaking frequency:** Light
+### Nathan Kanapi
+- **Attendance:** 0/11 (100% absent)
+- **Speaking frequency:** Never
+- **Substantive contributions:** None
+- **Work between meetings:** None
+- **Quality:** Complete non-participation
+- **Accountability:** Failed basic attendance requirement
+- **Trajectory:** Never engaged
+
+### Olivier Rishi Mataboro
+- **Attendance:** 9/11 (Absent 02/17, 03/17)
+- **Speaking frequency:** Light - Minimal contributions
 - **Substantive contributions:**
-  - In-person events proposal via idea intake form
-- **Work between meetings:** No clear evidence
-- **Quality:** Minimal documented impact
-- **Accountability:** Limited follow-through
-- **Trajectory:** Quiet presence
+  - Proposed in-person community events idea (01/06)
+- **Work between meetings:** No evidence
+- **Quality:** Limited engagement
+- **Accountability:** Minimal
+- **Trajectory:** Low consistent engagement
 
-### Part 3: POWER DYNAMICS
+## Part 3: Power Dynamics
 
 **Speaking Time Dominance:**
-- Maureen commands most meeting time as chair
-- Wilco (non-member) frequently dominates discussions despite guest status
-- Terence (staff) often overrides committee discussions with procedural points
+- Maureen Wepngong dominates virtually every meeting as Chair
+- Abhik Nag (Secretary) often speaks more than most elected members
+- Terence McCutcheon (staff) frequently intervenes with procedural guidance
 
 **Consistently Sidelined:**
-- Olivier rarely gets speaking opportunities
-- Boaz speaks minimally despite perfect attendance
-- Several members remain silent in most meetings
+- Ian McCullough - present but never speaks
+- Nathan Kanapi - completely absent
+- Multiple instances of Maureen expressing frustration: "I ask what does everyone think and I expect the committee members to say something and no one says anything" (03/03)
 
 **Visible Alliances:**
-- Hub working group: Sanjaya, Akheel, Fanny operate as a bloc
-- Translation team: Boaz and Laurentine coordinate independently
-- Tension between Maureen and the hub group over transparency
+- Sanjaya/Akheel/Fanny formed a WhatsApp group for hubs work
+- Boaz/Laurentine collaborated on translation
+- Tension between Maureen and the "silos" created by private working groups
 
 **Work vs. Attendance:**
-- Actual workers: Maureen, Sanjaya, Boaz (translation), Fanny, Chaya (non-member)
-- Show up but minimal work: Jose, Olivier
-- High-value intermittent: Ian/Cullah, Akheel
+- Actual work done by: Maureen, Sanjaya, Boaz, Fanny, Laurentine
+- Just showing up: Ian, Olivier
+- Not even showing up: Nathan
 
-### Part 4: SUMMARY RANKINGS
+## Part 4: Summary Rankings
 
-**Most to Least Effective:**
+1. **Maureen Wepngong** - Exceptional leader carrying the committee despite member apathy
+2. **Sanjaya Wanigasekera** - Solid Vice Chair with consistent operational delivery
+3. **Boaz Balume** - Specialized excellence in translation despite minimal speaking
+4. **Fanny Wijaya** - Good strategic contributions and documentation
+5. **Laurentine Djatsa** - Valuable when present, delivered on translation
+6. **Akheel Fouze** - Moderate contributor, admitted technical struggles
+7. **Jose Iadicicco** - Ideas without follow-through
+8. **Olivier Rishi Mataboro** - Minimal value despite attendance
+9. **Ian McCullough** - Attendance without participation
+10. **Nathan Kanapi** - Complete failure of elected responsibility
 
-1. **Maureen Wepngong** - Drives agenda, creates documents, manages workstreams
-2. **Sanjaya Wanigasekera** - Operational delivery, consistent participation
-3. **Boaz Balume** - Perfect attendance, delivered major translation milestone
-4. **Fanny Wijaya** - Strong documentation despite attendance gaps
-5. **Laurentine Djatsa** - Reliable contributor within defined scope
-6. **Ian McCullough** - High-impact technical contributions when present
-7. **Akheel Fouze** - Knowledgeable but inconsistent availability
-8. **Jose Iadicicco** - Present but limited concrete deliverables
-9. **Olivier Rishi Matabaro** - Minimal measurable impact
-10. **Nathan Kanapi** - Complete non-participant, should be removed
-
-**Critical Finding:** Nathan Kanapi attended 0/11 meetings and contributed nothing, yet retained his voting seat throughout the period, undermining committee legitimacy.
+**Critical Finding:** The committee suffers from severe participation inequality. Maureen repeatedly expresses frustration with member silence, asking "What do you guys need? What do I do? What am I supposed What's my job here? Do you need me to make decisions by myself?" (03/03). At least 3-4 members are effectively dead weight, collecting stipends while contributing nothing.
