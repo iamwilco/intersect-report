@@ -20,6 +20,10 @@ from datetime import datetime
 from config import (
     VAULT_ROOT, COMMITTEES, COMMITTEE_FULL_NAMES, SITE_DATA_DIR, ELECTION_START,
 )
+try:
+    from config import SITE_DATA_MIRRORS
+except ImportError:
+    SITE_DATA_MIRRORS = []
 
 EVIDENCE_DIR = SITE_DATA_DIR / "evidence"
 
@@ -112,47 +116,76 @@ def parse_promises_report(text: str) -> list[dict]:
     return promises
 
 
+RATIO_RE = re.compile(r"^\s*(\d+)\s*/\s*(\d+)\s*$")
+
+
 def parse_attendance_section(text: str) -> list[dict]:
-    """Extract member attendance data from Prompt 2 report."""
+    """Extract member attendance data from Prompt 2 report.
+
+    Handles multiple table formats:
+      | Name | 11/25 | 12/02 | ... | 11/11 |      (MCC: ratio in LAST cell)
+      | Name | 6/6   | 100%  |                   (TSC: ratio in SECOND cell)
+    Picks the last cell that is a clean "N/M" ratio. Columns that look like
+    dates (e.g. "11/25") in the header region are not candidates because we
+    only inspect body cells and take the ratio furthest to the right.
+    """
     members = []
-    # Look for attendance table rows: | Name | status | status | ... | X/Y |
+    by_name: dict[str, dict] = {}
     lines = text.split("\n")
     in_table = False
-    headers = []
 
     for line in lines:
-        if not line.strip().startswith("|"):
+        stripped = line.strip()
+        if not stripped.startswith("|"):
             if in_table:
-                break
+                in_table = False
             continue
 
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        cells = [c.strip() for c in stripped.strip("|").split("|")]
 
-        # Skip separator
         if all(set(c) <= {"-", " ", ":"} for c in cells):
             in_table = True
             continue
 
-        if not in_table:
-            headers = cells
+        if not in_table or len(cells) < 2:
             continue
 
-        if len(cells) >= 3:
-            name = cells[0]
-            total = cells[-1] if "/" in cells[-1] else None
-            if total and name and not set(name) <= {"-", " "}:
-                parts = total.split("/")
-                try:
-                    attended = int(parts[0].strip())
-                    total_meetings = int(parts[1].strip())
-                except (ValueError, IndexError):
-                    continue
-                members.append({
-                    "name": name,
-                    "attended": attended,
-                    "total": total_meetings,
-                    "rate": round(attended / total_meetings * 100) if total_meetings else 0,
-                })
+        name = cells[0]
+        if not name or set(name) <= {"-", " "}:
+            continue
+
+        ratio_cell = None
+        for c in reversed(cells[1:]):
+            m = RATIO_RE.match(c)
+            if m:
+                ratio_cell = m
+                break
+        if not ratio_cell:
+            continue
+
+        try:
+            attended = int(ratio_cell.group(1))
+            total_meetings = int(ratio_cell.group(2))
+        except ValueError:
+            continue
+        if total_meetings == 0:
+            continue
+
+        existing = by_name.get(name)
+        if existing:
+            existing["attended"] += attended
+            existing["total"] += total_meetings
+            existing["rate"] = round(existing["attended"] / existing["total"] * 100)
+        else:
+            entry = {
+                "name": name,
+                "attended": attended,
+                "total": total_meetings,
+                "rate": round(attended / total_meetings * 100),
+            }
+            by_name[name] = entry
+            members.append(entry)
+
     return members
 
 
@@ -344,9 +377,13 @@ def main():
                 if data["reports"][key].get("available"):
                     data["reports"][key].pop("raw_text", None)
 
+            payload = json.dumps(data, indent=2)
             out_path = SITE_DATA_DIR / f"{c.lower()}.json"
-            out_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+            out_path.write_text(payload, encoding="utf-8")
             print(f"  -> {out_path}")
+            for mirror in SITE_DATA_MIRRORS:
+                mirror.mkdir(parents=True, exist_ok=True)
+                (mirror / f"{c.lower()}.json").write_text(payload, encoding="utf-8")
             all_data.append(data)
         else:
             print(f"  No data found for {c}")
@@ -359,9 +396,13 @@ def main():
 
     # Build index
     index = build_index(all_data)
+    index_payload = json.dumps(index, indent=2)
     index_path = SITE_DATA_DIR / "index.json"
-    index_path.write_text(json.dumps(index, indent=2), encoding="utf-8")
+    index_path.write_text(index_payload, encoding="utf-8")
     print(f"\nIndex -> {index_path}")
+    for mirror in SITE_DATA_MIRRORS:
+        mirror.mkdir(parents=True, exist_ok=True)
+        (mirror / "index.json").write_text(index_payload, encoding="utf-8")
     print(f"Done. {len(all_data)} committee(s) exported.")
 
 

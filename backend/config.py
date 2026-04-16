@@ -13,8 +13,12 @@ from pathlib import Path
 # with a Transcripts/ directory containing dated .md files.
 VAULT_ROOT = Path.home() / "Desktop" / "wilco-os" / "projects" / "intersect-reports" / "Intersect"
 
-# Where the frontend site lives (for generate_site_data.py output)
+# Primary output dir for generate_site_data.py. Additional mirrors are
+# written to every path in SITE_DATA_MIRRORS (used by the Next.js dev/build).
 SITE_DATA_DIR = Path.home() / "Desktop" / "wilco-os" / "projects" / "intersect-reports" / "docs" / "data"
+SITE_DATA_MIRRORS = [
+    Path.home() / "Desktop" / "wilco-os" / "projects" / "intersect-reports" / "site" / "data",
+]
 
 # ─────────────────────────────────────────────
 # Committees
